@@ -22,7 +22,7 @@ function superlist_child_enqueue_files() {
 
 	# Include new styles
 	wp_enqueue_style( 'superlist-custom' );
-
+	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/assets/libraries/bootstrap-sass/javascripts/bootstrap-min.js', '', '', true );
 	wp_enqueue_script( 'validate-js', get_stylesheet_directory_uri() . '/assets/js/validate-min.js', '', '', true );
 
 }
