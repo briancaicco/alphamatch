@@ -112,6 +112,20 @@ add_filter( 'inventor_listing_detail_sections', function( $sections, $post_type 
 }, 10, 2 );
 
 
+
+
+	// Remove CSS version Parameter (messes with cacheing in chrome)
+	//////////////////////////////////////////////////////////////////////
+function remove_cssjs_ver( $src ) {
+	if( strpos( $src, '?ver=' ) )
+		$src = remove_query_arg( 'ver', $src );
+	return $src;
+}
+add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+
+
+
 /**
  * Removes post type Icon for pet post type
  *
