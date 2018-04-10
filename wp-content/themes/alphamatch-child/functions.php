@@ -447,6 +447,40 @@ function isFuture($time)
 
 
 
+/**
+ * Login Page redirect
+ *
+ * @since 0.1.0
+ * @uses wp_login_form() Displays the login form.
+ */
+function redirect_login_page(){
+
+    // Store for checking if this page equals wp-login.php
+    $page_viewed = basename( $_SERVER['REQUEST_URI'] );
+
+    // permalink to the custom login page
+    $login_page  = get_permalink( '10' );
+
+    if( $page_viewed == "wp-login.php" ) {
+        wp_redirect( $login_page );
+        exit();
+    }
+}
+
+add_action( 'init','redirect_login_page' );
+
+
+
+function redirect_registration_page()
+{
+	global $pagenow;
+
+	if ( ( strtolower($pagenow) == 'wp-login.php') && ( strtolower( $_GET['action']) == 'register' ) ) {
+		wp_redirect( home_url('/register'));
+	}
+}
+
+add_filter( 'init', 'redirect_registration_page' );
 
 
 
