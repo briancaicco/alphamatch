@@ -18,7 +18,8 @@
                     <?php else: ?>
                         <?php $login_page = get_theme_mod( 'inventor_general_login_required_page', false ); ?>
                         <?php $url = get_permalink( $login_page ); ?>
-                        <a href="/register" type="button" class="button btn bnt-lg btn-primary">Register</a>
+                        <a href="<?php bloginfo( 'url' );?>/login" style="color: #fff !important;" >Login</a>
+                        <a href="<?php bloginfo( 'url' );?>/register" style="margin-left: 20px; color: #fff !important;" class="button btn bnt-lg btn-primary">Register</a>
                     <?php endif; ?>
                 </span>
             </span>
