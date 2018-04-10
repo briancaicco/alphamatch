@@ -1,0 +1,52 @@
+Payment gateways
+################
+
+There are 4 payment gateways available: 
+
+- Wire Transfer
+- PayPal Account
+- PayPal Credit Card 
+- Stripe
+	
+PayPal
+======
+
+To enable **PayPal payment gateway**, you can choose if want to allow user to pay by his credit card or by his PayPal Account. Required fields are your *"PayPal Client ID*" and *"PayPal Client Secret"*. You can get it from `PayPal Developer`_. For debugging purpose, you can enable *"PayPal Sand Box mode"* by leaving *"Live Mode"* checkbox blank.
+
+.. _`PayPal Developer`: https:\\developer.paypal.com
+
+Stripe
+======
+
+To enable **Stripe payment gateway**, you need to set required fields *"Stripe Secret Key*" and *"Stripe Publishable Key"*. You can get it from `Stripe`_. For debugging purpose use Stripe Test keys.
+
+.. note:: You can download inventor-stripe plugin from `this URL`_.
+
+.. _`Stripe`: https:\\stripe.com
+.. _`this URL`: https://drive.google.com/file/d/0B8SWWcjL4T-OLWs4OFdNeTRHZW8
+
+
+Wire transfer
+=============
+
+If you want to enable **wire transfer payment gateway**, enter all mandatory data:
+
++------------------+-----------+
+| Field            | Mandatory |
++==================+===========+
+| Account number   | yes       |
++------------------+-----------+
+| Bank code        | yes       |
++------------------+-----------+
+| Full name        | yes       |
++------------------+-----------+
+| Street / P.O.Box | no        |
++------------------+-----------+
+| Postcode / ZIP   | no        |
++------------------+-----------+
+| City             | no        |
++------------------+-----------+
+| Country          | yes       |
++------------------+-----------+
+
+.. warning:: Wire transfer payments are not handled automatically like PayPal or Stripe payments. You will need to verify user transaction in your bank and set his package in WP admin yourself.

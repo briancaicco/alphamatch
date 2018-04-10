@@ -1,0 +1,544 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Billplz\n"
+"POT-Creation-Date: 2017-02-26 10:06+0100\n"
+"PO-Revision-Date: 2015-11-26 11:24+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;"
+"_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-inventor-bookings-logic.php:44
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:41
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:47
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:53
+msgid "Bookings"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:66
+msgid "Awaiting approval"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:67
+msgid "Pending payment"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:68
+msgid "Approved"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:69
+msgid "Cancelled"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:70
+msgid "No-show"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:71
+msgid "Completed"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:105 includes/class-inventor-bookings-logic.php:417
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:42
+msgid "Booking"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:106
+#, php-format
+msgid "Booking of %s"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:147
+msgid "Booking has been successfully paid."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:163
+msgid "Bookings configuration"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:173
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:174
+msgid "Allow/disallow listing booking (also price needs to be set)."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:184
+msgid "Period unit"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:185
+msgid "Final booking price depends on booking range, period unit and listing price."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:188
+msgid "Hour"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:189
+msgid "Day"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:190
+msgid "Night"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:198
+msgid "Min period"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:199
+msgid "Minimum booking period required"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:213
+msgid "Max period"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:214
+msgid "Maximum booking period allowed"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:228
+msgid "Price per person"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:229
+msgid "Check if you want to calculate total booking price depending on number of persons."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:241
+msgid "Min persons"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:242
+msgid "Minimum persons needed for booking"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:258
+msgid "Max persons"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:259
+msgid "Total person capacity per booking"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:274
+msgid "Additional information"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:275
+msgid "Reservation details for customers"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:284
+msgid "Check-in"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:285
+msgid "When the user can check-in"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:294
+msgid "Check-out"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:295
+msgid "When the user can check-out"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:304
+msgid "Cancellation policy"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:317
+msgid "Week availability"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:328
+msgid "Exceptions"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:337
+msgid "Item"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:338
+msgid "Add Another"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:339
+msgid "Remove"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:345
+msgid "Date"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:378
+msgid "Booking range is invalid."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:386
+msgid "Invalid number of persons."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:393
+msgid "Same booking request already exists."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:408
+msgid "reCAPTCHA is not valid."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:448
+msgid "Booking request"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:505
+msgid "Booking request has been successfully sent."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:508
+msgid "Unable to send a booking request."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:557
+msgid "Booking reviewed"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:562
+msgid "Booking approved"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:570
+msgid "Booking cancelled"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:575
+msgid "Booking marked as completed"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:580
+msgid "Booking marked as no-show"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:586
+msgid "Unable to moderate booking."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:629
+msgid "Booking successfully moderated."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:631
+msgid "Booking status was changed but it wasn't able to send email."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:44
+msgid "Booking detail"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:59
+msgid "My bookings"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:66
+msgid "Inventor Bookings"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:79
+msgid "Minimum persons"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:82
+msgid "Limitation of minimum persons needed for each booking."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:94
+msgid "Maximum persons"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:97
+msgid "Limitation of maximum persons allowed for each booking."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:109
+msgid "Default ordering for listing archive"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:124
+msgid "Prepaid bookings"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:125
+msgid "Check if the approved booking has to be paid by customer."
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:43
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:44
+msgid "Add New Booking"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:45
+msgid "Edit Booking"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:46
+msgid "New Booking"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:48
+msgid "View Booking"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:49
+msgid "Search Booking"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:50
+msgid "No Bookings found"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:51
+msgid "No Bookings Found in Trash"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:95
+msgid "General"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:103
+#: templates/bookings/detail.php:22 templates/mails/booking-approval.php:24
+#: templates/mails/booking-cancellation.php:24 templates/mails/booking-request.php:19
+msgid "Book from"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:109
+#: templates/bookings/detail.php:26 templates/mails/booking-approval.php:29
+#: templates/mails/booking-cancellation.php:29 templates/mails/booking-request.php:23
+msgid "Book to"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:115
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:197
+#: templates/bookings/detail.php:34 templates/mails/booking-approval.php:39
+#: templates/mails/booking-request.php:31
+msgid "Price"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:129
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:281
+msgid "Listing ID"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:135
+#: templates/bookings/detail.php:30 templates/mails/booking-approval.php:34
+#: templates/mails/booking-cancellation.php:34 templates/mails/booking-request.php:27
+#: templates/widgets/booking-form.php:80
+msgid "Number of persons"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:146
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:195
+#: templates/bookings/detail.php:42 templates/mails/booking-approval.php:49
+#: templates/mails/booking-cancellation.php:44 templates/mails/booking-request.php:39
+#: templates/widgets/booking-form-admin.php:54 templates/widgets/booking-form.php:116
+msgid "E-mail"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:152
+#: templates/bookings/detail.php:38 templates/mails/booking-approval.php:44
+#: templates/mails/booking-cancellation.php:39 templates/mails/booking-request.php:35
+#: templates/widgets/booking-form-admin.php:40 templates/widgets/booking-form.php:111
+msgid "Name"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:158
+#: templates/bookings/detail.php:46 templates/mails/booking-approval.php:54
+#: templates/mails/booking-cancellation.php:49 templates/mails/booking-request.php:43
+#: templates/widgets/booking-form-admin.php:67 templates/widgets/booking-form.php:121
+msgid "Phone"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:164
+#: templates/bookings/detail.php:50 templates/mails/booking-approval.php:59
+#: templates/mails/booking-cancellation.php:54 templates/mails/booking-request.php:47
+#: templates/widgets/booking-form-admin.php:80 templates/widgets/booking-form.php:127
+msgid "Message"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:170
+msgid "Hash"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:176
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:198
+#: templates/bookings/detail.php:11
+msgid "Status"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:192
+#: templates/widgets/booking-form-admin.php:19
+msgid "Title"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:193
+#: templates/bookings/detail.php:18 templates/mails/booking-approval.php:14
+#: templates/mails/booking-cancellation.php:14 templates/mails/booking-request.php:10
+msgid "Listing"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:194
+msgid "Period"
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:196
+#: templates/widgets/booking-form.php:72
+msgid "Persons"
+msgstr ""
+
+#: includes/widgets/class-inventor-bookings-widget-booking-form.php:23
+msgid "Booking Form"
+msgstr ""
+
+#: includes/widgets/class-inventor-bookings-widget-booking-form.php:25
+msgid "Booking form."
+msgstr ""
+
+#: templates/bookings/detail.php:2
+msgid "Booking not found."
+msgstr ""
+
+#: templates/bookings/detail.php:7
+msgid "Booking ID"
+msgstr ""
+
+#: templates/bookings/detail.php:58
+msgid "Cancel booking"
+msgstr ""
+
+#: templates/bookings/detail.php:59
+msgid "Approve booking"
+msgstr ""
+
+#: templates/bookings/detail.php:70
+msgid "Pay booking"
+msgstr ""
+
+#: templates/bookings/list.php:40
+msgid "Previous"
+msgstr ""
+
+#: templates/bookings/list.php:41
+msgid "Next"
+msgstr ""
+
+#: templates/bookings/list.php:47
+msgid "You don't have any bookings, yet."
+msgstr ""
+
+#: templates/bookings/list.php:49
+msgid "Please login first."
+msgstr ""
+
+#: templates/bookings/payment-form-before.php:7
+msgid "Price is not set."
+msgstr ""
+
+#: templates/bookings/payment-form-before.php:12
+#, php-format
+msgid "You are going to pay <strong>%s</strong> for booking of <strong>\"%s\"</strong>."
+msgstr ""
+
+#: templates/bookings/payment-form-before.php:19
+msgid "Missing listing."
+msgstr ""
+
+#: templates/field-types/week-availability.php:56
+msgid "Discount"
+msgstr ""
+
+#: templates/field-types/week-availability.php:65
+msgid "Closed"
+msgstr ""
+
+#: templates/mails/booking-approval.php:7
+msgid "Your following booking was approved:"
+msgstr ""
+
+#: templates/mails/booking-approval.php:68
+msgid "Please confirm your booking at this URL:"
+msgstr ""
+
+#: templates/mails/booking-cancellation.php:7
+msgid "Following booking was cancelled:"
+msgstr ""
+
+#: templates/mails/booking-request.php:55
+msgid "See booking details at this URL:"
+msgstr ""
+
+#: templates/widgets/booking-form-admin.php:29
+msgid "Form fields"
+msgstr ""
+
+#: templates/widgets/booking-form-admin.php:108
+msgid "Site admin"
+msgstr ""
+
+#: templates/widgets/booking-form-admin.php:121
+msgid "Listing author"
+msgstr ""
+
+#: templates/widgets/booking-form-admin.php:134
+msgid "Listing email"
+msgstr ""
+
+#: templates/widgets/booking-form-admin.php:139
+msgid "If none selected, post author will receive an email by default."
+msgstr ""
+
+#: templates/widgets/booking-form.php:46 templates/widgets/booking-form.php:52
+#: templates/widgets/booking-form.php:65
+msgid "From"
+msgstr ""
+
+#: templates/widgets/booking-form.php:59
+msgid "To"
+msgstr ""
+
+#: templates/widgets/booking-form.php:91 templates/widgets/booking-form.php:98
+msgid "Min: "
+msgstr ""
+
+#: templates/widgets/booking-form.php:92 templates/widgets/booking-form.php:99
+msgid "Max: "
+msgstr ""
+
+#: templates/widgets/booking-form.php:98 templates/widgets/booking-form.php:99
+msgid "person"
+msgid_plural "persons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/widgets/booking-form.php:105
+msgid "Contact information"
+msgstr ""
+
+#: templates/widgets/booking-form.php:138
+msgid "Request"
+msgstr ""

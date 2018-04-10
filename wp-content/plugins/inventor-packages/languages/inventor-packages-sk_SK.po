@@ -1,0 +1,469 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Packages\n"
+"POT-Creation-Date: 2017-11-02 22:38+0100\n"
+"PO-Revision-Date: 2017-11-02 22:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-inventor-packages-logic.php:66
+msgid "Video"
+msgstr "Video"
+
+#: includes/class-inventor-packages-logic.php:67
+msgid "Gallery"
+msgstr "Galéra"
+
+#: includes/class-inventor-packages-logic.php:68
+msgid "Location"
+msgstr "Poloha"
+
+#: includes/class-inventor-packages-logic.php:69
+msgid "Opening hours"
+msgstr "Otváracie hodiny"
+
+#: includes/class-inventor-packages-logic.php:70
+msgid "Contact"
+msgstr "Kontakt"
+
+#: includes/class-inventor-packages-logic.php:71
+msgid "Social networks"
+msgstr "Sociálne siete"
+
+#: includes/class-inventor-packages-logic.php:83
+#: includes/post-types/class-inventor-packages-post-type-package.php:39
+#: includes/post-types/class-inventor-packages-post-type-package.php:45
+#: includes/post-types/class-inventor-packages-post-type-package.php:51
+#: includes/widgets/class-inventor-packages-widget-packages.php:23
+msgid "Packages"
+msgstr "Balíky"
+
+#: includes/class-inventor-packages-logic.php:255
+#: includes/class-inventor-packages-logic.php:288
+#: includes/class-inventor-packages-logic.php:321
+#: templates/widgets/packages.php:83
+msgid "Unlimited"
+msgstr "Neobmedzene"
+
+#: includes/class-inventor-packages-logic.php:259
+#: includes/post-types/class-inventor-packages-post-type-package.php:109
+#: includes/post-types/class-inventor-packages-post-type-package.php:200
+#: templates/widgets/packages.php:80
+msgid "Max Listings"
+msgstr "Max položiek"
+
+#: includes/class-inventor-packages-logic.php:292
+#: includes/post-types/class-inventor-packages-post-type-package.php:121
+#: includes/post-types/class-inventor-packages-post-type-package.php:201
+msgid "Max Categories"
+msgstr "Max kategórií"
+
+#: includes/class-inventor-packages-logic.php:325
+#: includes/post-types/class-inventor-packages-post-type-package.php:133
+#: includes/post-types/class-inventor-packages-post-type-package.php:202
+msgid "Max Photos"
+msgstr "Max fotiek"
+
+#: includes/class-inventor-packages-logic.php:386
+msgid "Listing details"
+msgstr "Detaily položky"
+
+#: includes/class-inventor-packages-logic.php:409
+msgid "week"
+msgstr "týždeň"
+
+#: includes/class-inventor-packages-logic.php:410
+msgid "month"
+msgstr "mesiac"
+
+#: includes/class-inventor-packages-logic.php:411
+msgid "year"
+msgstr "rok"
+
+#: includes/class-inventor-packages-logic.php:428
+msgid "Purchase package"
+msgstr "Zakúpiť balík"
+
+#: includes/class-inventor-packages-logic.php:429
+#, php-format
+msgid "Upgrade package to %s"
+msgstr "Aktualizovať balík na %s"
+
+#: includes/class-inventor-packages-logic.php:450
+msgid "Not set"
+msgstr "Nenastavené"
+
+#: includes/class-inventor-packages-logic.php:599
+msgid "Infinite"
+msgstr "Nekonečne"
+
+#: includes/class-inventor-packages-logic.php:639
+#: includes/class-inventor-packages-logic.php:654
+#: includes/class-inventor-packages-logic.php:805
+#: includes/post-types/class-inventor-packages-post-type-package.php:40
+msgid "Package"
+msgstr "Balík"
+
+#: includes/class-inventor-packages-logic.php:648
+msgid "Package Information"
+msgstr "Informácie o balíku"
+
+#: includes/class-inventor-packages-logic.php:671
+msgid "Infinite duration"
+msgstr "Nekonečné trvanie"
+
+#: includes/class-inventor-packages-logic.php:678
+msgid "Validity"
+msgstr "Platnosť"
+
+#: includes/class-inventor-packages-logic.php:722
+#, php-format
+msgid "Your package %s allows you to set unlimited number of categories."
+msgstr "Váš balík %s Vám umožňuje prideliť neobmedzený počet kategórií."
+
+#: includes/class-inventor-packages-logic.php:724
+#, php-format
+msgid "Your package %s allows you to set at most %d category."
+msgid_plural "Your package %s allows you to set at most %d categories."
+msgstr[0] "Váš balík %s Vám umožňuje prideliť najviac %d kategóriu."
+msgstr[1] "Váš balík %s Vám umožňuje prideliť najviac %d kategórií."
+
+#: includes/class-inventor-packages-logic.php:745
+#, php-format
+msgid ""
+"Your package %s allows you to show unlimited number of photos in the gallery."
+msgstr "Váš balík %s Vám umožňuje zobraziť neobmedzený počet fotiek v galérii."
+
+#: includes/class-inventor-packages-logic.php:747
+#, php-format
+msgid "Your package %s allows you to show at most %d photo in the gallery."
+msgid_plural ""
+"Your package %s allows you to show at most %d photos in the gallery."
+msgstr[0] "Váš balík %s Vám umožňuje zobraziť najviac %d fotku v galérii."
+msgstr[1] "Váš balík %s Vám umožňuje zobraziť najviac %d fotiek v galérii."
+
+#: includes/class-inventor-packages-logic.php:780
+#, php-format
+msgid "Your package \"%s\" does not allow you to publish this information."
+msgstr "Váš balík \"%s\" Vám nepovoľuje publikovať túto informáciu."
+
+#: includes/class-inventor-packages-logic.php:808
+msgid ""
+"Button will be linked to the purchase page. You must create payment page "
+"(containing [inventor_payment]) which must be set up in customizer."
+msgstr ""
+"Tlačidlo bude prelinkované s nákupnou stránkou. Vytvorte stránku (obsahujúcu "
+"[inventor_payment]), ktorá bude nastavená v kustomizéri."
+
+#: includes/class-inventor-packages-logic.php:1311
+msgid "Package is not free."
+msgstr "Balík nie je bezplatný."
+
+#: includes/class-inventor-packages-logic.php:1316
+msgid "Package has been set."
+msgstr "Balík bol nastavený"
+
+#: includes/class-inventor-packages-logic.php:1318
+msgid "Could not set package for user."
+msgstr "Nepodarilo sa nastaviť balík používateľa. "
+
+#: includes/class-inventor-packages-logic.php:1339
+msgid "Package has been upgraded."
+msgstr "Balík bol aktualizovaný."
+
+#: includes/customizations/class-inventor-packages-customizations-packages.php:34
+msgid "Inventor Packages"
+msgstr "Inventor balíky"
+
+#: includes/customizations/class-inventor-packages-customizations-packages.php:49
+msgid "Default package"
+msgstr "Prednastavený balík"
+
+#: includes/customizations/class-inventor-packages-customizations-packages.php:53
+msgid "For newly registered user"
+msgstr "Pre novoregistrovaného používateľa"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:41
+#: includes/post-types/class-inventor-packages-post-type-package.php:42
+msgid "Add New Package"
+msgstr "Pridať nový balík"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:43
+msgid "Edit Package"
+msgstr "Upraviť balík"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:44
+msgid "New Package"
+msgstr "Nový balík"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:46
+msgid "View Package"
+msgstr "Zobraziť balík"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:47
+msgid "Search Package"
+msgstr "Vyhľadať balík"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:48
+msgid "No Packages found"
+msgstr "Nenašli sa žiadne balíky"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:49
+msgid "No Packages Found in Trash"
+msgstr "V koši sa nenašli žiadne balíky"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:78
+msgid "General"
+msgstr "Všeobecné"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:87
+#: includes/post-types/class-inventor-packages-post-type-package.php:198
+#: templates/widgets/packages.php:64
+msgid "Price"
+msgstr "Cena"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:90
+#, php-format
+msgid "In %s."
+msgstr "V %s."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:102
+#: includes/post-types/class-inventor-packages-post-type-package.php:199
+#: templates/widgets/packages.php:72
+msgid "Duration"
+msgstr "Trvanie"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:111
+msgid ""
+"If submission type is 'packages'. Keep blank for unlimited amount of "
+"listings."
+msgstr ""
+"Pre typ podania “baliky”. Ponecahte prázdne pre neobmedzené množsto položiek."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:122
+#: includes/post-types/class-inventor-packages-post-type-package.php:134
+msgid "Per listing. Keep blank for unlimited"
+msgstr "Na položku. Nechajte prázdne pre neobmedzený počet."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:145
+#: includes/post-types/class-inventor-packages-post-type-package.php:204
+msgid "Private"
+msgstr "Súkromný"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:147
+msgid ""
+"If checked, package won't be visible in the pricing. Suitable for VIP users "
+"or admins."
+msgstr ""
+"Súkromné balíky nie su viditeľné v cenníku. Vhodné pre VIP používateľov "
+"alebo adminov."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:152
+msgid "Permissions and restrictions"
+msgstr "Oprávnenia a reštrikcie"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:163
+msgid "Metaboxes / Sections"
+msgstr "Metaboxy / Sekcie"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:164
+msgid ""
+"Defines which information will be author available to publish in his "
+"listings."
+msgstr "Definuje, ktoré informácie bude môcť autor položiek publikovať."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:173
+msgid "Use listing types restriction"
+msgstr "Použiť reštrikciu typov položiek"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:179
+msgid "Listing types"
+msgstr "Typy položiek"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:180
+msgid "Defines which listing types will be users available to create."
+msgstr "Definuje, ktoré typy položiek budú môcť používatelia vytvárať."
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:197
+#: templates/widgets/packages-admin.php:12
+msgid "Title"
+msgstr "Názov"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:203
+msgid "Type"
+msgstr "Typ"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:253
+msgid "Yes"
+msgstr "Áno"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:253
+msgid "No"
+msgstr "Nie"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:258
+msgid "free"
+msgstr "zdarma"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:260
+msgid "regular"
+msgstr "regulárny"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:262
+msgid "simple"
+msgstr "jednoduchý"
+
+#: includes/post-types/class-inventor-packages-post-type-package.php:264
+msgid "trial"
+msgstr "časovo obmedzený"
+
+#: includes/widgets/class-inventor-packages-widget-packages.php:25
+msgid "Displays available packages."
+msgstr "Zobrazí dostupné balíky."
+
+#: templates/package-info.php:13
+msgid ""
+"Site is using packages. Before you can post listing, please upgrade your "
+"package."
+msgstr ""
+"Stránka používa balíky. Na to, aby ste mohli vytvoriť položku si potrebujete "
+"aktualizovať svoj balík."
+
+#: templates/package-info.php:17
+msgid "You don't have any package."
+msgstr "Nemáte žiaden balík."
+
+#: templates/package-info.php:22
+#, php-format
+msgid "You are using <strong>%s</strong> package."
+msgstr "Používate balík <strong>%s</strong>."
+
+#: templates/package-info.php:29
+#, php-format
+msgid "Your membership is valid until <strong>%s</strong>."
+msgstr "Vaše členstvo je platné do <strong>%s</strong>."
+
+#: templates/package-info.php:38
+msgid "You can add <strong>unlimited</strong> amount of items"
+msgstr "Môžte pridať <strong>neobmedzený</strong> počet položiek"
+
+#: templates/package-info.php:40
+#, php-format
+msgid ""
+"You can not add new listings because you spent all of your available "
+"listings. Change your package. First <strong>%s</strong> items has been "
+"disabled from listing."
+msgstr ""
+"Nemôžete pridať nové položky, pretože ste vyčerpali maximálny povolený "
+"počet. Zmeňte svoj balík. Prvých <strong>%s</strong> položiek bolo "
+"deaktivovaných."
+
+#: templates/package-info.php:42
+#, php-format
+msgid "You can add <strong>%s</strong> items."
+msgstr "Môžete pridať <strong>%s</strong> položiek."
+
+#: templates/package-info.php:49
+#, php-format
+msgid "Your membership already expired at <strong>%s</strong>."
+msgstr "Vaše členstvo vypršalo <strong>%s</strong>."
+
+#: templates/package-info.php:51
+msgid "All your items has been deactivated until you pay for new membership."
+msgstr ""
+"Všetky vaše položky boli deaktivované pokiaľ si nepredĺžite svoje členstvo. "
+
+#: templates/package-info.php:67
+msgid "Select Package"
+msgstr "Zvoľte balík"
+
+#: templates/package-info.php:77 templates/widgets/packages.php:55
+msgid "Change"
+msgstr "Zmeniť"
+
+#: templates/payment-form-before.php:9
+msgid "You can't choose trial package."
+msgstr "Nemôžete zvoliť časovo obmedzený balík."
+
+#: templates/payment-form-before.php:13
+#, php-format
+msgid "You chose package <strong>\"%s\"</strong>."
+msgstr "Zvolili ste balík <strong>\"%s\"</strong>."
+
+#: templates/payment-form-before.php:17
+#, php-format
+msgid ""
+"You are going to pay <strong>%s</strong> for package <strong>\"%s\"</strong>."
+msgstr ""
+"Chystáte sa zaplatiť <strong>%s</strong> za balík <strong>\"%s\"</strong>."
+
+#: templates/payment-form-before.php:23 templates/payment-form-fields.php:23
+msgid "Missing package."
+msgstr "Chýba balík."
+
+#: templates/payment-form-fields.php:8
+msgid ""
+"Trial packages can only be used as a default package. They cannot be "
+"purchased or chosen."
+msgstr ""
+"Časovo obmedzené balíky môžu byť použité iba ako prednastavenie pre nových "
+"používateľov. Nemôžu byť kúpené alebo zvolené."
+
+#: templates/payment-form-fields.php:16
+msgid "Confirm"
+msgstr "Potvrdiť"
+
+#: templates/widgets/packages.php:53
+msgid "Purchase"
+msgstr "Zakúpiť"
+
+#: templates/widgets/packages.php:95
+msgid "No packages found."
+msgstr "Nenašli sa žiadne balíky."
+
+#~ msgid "Your package \"%s\" does not allow you to public this information."
+#~ msgstr "Váš balík \"%s\" Vám nepovoľuje publikovať túto informáciu."
+
+#~ msgid "Metaboxes"
+#~ msgstr "Metaboxy"
+
+#~ msgid "Metabox permissions"
+#~ msgstr "Oprávnenia"
+
+#~ msgid "Permissions"
+#~ msgstr "Oprávnenia"
+
+#~ msgid "Reviews"
+#~ msgstr "Hodnotenia"
+
+#~ msgid "Listing types restrictions"
+#~ msgstr "Reštrikcia typov položiek"
+
+#~ msgid "Use restriction"
+#~ msgstr "Použiť reštrikciu"
+
+#~ msgid "Date"
+#~ msgstr "Dátum"
+
+#~ msgid "Payment page has been not set."
+#~ msgstr "Platobná stránka nebola nastavená."
+
+#~ msgid "You choosed package <strong>\"%s\"</strong>."
+#~ msgstr "Zvolili ste balík <strong>\"%s\"</strong>."
+
+#~ msgid "Valid"
+#~ msgstr "Platné"
+
+#~ msgid "Your subscription is valid until <strong>%s</strong>."
+#~ msgstr "Vaše členstvo je platné do <strong>%s</strong>."

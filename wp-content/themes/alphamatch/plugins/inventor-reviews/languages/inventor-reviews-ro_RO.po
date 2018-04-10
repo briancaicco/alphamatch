@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Reviews\n"
+"POT-Creation-Date: 2016-08-02 09:29+0200\n"
+"PO-Revision-Date: 2016-08-02 09:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: includes/class-inventor-reviews-logic.php:107
+#: includes/class-inventor-reviews-logic.php:119
+#: includes/class-inventor-reviews-logic.php:483
+#: templates/admin/review-admin-field-rating.php:2
+#: templates/review-field-rating.php:3 templates/review-listing-rating.php:12
+#: templates/review-single.php:50 templates/widgets/filter-fields/rating.php:4
+#: templates/widgets/filter-fields/rating.php:12
+msgid "Rating"
+msgstr "Rating"
+
+#: includes/class-inventor-reviews-logic.php:194
+msgid "PROS: "
+msgstr "Pro:"
+
+#: includes/class-inventor-reviews-logic.php:194
+msgid "CONS: "
+msgstr "Contra:"
+
+#: includes/class-inventor-reviews-logic.php:403
+msgid "reCAPTCHA is not valid."
+msgstr "Codul reCAPTCHA este invalid."
+
+#: includes/class-inventor-reviews-logic.php:437
+#: templates/admin/review-admin-field-pros.php:2
+#: templates/review-field-pros.php:4 templates/review-single.php:66
+msgid "Pros"
+msgstr "Pro"
+
+#: includes/class-inventor-reviews-logic.php:439
+#: templates/admin/review-admin-field-cons.php:2
+#: templates/review-field-cons.php:4 templates/review-single.php:75
+msgid "Cons"
+msgstr "Contra"
+
+#: templates/review-field-author.php:3
+msgid "Name"
+msgstr "Nume"
+
+#: templates/review-field-comment.php:2
+msgid "comment"
+msgstr "Comentariu"
+
+#: templates/review-field-email.php:3
+msgid "E-mail"
+msgstr "Email"
+
+#: templates/review-field-file.php:4
+msgid "Attach image"
+msgstr "Atașează imagine"
+
+#: templates/review-field-file.php:8
+msgid "Upload Image"
+msgstr "Încarcă imagine"
+
+#: templates/review-list.php:6
+#, php-format
+msgid "One review on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s reviews on &ldquo;%2$s&rdquo;"
+msgstr[0] "O recenzie pentru &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s recenzii pentru &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s recenzii pentru &ldquo;%2$s&rdquo;"
+
+#: templates/review-list.php:21
+msgid "Older Reviews"
+msgstr "Recenzii mai vechi"
+
+#: templates/review-list.php:22
+msgid "Newer Reviews"
+msgstr "Recenzii mai noi"
+
+#: templates/review-list.php:27
+msgid "Reviews are closed."
+msgstr "Recenziile nu sunt permise."
+
+#: templates/review-list.php:38
+msgid "Post New Review"
+msgstr "Adaugă o recenzie"
+
+#: templates/review-list.php:39
+msgid "Submit Review"
+msgstr "Trimite recenzia"
+
+#: templates/review-single.php:15
+msgid "Your review is awaiting moderation."
+msgstr "Recenzia ta așteaptă aprobare."
+
+#: templates/review-single.php:26
+msgid "Edit"
+msgstr "Editează"
+
+#: templates/review-single.php:32
+msgid "Spam"
+msgstr "Spam"
+
+#: templates/review-single.php:39
+msgid "Delete"
+msgstr "Șterge"
+
+#: templates/review-total-rating.php:9
+#, php-format
+msgid ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d review</a>"
+msgid_plural ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d reviews</a>"
+msgstr[0] ""
+"<strong>%.2f / 5 </strong> din <a href=\"#listing-detail-section-reviews\">"
+"%d recenzie</a>"
+msgstr[1] ""
+"<strong>%.2f / 5 </strong> din <a href=\"#listing-detail-section-reviews\">"
+"%d recenzii</a>"
+msgstr[2] ""
+"<strong>%.2f / 5 </strong> din <a href=\"#listing-detail-section-reviews\">"
+"%d recenzii</a>"
+
+#: templates/widgets/filter-fields/rating.php:14
+msgid "Any rating"
+msgstr "Orice rating"

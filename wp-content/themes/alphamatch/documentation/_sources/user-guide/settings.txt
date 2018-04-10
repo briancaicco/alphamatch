@@ -1,0 +1,138 @@
+Settings
+########
+
+All plugin settings are located in *"WP admin > Appearance > Customize"*. They are split into following sections:
+
+General
+=======
+
+In **general settings** there are options to set: 
+
+* enable/disable listing post types
+* available banner types
+* listing map type (*roadmap, satellite, hybrid*)
+* default sorting of listing archives (*date, title, price, rating, popularity*)
+* default ordering (*ascending or descending*)
+* number of allowed categories per listing
+* if featured image is present in listing gallery 
+* listing display type (*row/grid*)
+* to show featured listings on top
+* sublistings (related listing relationship)
+* if sublistings should be ignored in archive pages
+* purchase code (to enable automatic plugin updates)
+* Google Browser Key (read more in `Google Maps APIs`_)
+
+.. _`Google Maps APIs`: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+.. note:: When creating Google Browser Key in `Google Developer Console`_, don't forget to set your website URL correctly.
+
+.. _`Google Developer Console`: https://console.developers.google.com
+
+Pages
+=====
+
+In this section are settings regarding to pages from all inventor plugins 
+
+* login
+* after login
+* registration
+* after register
+* profile
+* change password
+* reset forgotten password
+* terms & conditions
+* report listing
+* payment
+* after payment
+* transactions
+* user listings
+* add listing
+* edit listing
+* remove listing
+* booking detail
+* claim listing
+* compare listings
+* favorite listings
+* create collection
+* invoices
+* watchdogs 
+* apply for job
+* job applicants
+
+Currency
+========
+
+This section contains necessary settings to define **new currency** including:
+
+* currency symbol
+* currency code
+* show symbol before or after amount
+* number of decimal places
+* decimal separator
+* thousand separator
+
+Currencies
+==========
+
+For **multiple currencies**, enter number of additional currencies. You can also enable automatic rate conversion using third party service `Currency layer`_.
+
+.. _`Currency layer`: http://currencylayer.com
+
+.. note:: To show additional currencies settings sections, you may need to refresh window after changing number of additional currencies.
+
+Measurement
+===========
+
+You may need to change **area, distance or weight units** to your preferences. You can do it here.
+
+Submission
+==========
+
+All settings regarding to submission system are grouped in this section. Beside of **type of submission** (Free for all / packages), you can decide if you want the listings to be manually **reviewed by site admin** or choose **default package** if using packages. To enable **frontend submission**, you need to set all submission pages containing plugin shortcodes:
+
+* List of user listings page
+* Create listing page
+* Edit listing page
+* Remove listing page
+
+Notifications
+=============
+
+Plugin offers some user **email notifications** related to submission system. Here is list of them:
+
+- Package expiration warning
+- Package expiration announcement
+- Submission waiting for review
+    - for user
+    - for admin
+- Submission published
+    - for user
+    - for admin
+	
+Watchdogs
+=========
+
+Watchdog is a user's **saved search query**. User can create unlimited number of his own watchdogs. To create a watchdog, user have to fill something into filter at first and then click on *"Watch this search query"* under number of matched results. To allow user to see their watchdogs, you need to set *"Watchodgs page"* with plugin shortcode.
+
+Invoices
+========
+
+Plugin generates invoice for every successfull transaction. If you wish, you can set *"Invoices page"*. with plugin shortcode to allow users to see and print their invoices or you can handle it yourself. Default invocie settings include:
+
+* Payment term
+* Tax rate
+* Billing name
+* Reg. No.
+* VAT No.
+* another supplier details
+
+.. note:: Wire transfer payments are handled specially. Invoice type for such transaction is an "Advance invoice" and all wire transfer details are added into invoice billing details.
+
+.. note:: You may need to set special tax rate for some customers. You can read how to do it in *"Developer Guide"* chapter.
+
+.. note:: **Payment gateways** are described in their :doc:`own chapter <payment-gateways>`.
+
+Statistics
+==========
+
+You can enable *"Search Query Logging"* and *"Listing Views Logging"* to see statistics graphs in WP admin. It is not recommended to use this feature on slow hostings. 

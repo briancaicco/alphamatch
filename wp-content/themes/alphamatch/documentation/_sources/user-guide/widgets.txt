@@ -1,0 +1,116 @@
+Widgets
+*******
+
+Plugin comes with some useful widgets containing interesting information or functionality.
+
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| Widget name            | Description                                                                                                       | Suitable widget area             |
++========================+===================================================================================================================+==================================+
+| **Boxes**              | Shows 3 boxes with custom text                                                                                    | Content Top, Top, Bottom, Footer |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Call to action**     | Shows button with custom link and description                                                                     | Top, Bottom                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Coupon detail**      | Shows small box with detail information                                                                           | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Coupon listing**     | Lists coupons                                                                                                     | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Favorite listings**  | Lists user favorites                                                                                              | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **FAQ**                | Displays FAQ                                                                                                      | Content Top                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Filter**             | Search form for filtering listings                                                                                | Content Top, Primary             |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Google Map**         | Displays interactive Google Map with listings                                                                     | Top Fullwidth                    |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listings**           | Displays specific listing configured by category, location, display type, count, special attributes, order...     | Top, Primary                     |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listing Author**     | Displays information of listing author                                                                            | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listing Categories** | Renders selected listing categories                                                                               | Top                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listing details**    | Shows listing's total rating, number of views and favorites                                                       | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listing Inquire**    | Contact form for sending inquire messages                                                                         | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Listing Slider**     | Renders slider with listing images and small description                                                          | Top Fullwidth                    |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Opening Hours**      | Renders opening hours of listing                                                                                  | Primary                          |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Packages**           | Displays all defined packages                                                                                     | Dashboard                        |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Pricing tables**     | Displays all defined pricing tables                                                                               | Top                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Partners**           | Displays specified partners                                                                                       | Top                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Simple map**         | Renders simple Google Map                                                                                         | Content Top                      |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Video cover**        | Renders title, subtitle and filter width video or image background                                                | Top Fullwidth                    |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **Testimonials**       | Shows testimonials                                                                                                | Top                              |
++------------------------+-------------------------------------------------------------------------------------------------------------------+----------------------------------+
+
+.. note:: Some widgets contains *"Advanced options"* in which you can set custom background color or image, extra padding from top or bottom or either set special css classes.
+
+
+Widget logic
+============
+
+`Widget Logic`_ is plugin that can help you to set on which page should desired widget appear. It creates extra input field under every widget where you can use `WP's Conditional tags`_.
+
+Widget logic is using PHP `eval()`_ function so be careful what you are putting into widget logic plugin. PHP syntax error could completely break your website.
+
+
+.. _`Widget Logic`: https://wordpress.org/plugins/widget-logic/
+.. _`WP's Conditional tags`: http://codex.wordpress.org/Conditional_Tags
+.. _`eval()`: http://php.net/manual/en/function.eval.php
+
+Most common conditional tags
+============================
+
+``is_front_page()``
+    Widget will be displayed only on homepage
+
+``! is_front_page()``
+	This ! mark negotiate conditional tag. So in this example, widget will be displayed on every page except homepage
+
+``is_page( 'contact' )``
+	Show widget on page with 'contact' slug/URL only.
+
+``is_page( 123 )``
+	Show widget on page with ID 123 only.
+
+``is_singular( 'property' )``
+	Display widget on property detail page only.
+
+``is_user_logged_in()``
+	Only for authenticated users.
+
+``is_post_type_archive()``
+	Widget will be displayed in post type archive pages.
+	
+``is_post_type_archive( array( 'property', 'hotel' ) )``
+	Widget will be displayed in archive pages of *property* and *hotel* listing types only.
+
+``is_archive()``
+	Widget will be show only on all archive pages.
+
+``is_tax( 'listing_categories' )``
+	Widget will be displayed in the listing categories archive pages.
+	
+``is_tax( 'listing_categories', 'sport' )``
+	Widget will be displayed in the archive page of *sport* listing category only.
+	
+
+Combining conditional tags & Debugging
+======================================
+
+You can combine multiple conditional tags by using ``&&`` and ``||`` operators. Two ampersands are logical operator ``AND``. Two pipes are logical operator ``OR``. When combining multiple operators make sure that you don't make any mistake. If you make syntax error your site will be broken. Website will be rendered normally until malfunction widget. The best way how to debug this situation is to open your PHP error log and look for an issue.
+
+Different widgets for languages in WPML
+=======================================
+
+You can display widgets based on current language. Just use ``ICL_LANGUAGE_CODE`` constant which is coming from WPML. Below you can check en example where we are displaing widget for english version only:
+
+.. code-block:: php
+
+    ICL_LANGUAGE_CODE == 'en'

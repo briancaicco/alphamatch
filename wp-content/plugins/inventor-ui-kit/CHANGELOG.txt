@@ -1,0 +1,22 @@
+Version: 1.0.0
+Release date: 2016-11-04
+What's new:
+- First release
+
+
+Version: 1.0.1
+Release date: 2016-12-13
+What's new:
+- video embed script is not loading if not necessary
+
+
+Version: 1.0.2
+Release date: 2017-01-31
+What's new:
+- removed black stripes from video cover
+
+
+Version: 1.1.0
+Release date: 2017-04-28
+- option to set number of filter inputs in Cover widget
+- option to show filter without title nor subtitle

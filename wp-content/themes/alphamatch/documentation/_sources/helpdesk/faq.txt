@@ -1,0 +1,81 @@
+FAQ
+***
+
+What's the difference between listing type, category and lexicon?
+=================================================================
+**Listing type** is a group of objects with same variables. For example *business, car, restaurant, real estate, pet, event* etc. 
+In general, **category** can be assigned to any listing. It will help your users to search listings by it. For example *medicine, finance, nature* etc... 
+**Lexicon** is custom taxonomy used to better description of single listing of specific listing type. It can be for example *color, car type, restaurant type, hotel class, clothes size* etc.
+
+
+My listings have ‘draft’ post status every time I publish them, why?  
+====================================================================
+Your site is using package system and the package of user who submitted the listing aexpired. You can either set valid :doc:`package <../user-guide/packages>` to the user or change :doc:`submission type <../user-guide/submission-system>`. 
+
+
+How can I translate site into other language?  
+=============================================
+All translation strings are saved in .po file. You can use PoEdit software. Follow steps in chapter :doc:`../user-guide/translations`.
+
+
+How can I change english phrases into something else?  
+=====================================================
+You can either override `templates`_ in your `child theme`_ or you can create own :doc:`.po file <../user-guide/translations>`.
+
+.. _`templates`: https://developer.wordpress.org/themes/basics/template-hierarchy/
+.. _`child theme`: https://codex.wordpress.org/Child_Themes
+
+
+How can I change colors to my own?
+==================================
+You can use one of the prepared color variations or you can define your own colors using SASS. Read more in :doc:`../developer-guide/custom-colors`.
+
+
+Can I create my own listing type?
+=================================
+Yes you can do it in 2 ways. You can either do it :doc:`programatically <../developer-guide/custom-listing-post-types>` (recommended, better performance) or you can use :doc:`GUI Manager <../user-guide/custom-listing-types>` (for non-programmers).
+
+
+How can I disable existing listing type?
+========================================
+Just go to WP admin and navigate to Appearance > Customize and in section Inventor General disable or enable corresponding post types.
+
+
+How can I create my own taxonomy/lexicon?
+============================================
+You can do it similar as creating custom post type. Follow steps in chapter :doc:`../developer-guide/taxonomies`.
+
+
+I want to add new fields into existing post type. Can I do that without programming skills?
+============================================================================================== 
+Yes you can using inventor-fields plugin. It allows you to define fields via WP admin. Read more in chapter :doc:`../user-guide/custom-fields`.
+
+
+I don't see some sections at listing detail, why?
+=================================================
+It is because user who created the listing has assigned a package without enough permissions. Check chapter :doc:`../user-guide/packages`.
+
+
+My Google Map does not show up, why?
+====================================
+
+You need to enter your own Google Browser Key in the :doc:`settings <../user-guide/settings>` and set your website URL correctly in Google Developer Console. Read more in official `Google documentation`_.
+
+.. _`Google documentation`: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+
+Listing address in the Google Map does not offer autocomplete options
+=====================================================================
+Check if "Google Places API Web Service" API is enabled for your Google Project of your Browser Key in `Google Cloud Platform Console`_.
+
+.. _`Google Cloud Platform Console`: https://console.cloud.google.com/home/dashboard
+
+
+There are some errors on my site. What should I do?
+======================================================
+Be sure, you are using latest theme and plugin versions and no-third party asset is breaking your website. If the problem persists, contact our :doc:`support team <support>`.
+
+
+Do your plugins offer automatic updates?
+=============================================
+Yes they do. Just :doc:`enter your purchase code <../user-guide/settings>` and your plugins will be automatically updated every time new version will be released.

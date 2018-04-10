@@ -1,0 +1,81 @@
+Taxonomies
+##########
+
+Custom taxonomies could be found inside ``inventor/includes/taxonomies`` folder. Before you start working with taxonomies, make sure that you are familiar with all nuances of `register_taxonomy`_ function.
+
+.. _`register_taxonomy`: https://codex.wordpress.org/Function_Reference/register_taxonomy
+
+Adding new taxonomy to listing
+==============================
+
+.. code-block:: php
+    :linenos:
+
+    add_action( 'init', 'my_custom_taxonomy', 11 );
+    add_action( 'parent_file', 'menu', 11 );
+    add_action( 'admin_menu', 'admin_menu', 11 );
+    
+    function my_custom_taxonomy() {
+        $custom_taxonomy_labels = array(
+            'name'              => __( 'Custom Taxonomies', 'domain' ),
+            'singular_name'     => __( 'Custom Taxonomy', 'domain' ),
+            'search_items'      => __( 'Search Custom Taxonomy', 'domain' ),
+            'all_items'         => __( 'All Custom Taxonomies', 'domain' ),
+            'parent_item'       => __( 'Parent Custom Taxonomy', 'domain' ),
+            'parent_item_colon' => __( 'Parent Custom Taxonomy:', 'domain' ),
+            'edit_item'         => __( 'Edit Custom Taxonomy', 'domain' ),
+            'update_itm'        => __( 'Update Custom Taxonomy', 'domain' ),
+            'add_new_item'      => __( 'Add New Custom Taxonomy', 'domain' ),
+            'new_item_name'     => __( 'New Custom Taxonomy', 'domain' ),
+            'menu_name'         => __( 'Custom Taxonomies', 'domain' ),
+        );
+    
+        register_taxonomy( 'custom_taxonomies', Inventor_Post_Types::get_listing_post_types(), array(
+            'labels'            => $custom_taxonomy_labels,
+            'hierarchical'      => true,
+            'query_var'         => 'custom-taxonomy',
+            'rewrite'           => array( 'slug' => __( 'custom-taxonomy', 'domain' ) ),
+            'public'            => true,
+            'show_ui'           => true,
+            'show_admin_column' => true,
+        ) );
+    }
+    
+    function menu( $parent_file ) {
+        global $current_screen;
+        $taxonomy = $current_screen->taxonomy;
+    
+        if ( 'custom_taxonomies' == $taxonomy ) {
+            return 'lexicon';
+        }
+    
+        return $parent_file;
+    }
+    
+    function admin_menu( $parent_file ) {
+        add_submenu_page( 
+            'lexicon', 
+            __( 'Custom Taxonomies', 'domain' ), 
+            __( 'Custom Taxonomies', 'domain' ), 
+            'edit_posts', 
+            'edit-tags.php?taxonomy=custom_taxonomies', 
+            false 
+        );
+    }    
+
+
+Removing taxonomy
+=================
+
+All taxonomies definition are wrapped in init hooks so it is easy to remove custom taxonomy only by defining remove_action(). Below you can see example how to remove **colors** taxonomy.
+
+.. code-block:: php
+    :linenos:
+
+    remove_action( 'init', array( 'Inventor_Taxonomy_Colors', 'definition' ) );
+
+
+Changing taxonomy slug
+======================
+
+To change already existing taxonomy, you need to remove it at first and then register it again using approaches above.

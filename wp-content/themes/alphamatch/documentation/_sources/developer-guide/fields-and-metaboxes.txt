@@ -1,0 +1,300 @@
+Fields and Metaboxes
+####################
+
+Plugin defines custom meta fields. All fields are implemented using third party `CMB2 plugin`_.
+
+.. _`CMB2 plugin`: https://wordpress.org/plugins/cmb2/
+
+* `Official CMB2 documentation`_
+* `Available field types`_
+* `Bringing fields on the front end`_
+
+.. _`Official CMB2 documentation`: https://github.com/webdevstudios/CMB2/wiki
+.. _`Available field types`: https://github.com/WebDevStudios/CMB2/wiki/Field-Types 
+.. _`Bringing fields on the front end`: http://webdevstudios.com/2015/03/30/use-cmb2-to-create-a-new-post-submission-form/
+
+
+Using predefined metaboxes
+==========================
+
+If you want to add `built in metaboxes <#predefined-metaboxes>`_ to a post type, you can use ``Inventor_Post_Types::add_metabox()`` method (see example below).
+
+.. code-block:: php
+    :linenos:
+    :emphasize-lines: 24
+
+    add_action( 'cmb2_init', 'doctor_fields' );
+    
+    function doctor_fields() {
+        Inventor_Post_Types::add_metabox( 'doctor', array(
+            'general', 
+            'banner', 
+            'gallery', 
+            'video', 
+            'location', 
+            'price', 
+            'contact', 
+            'flags', 
+            'listing_category' 
+        ) );
+    }
+
+
+Remove predefined metabox
+=========================
+
+If you want to remove :doc:`built in metabox <metaboxes>` from a listing post type, you can use ``Inventor_Post_Types::remove_metabox()`` method. In example below we removed *"Video"* metabox from *"Doctor"* listing type.
+
+.. code-block:: php
+    :linenos:
+    :emphasize-lines: 24
+
+    add_action( 'cmb2_init', 'remove_metabox', 11 );
+    
+    function remove_metabox() {
+        Inventor_Post_Types::remove_metabox( 'doctor', array(
+            'video',
+        ) );
+    }
+
+
+Create new field
+================
+
+If predefined metaboxes do'nt meet your requirements, you can create your own fields. Below is a small example how to add new *"Fax"* field into existing *"Contact"* metabox of *"Doctor"* listing type.
+
+.. code-block:: php
+    :linenos:
+
+    add_action( 'cmb2_init', 'custom_fields', 11 );
+
+    function custom_fields( ) {
+        $contact_metabox = CMB2_Boxes::get( INVENTOR_LISTING_PREFIX . 'doctor_contact' );
+    
+        if ( ! empty( $contact_metabox ) ) {
+            $contact_metabox->add_field( array(
+                'id'         => INVENTOR_LISTING_PREFIX . 'doctor_fax',
+                'name'       => __( 'Fax', 'domain' ),
+                'type'       => 'text'
+            ) );
+        }
+    }
+
+   
+.. note :: If you want to add field on the specific position, set second argument of ``add_field()`` function.
+
+
+Creating metabox
+================
+
+Adding new metaboxes is quite similar as extending them. We will define all metabox information instead of just adding new field. Below you can see an example how to define new *"Details"* metabox with *"Salary"* field for *"Doctor"* listing type. This is just a sample, for more information check CMB2 official documentation.
+
+
+.. code-block:: php
+    :linenos:
+    
+    add_action( 'cmb2_init', 'custom_metabox' );
+
+    function custom_metabox() {
+        $details_metabox = new_cmb2_box( array(
+            'id'            => INVENTOR_LISTING_PREFIX . 'doctor_details',
+            'title'         => __( 'Details', 'domain' ),
+            'object_types'  => array( 'doctor' ),
+            'context'       => 'normal',
+            'priority'      => 'high',
+            'skip'          => false
+        ) );
+    
+        $details_metabox->add_field( array(
+            'name'          => __( 'Salary', 'domain' ),
+            'id'            => INVENTOR_LISTING_PREFIX  . 'doctor_salary',
+            'type'          => 'text',
+            'attributes'    => array(
+                'type'        => 'number',
+                'min'         => 0
+            )
+        ) );
+    }
+
+
+.. note:: All metabox fields are visible in listing detail attributes by default. To avoid that, set ``skip`` field argument to ``true``.
+
+.. _predefined-metaboxes:
+
+
+Predefined fields and metaboxes
+===============================
+
+Inventor predefines some useful common metaboxes, so you don't have to recreate them everytime.
+
+.. note :: Metabox ID is build using this structure: ``listing_<listing-type>_<metabox-key>``.
+
+Common predefined metaboxes and fields are defined in the file: ``includes/class-inventor-metaboxes.php``.
+
+Special fields related to post types are defined in ``includes/post-types/class-inventor-post-type-POST_TYPE_NAME.php`` files or in corresponding plugin. Each post type is using own ``fields()`` static method for its fields definition.
+
+
+Single metaboxes
+****************
+
++----------------------------+--------------------------------------+--------------------------------------+
+| Metabox key                | Field name                           | Field ID                             |
++============================+======================================+======================================+
+| *general*                  | Title                                | ``listing_title``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Description                          | ``listing_description``              |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Featured Image                       | ``listing_featured_image``           |                            
++----------------------------+--------------------------------------+--------------------------------------+
+| *branding*                 | Slogan                               | ``listing_slogan``                   |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Brand color                          | ``listing_brand_color``              |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Logo                                 | ``listing_logo``                     |                            
++----------------------------+--------------------------------------+--------------------------------------+
+| *banner*                   | Banner Type                          | ``listing_banner``                   |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Custom image                         | ``listing_banner_image``             |                            
+|                            +--------------------------------------+--------------------------------------+
+|                            | Video file                           | ``listing_banner_video``             |                            
+|                            +--------------------------------------+--------------------------------------+
+|                            | Video embed                          | ``listing_banner_video_embed``       |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Zoom                                 | ``listing_banner_map_zoom``          |                            
+|                            +--------------------------------------+--------------------------------------+
+|                            | Map type                             | ``listing_banner_map_type``          |                            
+|                            +--------------------------------------+--------------------------------------+
+|                            | Marker                               | ``listing_banner_map_marker``        |
++----------------------------+--------------------------------------+--------------------------------------+
+| *gallery*                  | Gallery                              | ``listing_gallery``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+| *color*                    | Color                                | ``listing_color``                    |
++----------------------------+--------------------------------------+--------------------------------------+
+| *video*                    | URL                                  | ``listing_video``                    |
++----------------------------+--------------------------------------+--------------------------------------+
+| *listing_category*         | Listing categories                   | ``listing_listing_category``         |
++----------------------------+--------------------------------------+--------------------------------------+
+| *contact*                  | E-mail                               | ``listing_email``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Phone                                | ``listing_phone``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Website                              | ``listing_website``                  |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Person                               | ``listing_person``                   |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Address                              | ``listing_address``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+| *social*                   | Facebook                             | ``listing_facebook``                 |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Twitter                              | ``listing_twitter``                  |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Google+                              | ``listing_google``                   |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Instagram                            | ``listing_instagram``                |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Vimeo                                | ``listing_vimeo``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | YouTube                              | ``listing_youtube``                  |
+|                            +--------------------------------------+--------------------------------------+
+|                            | LinkedIn                             | ``listing_linkedin``                 |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Dribbble                             | ``listing_dribbble``                 |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Skype                                | ``listing_skype``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Foursquare                           | ``listing_foursquare``               |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Behance                              | ``listing_behance``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+| *price*                    | Price                                | ``listing_price``                    |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Prefix                               | ``listing_price_prefix``             |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Suffix                               | ``listing_price_suffix``             |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Custom                               | ``listing_price_custom``             |
++----------------------------+--------------------------------------+--------------------------------------+
+| *flags*                    | Featured                             | ``listing_featured``                 |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Reduced                              | ``listing_reduced``                  |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Verified                             | ``listing_verified``                 |
++----------------------------+--------------------------------------+--------------------------------------+
+| *location*                 | Location                             | ``listing_locations``                |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Map Location                         | ``listing_map_location``             |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Map Location Polygon                 | ``listing_map_location_polygon``     |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Street View                          | ``listing_street_view``              |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Street View Location                 | ``listing_street_view_location``     |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Inside View                          | ``listing_inside_view``              |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Inside View Location                 | ``listing_inside_view_location``     |
++----------------------------+--------------------------------------+--------------------------------------+
+| *date*                     | Date                                 | ``listing_date``                     |
++----------------------------+--------------------------------------+--------------------------------------+
+| *time*                     | Time                                 | ``listing_time``                     |
++----------------------------+--------------------------------------+--------------------------------------+
+| *date_interval*            | Date from                            | ``listing_date_from``                |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Date to                              | ``listing_date_to``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+| *datetime_interval*        | Datetime from                        | ``listing_datetime_from``            |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Datetime to                          | ``listing_datetime_to``              |
++----------------------------+--------------------------------------+--------------------------------------+
+| *time_interval*            | Time from                            | ``listing_time_from``                |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Time to                              | ``listing_time_to``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+| *date_and_time_interval*   | Date                                 | ``listing_date``                     |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Time from                            | ``listing_time_to``                  |
+|                            +--------------------------------------+--------------------------------------+
+|                            | Time to                              | ``listing_time_to``                  |
++----------------------------+--------------------------------------+--------------------------------------+
+
+
+Group metaboxes (repeatable values)
+***********************************
+
++-------------------+-------------------+----------------------------+--------------+-----------------------+
+| Metabox key       | Group field name  | Group field ID             | Field name   | Field ID              |
++===================+===================+============================+==============+=======================+
+| *faq*             | FAQ               | ``listing_faq``            | Question     | ``listing_question``  |
+|                   |                   |                            +--------------+-----------------------+
+|                   |                   |                            | Answer       | ``listing_answer``    |
++-------------------+-------------------+----------------------------+--------------+-----------------------+
+| *opening_hours*   | Opening hours     | ``listing_opening_hours``  | Day          | ``listing_day``       |
+|                   |                   |                            +--------------+-----------------------+
+|                   |                   |                            | Time from    | ``listing_time_from`` |
+|                   |                   |                            +--------------+-----------------------+
+|                   |                   |                            | Time to      | ``listing_time_to``   |
+|                   |                   |                            +--------------+-----------------------+
+|                   |                   |                            | Custom text  | ``listing_custom``    |
++-------------------+-------------------+----------------------------+--------------+-----------------------+
+
+.. note :: Opening yours is a special metabox which uses repeatable group fields structure, but renders and escapes the field in own way defined in class: ``Inventor_Field_Types_Opening_Hours``.
+
+
+Getting metabox field value
+===========================
+
+There is a helper function you can use to retrieve formatted field value.
+
+Example to get phone number of the listing:
+
+.. code-block:: php
+    :linenos:
+
+    $listing_id = get_the_ID();
+    $post_type = get_post_type( $listing_id );
+    $metabox_id = 'listing_' . $post_type . '_contact';
+    $field_id = 'listing_phone';
+    $value = Inventor_Post_Types::get_metabox_field_value( $metabox_id, $field_id, $post_id );
+
+
+.. note :: CMB2 library actually saves all field values as a standard post meta information defined by WordPress itself. So if you need raw data instead of formatted value, you can call ``get_post_meta()`` function from WordPress API. 

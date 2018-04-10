@@ -1,0 +1,30 @@
+Custom Listing Types
+********************
+
+You can either define your custom listing post types in source code by following steps in the :doc:`../developer-guide/custom-listing-post-types` chapter or you can use GUI to create them in the WP admin in section *"Inventor > Listing Types"*.
+
+There is a also video tutorial in the :doc:`../helpdesk/screencast` chapter which can help you:
+
+.. raw:: html
+
+    <div style="padding-bottom:30px;">
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZeWFKhsSZU" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+Each listing type is defined by its:
+
+- plural name
+- singular name
+- unique identifier
+- URL slug
+- allowed purchasing flag
+- allowed claiming flag
+- predefined metaboxes
+- custom metaboxes
+
+New Listing type is available immediately after its creation. New listing can be created navigating to *"WP admin > Listings"* or using :doc:`../user-guide/submission-system`.
+
+.. warning:: After registering post type do not forget to resave permalinks. This task could be done by visiting *"Settings - Permalinks"* page in WordPress administration.
+
+.. note:: You will need to add metaboxes (and fields) to the new listing type using metabox manager in *"Inventor > Metaboxes"*, read more about it in chapter :doc:`../user-guide/custom-metaboxes`.
+

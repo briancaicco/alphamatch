@@ -1,0 +1,71 @@
+Custom Fields
+*************
+
+You can either define your custom fields in source code by following steps in the :doc:`../developer-guide/fields-and-metaboxes` chapter or you can use GUI to create them in the WP admin in section *"Inventor > Fields"*.
+
+There is a also video tutorial in the :doc:`../helpdesk/screencast` chapter which can help you:
+
+.. raw:: html
+
+    <div style="padding-bottom:30px;">
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZeWFKhsSZU" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+Each field is defined by its:
+
+- name
+- unique identifier
+- required flag
+- skip flag
+- description
+- label position
+- input type
+- value type
+- taxonomy
+- filter field flag
+- target
+- metabox
+
+
+**Name** and **description** informs user about the field. Enter any declarative text.
+
+**Identifier** has to be an unique slug (there can't 2 fields with same ID and its value can't contain special characters or spaces). 
+
+Mark **Required flag** if the field needs to be mandatory, otherwise it will be optional.
+
+Mark **Skip flag** if you want to show value of this fields into own metabox section in listing detail page instead of listing overview section. Be noticed, that metabox of the field has to be marked with **Section flag**.
+
+**Label position** just defines label appearance in the frontend submission.
+
+**Input type** defines how the field will be rendered in the forms (text input, selects, checkboxes etc...)
+
+There are many input types available. We can categorize them by their behaviour:
+
++----------------+---------------------------+------------------------------------------------------------------------+
+| Input type     | Number of accepted values | Variations                                                             |
++================+===========================+========================================================================+
+| single line    | 1                         | text, small text, medium text, email address, URL, embed media         |
++----------------+---------------------------+------------------------------------------------------------------------+
+| multiple lines | 1                         | textarea, smaller textarea, code textarea, wysiwyg editor              |
++----------------+---------------------------+------------------------------------------------------------------------+
+| picker         | 1, 2 or 3                 | time, date, timezone, date and time, date and time and timezone, color |
++----------------+---------------------------+------------------------------------------------------------------------+
+| checkbox       | 1 (true / false)          | checkbox                                                               |
++----------------+---------------------------+------------------------------------------------------------------------+
+| checkboxes     | many                      | multicheck, multicheck inline                                          |
++----------------+---------------------------+------------------------------------------------------------------------+  
+| radio          | 1                         | radio, radio_inline                                                    |
++----------------+---------------------------+------------------------------------------------------------------------+
+| select         | 1                         | select                                                                 |
++----------------+---------------------------+------------------------------------------------------------------------+ 
+
+**Value type** specifies entered values (characters, integer, positive integer, decimal and positive decimal) 
+
+**Taxonomy** can be set for some specific input types. Field options are constructed by created terms.
+
+Mark **Filter field flag** if you want to show this field in the filter widget.
+
+**Target** can be either listing or user. 
+
+Assign **metaboxes** you want to put new field into.

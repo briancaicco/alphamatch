@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Claims\n"
+"POT-Creation-Date: 2016-08-05 00:03+0600\n"
+"PO-Revision-Date: 2016-08-05 00:13+0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: includes/class-inventor-claims-logic.php:40
+msgid "Listing was claimed"
+msgstr "Листинг был заявлен"
+
+#: includes/class-inventor-claims-logic.php:41
+msgid "Claim was approved"
+msgstr "Заявка была одобрена"
+
+#: includes/class-inventor-claims-logic.php:69
+#: includes/class-inventor-claims-logic.php:122
+msgid "Verified"
+msgstr "Подтвержденно"
+
+#: includes/class-inventor-claims-logic.php:260
+msgid "Listing is already verified."
+msgstr "Листинг уже подтвержден."
+
+#: includes/class-inventor-claims-logic.php:268
+#: includes/class-inventor-claims-logic.php:408
+msgid "You already claimed this listing."
+msgstr "Вы уже подали заявку на этот листинг."
+
+#: includes/class-inventor-claims-logic.php:279
+msgid "Listing ID is missing."
+msgstr "ID листинга отсутствует."
+
+#: includes/class-inventor-claims-logic.php:399
+msgid "reCAPTCHA is not valid."
+msgstr "reCAPTCHA не действительна."
+
+#: includes/class-inventor-claims-logic.php:463
+msgid "Message has been successfully sent. Please, wait for admin review."
+msgstr "Сообщение было успешно отправлено. Пожалуйста, дождитесь обзора администратором."
+
+#: includes/class-inventor-claims-logic.php:465
+msgid "Unable to send a message."
+msgstr "Не удалось отправить сообщение."
+
+#: includes/customizations/class-inventor-claims-customizations-claims.php:44
+msgid "Claim listing"
+msgstr "Заявить листинг"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:37
+#: includes/post-types/class-inventor-claims-post-type-claim.php:43
+#: includes/post-types/class-inventor-claims-post-type-claim.php:49
+msgid "Claims"
+msgstr "Заявки"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:38
+#: templates/claims-button.php:8
+msgid "Claim"
+msgstr "Заявка"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:39
+#: includes/post-types/class-inventor-claims-post-type-claim.php:40
+msgid "Add New Claim"
+msgstr "Добавить Новую Заявку"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:41
+msgid "Edit Claim"
+msgstr "Редактировать Заявку"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:42
+msgid "New Claim"
+msgstr "Новая Заявка"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:44
+msgid "View Claim"
+msgstr "просмотр Заявки"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:45
+msgid "Search Claim"
+msgstr "Поиск Заявки"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:46
+msgid "No Claims found"
+msgstr "Заявки не найдены"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:47
+msgid "No Claims Found in Trash"
+msgstr "Заявки не найдены в Корзине"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:74
+msgid "General"
+msgstr "Общие"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:83
+msgid "Listing ID"
+msgstr "ID листинга"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:93
+#: templates/claims-form.php:14 templates/claims-mail.php:8
+msgid "Name"
+msgstr "Имя"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:99
+msgid "Email"
+msgstr "Email"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:105
+#: templates/claims-form.php:22 templates/claims-mail.php:16
+msgid "Phone"
+msgstr "Телефон"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:111
+#: templates/claims-form.php:26
+msgid "Message"
+msgstr "Сообщение"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:125
+msgid "Title"
+msgstr "Название"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:126
+msgid "Listing"
+msgstr "Листинг"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:127
+msgid "Author"
+msgstr "Автор"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:128
+msgid "Date"
+msgstr "Дата"
+
+#: templates/claims-button.php:4
+msgid "I claimed it"
+msgstr "Я заявил это"
+
+#: templates/claims-form.php:3
+msgid "You have to specify listing!"
+msgstr "Вы должны указать листинг!"
+
+#: templates/claims-form.php:7
+msgid "You have already claimed this listing. Please, wait for admin review."
+msgstr "Вы уже заявили этот листинг. Пожалуйста, подождите обзор администратором."
+
+#: templates/claims-form.php:18 templates/claims-mail.php:12
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/claims-form.php:36
+#, php-format
+msgid "Claim %s"
+msgstr "Заявка %s"
+
+#: templates/claims-mail.php:21
+msgid "URL"
+msgstr "Ссылка"

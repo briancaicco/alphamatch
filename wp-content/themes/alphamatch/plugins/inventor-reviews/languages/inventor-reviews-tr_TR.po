@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Reviews\n"
+"POT-Creation-Date: 2016-05-03 14:22+0200\n"
+"PO-Revision-Date: 2016-06-17 15:41+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"Language: tr\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: includes/class-inventor-reviews-logic.php:107
+#: includes/class-inventor-reviews-logic.php:119
+#: includes/class-inventor-reviews-logic.php:479
+#: templates/admin/review-admin-field-rating.php:2
+#: templates/review-field-rating.php:3 templates/review-listing-rating.php:12
+#: templates/review-single.php:53
+#: templates/widgets/filter-fields/rating.php:4
+#: templates/widgets/filter-fields/rating.php:12
+msgid "Rating"
+msgstr "Puan"
+
+#: includes/class-inventor-reviews-logic.php:194
+msgid "PROS: "
+msgstr "ARTILARI:"
+
+#: includes/class-inventor-reviews-logic.php:194
+msgid "CONS: "
+msgstr "EKSİLERİ:"
+
+#: includes/class-inventor-reviews-logic.php:399
+msgid "reCAPTCHA is not valid."
+msgstr "Doğrulama kodu yanlış"
+
+#: includes/class-inventor-reviews-logic.php:433
+#: templates/admin/review-admin-field-pros.php:2
+#: templates/review-field-pros.php:4 templates/review-single.php:69
+msgid "Pros"
+msgstr "Artıları"
+
+#: includes/class-inventor-reviews-logic.php:435
+#: templates/admin/review-admin-field-cons.php:2
+#: templates/review-field-cons.php:4 templates/review-single.php:78
+msgid "Cons"
+msgstr "Eksikleri"
+
+#: templates/review-field-author.php:3
+msgid "Name"
+msgstr "İsim"
+
+#: templates/review-field-comment.php:2
+msgid "comment"
+msgstr "Yorum"
+
+#: templates/review-field-email.php:3
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/review-field-file.php:4
+msgid "Attach image"
+msgstr "Fotoğraf ekle"
+
+#: templates/review-field-file.php:8
+msgid "Upload Image"
+msgstr "Fotoğraf yükle"
+
+#: templates/review-list.php:6
+#, php-format
+msgid "One review on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s reviews on &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo yazısında %1$s inceleme"
+
+#: templates/review-list.php:21
+msgid "Older Reviews"
+msgstr "Önceki İncelemeler"
+
+#: templates/review-list.php:22
+msgid "Newer Reviews"
+msgstr "Yeni İncelemeler"
+
+#: templates/review-list.php:27
+msgid "Reviews are closed."
+msgstr "İnceleme kapatıldı"
+
+#: templates/review-list.php:39
+msgid "Post New Review"
+msgstr "Yeni İncelem Gönder"
+
+#: templates/review-list.php:40
+msgid "Submit Review"
+msgstr "İnceleme Gönder"
+
+#: templates/review-single.php:18
+msgid "Your review is awaiting moderation."
+msgstr "İncelemeniz yönetici onayından sonra yayınlanacaktır."
+
+#: templates/review-single.php:29
+msgid "Edit"
+msgstr "Düzenle"
+
+#: templates/review-single.php:35
+msgid "Spam"
+msgstr "Spam"
+
+#: templates/review-single.php:42
+msgid "Delete"
+msgstr "Sil"
+
+#: templates/review-total-rating.php:9
+#, php-format
+msgid ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d review</a>"
+msgid_plural ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d reviews</a>"
+msgstr[0] ""
+"<strong>%.2f / 5 </strong> puan <a href=\"#listing-detail-section-reviews\">"
+"%d inceleme/a>"
+
+#: templates/widgets/filter-fields/rating.php:14
+msgid "Any rating"
+msgstr "Herhangi bir puan"

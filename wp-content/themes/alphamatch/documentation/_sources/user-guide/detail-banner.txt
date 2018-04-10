@@ -1,0 +1,32 @@
+Detail Banner
+#############
+
+Listing detail includes special area for basic information about the listing. It is located at the top between *"Top Fullwidth"* and *"Top"* widget area.
+
+Featured Image
+==============
+Default value is *"Featured Image"*, of course featured image must by set.
+
+Custom Image
+============
+If you want another image in banner choose option *"Custom Image"* and upload or choose image.
+
+Video
+=====
+To set background video choose *"Video"* and upload video in .mp4 format. You can decide to play your video once or loop it.
+
+Google Map
+==========
+If you choose *"Google Map"* it is necessary to set position on map in another section *"Location"*. The background map displays in Satellite mode and is centered to position, which you'll set for listing.
+
+.. note:: *"Zoom"* value has to be an integer from 0 (the lowest zoom level, in which the entire world can be seen on one map) to 21+ (down to streets and individual building).
+
+.. note:: At some locations you can see special *"45-degree-angle view"* with zoom 17+.
+
+Google Street View
+==================
+If you want to set position and location of Google Street View go to section *"Location"* and enable *"Google Street View"*.
+
+Google Inside View
+===================
+If you want to set position and location of Google Inside View go to section *"Location"* and enable *"Google Inside View"*.

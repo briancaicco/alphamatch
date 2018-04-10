@@ -1,0 +1,29 @@
+Shortcodes
+##########
+
+* ``[inventor_booking_detail]``
+* ``[inventor_breadcrumb]``
+* ``[inventor_logout]``
+* ``[inventor_login]``
+* ``[inventor_reset_password]``
+* ``[inventor_register]``
+* ``[inventor_password]``
+* ``[inventor_profile]``
+* ``[inventor_payment]``
+* ``[inventor_transactions]``
+* ``[inventor_report_form]``
+* ``[inventor_package_info]``
+* ``[inventor_currencies]``
+* ``[inventor_compare]``
+* ``[inventor_claim_form]``
+* ``[inventor_favorites]``
+* ``[inventor_favorites_create_collection]``
+* ``[inventor_invoices]``
+* ``[inventor_watchdogs]``
+* ``[inventor_users]``
+* ``[inventor_submission]``
+* ``[inventor_submission_steps]``
+* ``[inventor_submission_remove]``
+* ``[inventor_submission_list]``
+* ``[inventor_jobs_apply_form]``
+* ``[inventor_jobs_applicants]``

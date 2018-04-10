@@ -1,0 +1,133 @@
+Version: 0.1.0
+Release date: 2015-11-03
+What's new:
+- First release
+
+
+Version: 0.1.1
+Release date: 2015-11-13
+What's new:
+- show_in_menu fix
+- plugin URI
+
+
+Version: 0.1.2
+Release date: 2015-11-19
+What's new:
+- anonymous user redirection
+- new verified flag/label and claim button design
+- verified field definition moved from inventor core plugin
+
+
+Version: 0.1.3
+Release date: 2015-11-26
+What's new:
+- shortened claim button title
+- page setting moved to Inventor Pages section in WP customize
+
+
+Version: 0.1.4
+Release date: 2015-12-02
+What's new:
+- claim button for anonymous users
+- inventor_claims_allowed_listing_post_types filter
+- fixed cmb2 hook
+
+
+Version: 0.1.5
+Release date: 2016-01-18
+What's new:
+- claim button refactoring
+
+
+Version: 0.1.6
+Release date: 2016-03-16
+What's new:
+- removed .po and .mo files and created .pot file
+- render_claim_button renamed to get_claim_button (method name convention fix)
+- removed unnecessary theme support condition
+- fixed missing translation strings and phrases
+- Slovak translation
+
+
+Version: 0.2.0
+Release date: 2016-03-29
+What's new:
+- Italian translation
+
+
+Version: 0.3.0
+Release date: 2016-04-07
+What's new:
+- support for inventor-submission plugin
+- Spanish translation
+
+
+Version: 0.4.0
+Release date: 2016-04-10
+What's new:
+- support for Google reCAPTCHA
+
+
+Version: 0.5.0
+Release date: 2016-04-18
+What's new:
+- French translation
+- Danish translation
+- listing type in notification mail template
+
+
+Version: 0.6.0
+Release date: 2016-05-01
+What's new:
+- support for cookie storage
+- claim form preserves data if form is invalid
+
+
+Version: 0.7.0
+Release date: 2016-05-20
+What's new:
+- German translation
+- fix of claim contact email
+
+
+Version: 0.8.0
+Release date: 2016-06-08
+What's new:
+- Portugal translation
+- notifications for all site admins
+
+
+Version: 0.9.0
+Release date: 2016-07-01
+What's new:
+- Turkish translation
+- updated Danish translations
+- Portugal translation fix
+- option to override translation files more easily
+
+
+Version: 1.0.0
+Release date: 2016-08-02
+What's new:
+- Romanian translation
+
+
+Version: 1.1.0
+Release date: 2016-09-01
+What's new:
+- Russian translation
+- fixed plugin dependency
+- fixed claim form admin notification
+
+
+Version: 1.1.1
+Release date: 2017-04-28
+What's new:
+- admin name replaced by website name in email headers
+
+
+Version: 1.1.2
+Release date: 2017-05-17
+What's new:
+- claim button is not shown to listing author

@@ -1,0 +1,34 @@
+Filter
+######
+
+For filtering the listings it is available **Filter** widget which offers filtering functionality. You are able to set which fields do you want to display. You can set fields order as well. There are multiple widget areas where you can use filter widget - **Primary Sidebar** or **Content Top** are good for displaying the filter.
+
+The whole idea of filtering is based on simple principle. When the filter form is submitted the GET data are passed to server. All filter fields are prefixed by **filter-** string. An application will recognize that you want to filter the listings and the search functionality is made. New posts are set into the main loop. This recognition is made in ``pre_get_posts()``
+action. All the functionality is located inside **class-inventor-filter.php**.
+
+Same filter fields are used across other widgets which can benefit from filter for example **Google Map** or **Video cover**
+widgets.
+
+Search fields
+*************************
+
+* Keyword (post title + post content)
+* Title (post title)
+* Description (post content - WYSIWYG)
+* Distance (for Google Map widget)
+* Price
+* Rating
+* Geolocation (for Google Map widget)
+* Locations (taxonomy)
+* Categories (taxonomy)
+* Featured
+* Reduced
+
+Sorting options
+***************
+
+* Price
+* Title
+* Publish date
+* Rating
+* Popularity (number of views)

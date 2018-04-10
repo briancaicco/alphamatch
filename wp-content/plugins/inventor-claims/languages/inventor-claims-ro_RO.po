@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Claims\n"
+"POT-Creation-Date: 2016-08-02 09:24+0200\n"
+"PO-Revision-Date: 2016-08-02 09:24+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: includes/class-inventor-claims-logic.php:40
+msgid "Listing was claimed"
+msgstr "Listarea a fost revendicată"
+
+#: includes/class-inventor-claims-logic.php:41
+msgid "Claim was approved"
+msgstr "Revendicarea a fost aprobată"
+
+#: includes/class-inventor-claims-logic.php:69
+#: includes/class-inventor-claims-logic.php:122
+msgid "Verified"
+msgstr "Verificat"
+
+#: includes/class-inventor-claims-logic.php:272
+msgid "Listing is already verified."
+msgstr "Listarea a fost deja verificată"
+
+#: includes/class-inventor-claims-logic.php:280
+#: includes/class-inventor-claims-logic.php:420
+msgid "You already claimed this listing."
+msgstr "Deja ai revendicat această listare"
+
+#: includes/class-inventor-claims-logic.php:291
+msgid "Listing ID is missing."
+msgstr "ID-ul listării nu este precizat"
+
+#: includes/class-inventor-claims-logic.php:411
+msgid "reCAPTCHA is not valid."
+msgstr "Codul reCAPTCHA este invalid"
+
+#: includes/class-inventor-claims-logic.php:484
+msgid "Message has been successfully sent. Please, wait for admin review."
+msgstr ""
+"Mesajul a fost trimis cu succes. Te rugăm să aștepți verificarea "
+"administratorului."
+
+#: includes/class-inventor-claims-logic.php:486
+msgid "Unable to send a message."
+msgstr "Eroare la trimiterea mesajului."
+
+#: includes/customizations/class-inventor-claims-customizations-claims.php:44
+msgid "Claim listing"
+msgstr "Revendică listarea"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:37
+#: includes/post-types/class-inventor-claims-post-type-claim.php:43
+#: includes/post-types/class-inventor-claims-post-type-claim.php:49
+msgid "Claims"
+msgstr "Revendicări"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:38
+#: templates/claims-button.php:8
+msgid "Claim"
+msgstr "Revendică"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:39
+#: includes/post-types/class-inventor-claims-post-type-claim.php:40
+msgid "Add New Claim"
+msgstr "Adaugă revendicare"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:41
+msgid "Edit Claim"
+msgstr "Editează revendicarea"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:42
+msgid "New Claim"
+msgstr "Revendicare nouă"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:44
+msgid "View Claim"
+msgstr "Vezi revendicarea"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:45
+msgid "Search Claim"
+msgstr "Caută revendicari"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:46
+msgid "No Claims found"
+msgstr "Nicio revendicare găsită"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:47
+msgid "No Claims Found in Trash"
+msgstr "Nicio revendicare găsită în Coșul de gunoi"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:74
+msgid "General"
+msgstr "General"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:83
+msgid "Listing ID"
+msgstr "ID listare"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:93
+#: templates/claims-form.php:14 templates/claims-mail.php:8
+msgid "Name"
+msgstr "Nume"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:99
+msgid "Email"
+msgstr "Email"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:105
+#: templates/claims-form.php:22 templates/claims-mail.php:16
+msgid "Phone"
+msgstr "Telefon"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:111
+#: templates/claims-form.php:26
+msgid "Message"
+msgstr "Mesaj"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:125
+msgid "Title"
+msgstr "Titlu"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:126
+msgid "Listing"
+msgstr "Listare"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:127
+msgid "Author"
+msgstr "Autor"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:128
+msgid "Date"
+msgstr "Dată"
+
+#: templates/claims-button.php:4
+msgid "I claimed it"
+msgstr "Am revendicat-o"
+
+#: templates/claims-form.php:3
+msgid "You have to specify listing!"
+msgstr "Trebuie să specifici listarea!"
+
+#: templates/claims-form.php:7
+msgid "You have already claimed this listing. Please, wait for admin review."
+msgstr ""
+"Deja ai revendicat această listare. Te rugăm să aștepți verificarea "
+"administratorului."
+
+#: templates/claims-form.php:18 templates/claims-mail.php:12
+msgid "E-mail"
+msgstr "Email"
+
+#: templates/claims-form.php:36
+#, php-format
+msgid "Claim %s"
+msgstr "Revendică %s"
+
+#: templates/claims-mail.php:21
+msgid "URL"
+msgstr "URL"

@@ -1,0 +1,31 @@
+Custom Metaboxes
+****************
+
+You can either define your custom metaboxes in source code by following steps in the :doc:`../developer-guide/fields-and-metaboxes` chapter or you can use GUI to create them in the WP admin in section *"Inventor > Metaboxes"*.
+
+There is a also video tutorial in the :doc:`../helpdesk/screencast` chapter which can help you:
+
+.. raw:: html
+
+    <div style="padding-bottom:30px;">
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/IZeWFKhsSZU" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+Each metabox is defined by its:
+
+- name
+- unique identifier
+- description
+- section flag
+- assigned listing types
+
+**Name** and **description** informs user about its fields. Enter any declarative text.
+
+**Identifier** has to be an unique slug (there can't be 2 metaboxes with same ID and its value can't contain special characters or spaces). 
+
+Mark **Section flag** if you want to put values of its fields into own section in listing detail page instead of showing them in listing overview section. Be noticed, that only fields which are marked with **Skip flag** are shown in this metabox section.
+
+Assign **listing types** you want to enable new metabox for.
+
+.. note:: You can add fields to new metabox using fields manager in *"Inventor > Fields"*, read more about it in chapter :doc:`../user-guide/custom-fields`.

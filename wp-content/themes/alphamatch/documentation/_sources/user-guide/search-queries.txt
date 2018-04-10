@@ -1,0 +1,7 @@
+Search Queries
+##############
+
+After successful listing filtering users are able to save the results for the future use. In the dashboard 
+it is possible to check page with the saved queries. You can see the date when the search query were executed, how many listings did match the filter criteria and the current number of listings which match the filter.
+
+For creating page with the saved search queries, create standard WordPress page and then instert ``[inventor_watchdogs]`` shortcode into main WYSYWIG. Shortcode mentioned above will create a listing of saved queries.

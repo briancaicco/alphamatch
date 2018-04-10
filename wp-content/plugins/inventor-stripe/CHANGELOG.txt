@@ -1,0 +1,111 @@
+Version: 0.1.0
+Release date: 2015-11-03
+What's new:
+- First release
+
+
+Version: 0.2.0
+Release date: 2015-11-26
+What's new:
+- refactored business logic
+- using inventor_prepare_payment filter
+- listing purchase support
+- inventor_submission_transactions_page renamed to inventor_submission_transactions_page
+
+
+Version: 0.3.0
+Release date: 2015-12-02
+What's new:
+- support for billing details within payment form
+
+
+Version: 0.4.0
+Release date: 2016-03-16
+What's new:
+- removed .po and .mo files and created .pot file
+- after payment page redirection
+- Slovak translation
+
+
+Version: 0.5.0
+Release date: 2016-03-24
+What's new:
+- support for bitcoin
+- stripe PHP SDK v3.11.0
+
+
+Version: 0.6.0
+Release date: 2016-03-29
+What's new:
+- Italian translation
+
+
+Version: 0.7.0
+Release date: 2016-04-07
+What's new:
+- Spanish translation
+
+
+Version: 0.8.0
+Release date: 2016-04-14
+What's new:
+- Hungarian translation
+- French translation
+
+
+Version: 0.9.0
+Release date: 2016-04-15
+- Danish translation
+
+
+Version: 1.0.0
+Release date: 2016-05-01
+What's new:
+- support for cookie storage
+
+
+Version: 1.1.0
+Release date: 2016-05-20
+What's new:
+- German translation
+
+
+Version: 1.2.0
+Release date: 2016-06-08
+What's new:
+- Portugal translation
+- redirection after payment fix
+
+
+Version: 1.2.5
+Release date: 2016-06-13
+What's new:
+- Portugal translation fix
+
+
+Version: 1.3.0
+Release date: 2016-07-01
+What's new:
+- Turkish translation
+- updated Danish translations
+- option to override translation files more easily
+
+
+Version: 1.4.0
+Release date: 2016-08-02
+What's new:
+- Romanian translation
+
+
+Version: 1.5.0
+Release date: 2016-08-12
+What's new:
+- Russian translation
+- plugin dependency fix
+- gateway ID in the gateway array
+
+
+Version: 1.6.0
+Release date: 2016-11-04
+What's new:
+- Stripe PHP SDK v4.0.0

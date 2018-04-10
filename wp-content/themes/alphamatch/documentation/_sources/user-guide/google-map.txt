@@ -1,0 +1,60 @@
+Google Map
+##########
+
+With the theme is bundled plugin called **inventor-google-map**. Please enable this plugin to get an access to Google Map widget. After activating this plugin navigate to *"Appearance - Widgets"*. Right now you can user *"Google Map"* widget.
+
+The best place where to put the widget is *"Top Fullwidth"* widget area. After that you can visit the front end and you will see the map. You can the latitude, longitude and zoom for custom map position.
+
+If you have a lot of markers on the map and you want to speed up the performance set the max. pins setting. This option will limit max number of markers displayed on the map. Regarding the performance it is recommended to use some sort of caching plugin for your PHP. OPcache will drastically improve the map performance.
+
+.. warning:: You need to enter your own Google Browser Key in the :doc:`settings <settings>` and set your website URL correctly in Google Developer Console. Read more in official `Google documentation`_.
+.. _`Google documentation`: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+
+Basic Filter
+============
+
+On the map you are able to display the filter. You can set which fields will be displayed on the map. Firstly you must enable *"Filter"* option. If you are looking for filtering the listings on the map, check "Live filtering" option. You can set the fields labels position too. It is recommended to use *"Placeholders"* setting for *"Input titles"* because they looks better on the map than the labels above the field.
+
+Google Places & Distance
+========================
+
+You can filter listings on the map by using Google's places functionality. After enabling the filter, allow *"Geolocation"* and *"Distance"* fields. At this point, you can start looking for the desired place and than applying the distance.
+
+Intercept
+=========
+
+One of the great features of the Google Map widget is the *"Intercept"* functionality. You can set which current page setting do you want to follow. For example when the map is displayed on the archive page for *"Business"* post type, you can display only listings which are submitted as *"Business"* post type. The widget is able to follow the current filter options too. It means when you start filtering listings, the filter conditions will be applied on the listings on the map.
+
+Map options
+=================================
+
+* General options
+    * Show all markers on viewport
+    * Show toggle (open/close map)
+    * Current position
+    * Filter
+    * Live Filtering
+    * Auto Submit Filter
+* Toggle default state
+    * Open
+    * Closed
+* Intercept
+    * Filter queries in URL
+    * Main post type in loop
+    * Main term in loop
+* Toolbar
+    * Map types
+    * Zoom
+    * Geolocation
+* Marker style
+    * Simple
+    * Inventor POI
+    * Thumbnail
+* Input titles
+    * Labels
+    * Placeholders
+* Order by
+    * Default
+    * Random
+* Filter Fields

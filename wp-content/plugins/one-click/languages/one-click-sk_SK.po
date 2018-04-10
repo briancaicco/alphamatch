@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Click\n"
+"POT-Creation-Date: 2017-10-11 14:59+0200\n"
+"PO-Revision-Date: 2017-10-11 15:02+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-one-click-menu.php:32 templates/launcher.php:2
+msgid "One Click Installation"
+msgstr "Inštalácia jedným klikom"
+
+#: one-click.php:100
+msgid "WordPress Content"
+msgstr "WordPress obsah"
+
+#: one-click.php:101
+msgid ""
+"Images will be downloaded from external source so please be patient. "
+"Required plugin <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+msgstr ""
+"Obrázky budú stiahnuté z externého zdroja, buďte preto trpezliví. Požadovaný "
+"je plugin <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+
+#: one-click.php:107
+msgid "Customizer Theme Options"
+msgstr "Možnosti témy kustomizéra"
+
+#: one-click.php:108
+msgid ""
+"Options imported from customizer. Plugin which was used to export options <a "
+"href=\"https://wordpress.org/plugins/customizer-export-import/\">Customizer "
+"Export/Import</a>."
+msgstr ""
+"Možnosti importované z kustomizéra. Plugin, ktorý bol použitý na export "
+"nastavení je <a href=\"https://wordpress.org/plugins/customizer-export-"
+"import/\">Customizer Export/Import</a>."
+
+#: one-click.php:114
+msgid "Widgets Content &amp; Options"
+msgstr "Obsah a nastavenia widgetov"
+
+#: one-click.php:115
+msgid ""
+"Widget content and sidebar positions. Required plugin <a href=\"https://"
+"wordpress.org/plugins/widget-settings-importexport/\">Widget Settings "
+"Importer/Exporter</a>."
+msgstr ""
+"Obsah widgetov, ich nastavenia pozícia. Požadovaný plugin je <a href="
+"\"https://wordpress.org/plugins/widget-settings-importexport/\">Widget "
+"Settings Importer/Exporter</a>."
+
+#: one-click.php:121
+msgid "Widget Logic"
+msgstr "Logika widgetov"
+
+#: one-click.php:122
+msgid ""
+"Widget Logic conditional tags import for better widget management. Required "
+"plugin <a href=\"https://wordpress.org/plugins/widget-logic/\">Widget Logic</"
+"a>."
+msgstr ""
+"Nastavenia pre widget logiku pre lepšiu správu widgetov. Požadovaný plugin "
+"je <a href=\"https://wordpress.org/plugins/widget-logic/\">Widget Logic</a>."
+
+#: one-click.php:128
+msgid "Custom Options"
+msgstr "Vlastné nastavenia"
+
+#: one-click.php:129
+msgid ""
+"Custom options import functionality to fix same basic variables or proper "
+"menu locations."
+msgstr ""
+"Vlastné nastavenia na opravu niektorých základných premenných alebo "
+"správnych umiestnení navigácií."
+
+#: templates/launcher.php:12
+msgid "Exports folder in your current theme does not exists."
+msgstr "Priečinok s export súbormi sa nenašiel."
+
+#: templates/launcher.php:22
+msgid "All available steps has been successfully processed."
+msgstr "Všetky kroky boli úspešne spracované."
+
+#: templates/launcher.php:28
+msgid ""
+"For proper demo content import it is <u>recommended</u> to set following PHP "
+"settings:"
+msgstr ""
+"Pre úspešný import demo obsahu sa <u>odporúča</u> upraviť nasledovné PHP "
+"nastavenia:"
+
+#: templates/launcher.php:33
+msgid "Setting"
+msgstr "Nastavenie"
+
+#: templates/launcher.php:34
+msgid "Required value"
+msgstr "Požadovaná hodnota"
+
+#: templates/launcher.php:35
+msgid "Current value"
+msgstr "Aktuálna hodnota"
+
+#: templates/launcher.php:51
+msgid "These values can be reverted back to defaults after successful import."
+msgstr "Tieto hodnoty môžete po úspešnom importe vrátiť na predvolené hodnoty."
+
+#: templates/launcher.php:53
+msgid "They are <strong>NOT required</strong> for running website."
+msgstr "Nie sú <strong>požadované</strong> pre fungovanie webstránky."
+
+#: templates/launcher.php:61
+msgid "Run Missing Steps"
+msgstr "Spustiť chýbajúce kroky"
+
+#: templates/launcher.php:63
+msgid "Launch Installation"
+msgstr "Spustiť inštaláciu"
+
+#: templates/launcher.php:73
+msgid "Missing Plugins Detected"
+msgstr "Boli detekované chýbajúce moduly"
+
+#: templates/launcher.php:79
+msgid ""
+"You are missing plugins which are required for running one click "
+"installation. Please install plugins listed below."
+msgstr ""
+"Niektoré moduly potrebné k spusteniu inštalácie jedným klikom chýbajú. "
+"Nainštalujte prosím moduly spísané nižšie."

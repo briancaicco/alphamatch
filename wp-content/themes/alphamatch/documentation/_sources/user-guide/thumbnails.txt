@@ -1,0 +1,17 @@
+Thumbnails
+##########
+
+Thumbnail size
+==============
+
+All thumbnails in WordPress has default size 150x150px. This sometimes causes that images are blurred. To fix that you should do 2 simple steps.
+
+Set thumbnail size to larger
+============================
+
+In WordPress admin go to **Settings > Media** and set **Thumbnail size** at least to 300x300px and **Medium size** to 600x600px.
+
+Regenerate thumbnails
+=====================
+
+At first install **Regenerate Thumbnails** plugin from wordpress.org. After successful installation and activation regenerate thumbnails.

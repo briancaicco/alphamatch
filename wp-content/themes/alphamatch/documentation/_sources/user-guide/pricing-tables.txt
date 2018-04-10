@@ -1,0 +1,14 @@
+Pricing tables
+##############
+
+You can offer users your pricing by creating pricing tables. Every pricing table is defined by following attributes:
+
+- Price
+- Description
+- Button text
+- Button link
+- Highlight status
+- Package (if available)
+- Pricing items
+
+.. note:: If package is set, your price will be changed according to true package price and button link will ignored and replaced with URL to payment page (if set).

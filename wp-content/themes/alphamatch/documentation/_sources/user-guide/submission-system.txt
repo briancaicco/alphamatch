@@ -1,0 +1,41 @@
+Submission System
+#################
+
+Front end submission allows users to easily create their own listings from front end. To make it work correctly, it is necessary to configure all required pages. The best way how to do it is to sign in as admin, head into *"Customizer"* in WP admin and then set all options and settings under *"Inventor Submission"* section.
+
+.. note:: Don't forget to allow users to register under *"Settings / General / Anyone can register*".
+
+
+Submission Types
+================
+
+* **Free for all**. Users don't have to pay to publish their listings.
+* **Pay per post**. To publish the listing, users have to pay a one-time fee for every listing.
+* **Packages**. The number of published user listings is defined by a :doc:`package <packages>` assigned to user. It can be a one-time fee or you can set a package expiration. 
+
+
+Submission Review
+=================
+
+It is possible to set *"Review Before Submission"*. It means that all submissions have to be reviewed by site admin. Until then, their status will remain *"Pending"*.
+
+Page Structure
+==============
+
+For full working submission system it is required to set following pages. Process is following: 
+
+1. Create new page in WordPress. 
+2. Add shortcode from list below
+3. Set that page in *"Customizer / Inventor Pages"*.
+
++-------------------------+---------------------------------------------+
+| Page                    | Shortcode                                   |
++=========================+=============================================+
+| List page               | ``[inventor_submission_list]``              |
++-------------------------+---------------------------------------------+
+| Create page             | ``[inventor_submission]``                   |
++-------------------------+---------------------------------------------+
+| Edit page               | ``[inventor_submission]``                   |
++-------------------------+---------------------------------------------+
+| Remove page             | ``[inventor_submission_remove]``            |
++-------------------------+---------------------------------------------+

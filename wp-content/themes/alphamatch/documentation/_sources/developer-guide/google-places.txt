@@ -1,0 +1,90 @@
+Google Places
+#############
+
+Plugin **Inventor Google Places**  is able to search places around the certain location and then save them into CSV file. All these information are collected from Google Places service. Please make sure that you have Google account and the Google Maps API is enabled.
+
+Before fetching the places please note that google has daily limit for queries. You can make 1000 queries per day or 150000 queries when you are identified user.
+
+You can find more information regarding the daily limits here https://developers.google.com/places/web-service/usage
+
+Maximum number of places fetched from Google Places service is 200 by using radar search. If you want find another places you must change search criteria and move the radar search location.
+
+Before starting to work with the Google Places please read their policies https://developers.google.com/places/web-service/policies
+
+After enabling **Inventor Google Places** plugin new command for WP CLI will be avialable.
+
+Getting API key
+===============
+
+Here are few links how to get the API key
+
+https://developers.google.com/maps/documentation/business/places/
+https://developers.google.com/maps/documentation/business/places/auth
+
+1. Log in into Google Developer Console console.developers.google.com
+2. Create new project
+3. Under API Manager enable **Google Places API Web Service**
+4. Navigate into **Credentials**
+5. Click on **Add Credentials - API Key**
+
+.. image:: /img/google-places-api.png
+
+Obtaing Places
+==============
+
+You can choose if you want to use WP CLI command available in the Google Places Inventor plugin or you will download the data using your internet browser.
+
+By URL in Browser
+*****************
+
+Follow the documentation at https://developers.google.com/places/web-service/search
+
+Sample URL request:
+
+
+.. code-block:: none
+
+    https://maps.googleapis.com/maps/api/place/radarsearch/json?location=40.738095,-73.991360&radius=500&type=restaurant&key=YourApiKey
+
+You can output the list either into JSON or XML format depending on your needs.
+
+.. Note:: Don't forget to change *YourApiKey* to your API key
+
+
+WP CLI Installation
+*******************
+
+You need to run these command in terminal. Make sure that your hosting provider support SSH connections.
+
+.. code-block:: none
+
+    $ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+    $ php wp-cli.phar --info
+    $ chmod +x wp-cli.phar
+    $ sudo mv wp-cli.phar /usr/local/bin/wp
+
+
+List of columns available in CSV file:
+
+``name``, ``latitude``, ``longitude``, ``rating``, ``price_level``, ``icon``, ``types``, ``formatted_address``, ``vicinity``, ``url``, ``website``, ``formatted_phone_number``, ``international_phone_number``, ``id``, ``html_attributions``
+
+Command usage:
+
+.. code-block:: none
+
+    wp inventor-google-places radarsearch --location=40.738095,-73.991360 --radius=500 --api-key=YourApiKey --output=results.csv --types=restaurant
+
+:--location:
+    is the latitude and longitude for the position where you want to start searching the places.
+
+:--radius:
+    defines the distance from the center in meters. Max value is 50 000 meters.
+
+:--api-key:
+    your API key found in Google Console.
+
+:--types:
+    argument for querying only specific places. Multiple types separate by comma. Here is the full list of avaialble types https://developers.google.com/places/supported_types
+
+:--output:
+    the file where the results will be saved. Default folder is wp-content/inventor.

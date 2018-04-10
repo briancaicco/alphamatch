@@ -1,0 +1,20 @@
+Support
+#######
+
+Before asking any questions please read the whole documentation and FAQ. Theme has a lot of advanced functionalities and complex business logic so if you want to change the directory behaviour you probably need to edit the source code. We are not offering free customizations. If you are interested in custom work, feel free to send us a private message using `Custom Work form`_. If you are not able to find an answer here please ask your question in comments section on ThemeForest. Please do not use another channels for getting the support.
+
+General support rules
+*********************
+
+* Before any question, make sure that you **read the documentation**.
+* If you are requesting support, be sure you have **purchased both our product and its support** and it is not expired.
+* We **don't support third party plugins** which are not listed in item's description.
+* When pointing to our site please **remove an iframe**. We need to see full URL address.
+* If you have an issue with something attach your **public URL or at least the screenshot**.
+* In case of lack of WordPress knowledge, we can answer only to pointing you at **official WordPress documentation**.
+* All questions are answered as soon as possible but we reserve the right to answer question **up to two weeks**.
+* Please **never hurry us**, don't use words "asap" or "urgent". We are not responsible for solving requirements of your clients.
+* "Not working" and any other general questions will receive general answer. Please **be descriptive**.
+* Custom modifications are not free. You can contact us using our `Custom Work form`_ and **we may help you**.
+
+.. _`Custom Work form`: http://byaviators.com/en/custom-work/

@@ -1,0 +1,18 @@
+Notifications
+#############
+
+Plugin offers some user **email notifications** related to submission system. Here is list of them:
+
+* Package expiration warning
+* Package expiration announcement
+* Package purchase
+* Submission waiting for review
+	* for user
+	* for admin
+* Submission published
+	* for user
+	* for admin
+	
+Each notification is scheduled to the date depending by its purpose. If necessary, you have time to update notification message until it is published.
+
+.. note:: If you want to change default notification message or subject, don't edit scheduled notifications. Use **mail templates** instead.

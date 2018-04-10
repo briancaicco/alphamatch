@@ -1,0 +1,17 @@
+Invoices
+########
+
+VAT explanation
+===============
+Let's say your package (or listing) costs 100 EUR. If your VAT is 19%, then invoice item unit price is 84.03 EUR and tax is 15.97 EUR (19% of 84.03). Together it is 100 EUR.
+
+.. note:: Default VAT rate can be changed in the WP customizer. If you need to set custom tax for specific order/payment, you can achieve it using ``inventor_invoices_tax_rate`` WP filter.  
+
+
+Variable symbol
+===============
+Variable symbol is an identifier widely used for domestic payments. Is usually used to indicate invoice numbers, but it can also be an order reference or user id.
+
+Additional details
+==================
+Lines in the invoice billing details can be anything you need. Special payment details, identifiers, address or whatever.

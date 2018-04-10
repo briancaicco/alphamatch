@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Custom Appearance &mdash; Inventor recent documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/inventor.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Inventor recent documentation" href="../index.html"/>
+        <link rel="next" title="Custom Listing Post Types" href="custom-listing-post-types.html"/>
+        <link rel="prev" title="Thumbnails" href="../user-guide/thumbnails.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Inventor
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                recent
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">USER GUIDE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/updating.html">Updating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/layout.html">Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/translations.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/building-content.html">Building content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/submission-system.html">Submission System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/packages.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/pricing-tables.html">Pricing tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/detail-banner.html">Detail Banner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/payment-gateways.html">Payment gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/invoices.html">Invoices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/google-map.html">Google Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/reviews.html">Reviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/price-formatting.html">Price Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-listing-types.html">Custom Listing Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-metaboxes.html">Custom Metaboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-fields.html">Custom Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/search-queries.html">Search Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/shortcodes.html">Shortcodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/filter.html">Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/mail-templates.html">Mail templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/widgets.html">Widgets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/thumbnails.html">Thumbnails</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DEVELOPER GUIDE</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Custom Appearance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-gulp">Using gulp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#video">Video</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-custom-css">Writing custom CSS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="custom-listing-post-types.html">Custom Listing Post Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields-and-metaboxes.html">Fields and Metaboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taxonomies.html">Taxonomies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="package-durations.html">Package durations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="google-places.html">Google Places</a></li>
+</ul>
+<p class="caption"><span class="caption-text">HELPDESK</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/screencast.html">Screencast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/code-samples.html">Code Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/support.html">Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Inventor</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Custom Appearance</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/developer-guide/custom-appearance.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="custom-appearance">
+<h1>Custom Appearance<a class="headerlink" href="#custom-appearance" title="Permalink to this headline">¶</a></h1>
+<p>All style attributes and variables are defined in <a class="reference external" href="http://sass-lang.com/">Sass</a> files. It is quite hard to identify all colors, sizes, paddings, fonts etc. in one large file generated by Sass so it is always better to compile your own stylesheet. We are using pure Sass without any other libraries. For compiling we decided to use the <a class="reference external" href="http://gulpjs.com/">gulp</a> which is pretty fast. Gulpfile with prepared actions is located in theme root.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Editing default theme appearance using custom stylesheet requires some basic coding skills and you should be familiar with CSS3 rules and principles.</p>
+</div>
+<div class="section" id="using-gulp">
+<h2>Using gulp<a class="headerlink" href="#using-gulp" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Install boostrap-sass <a class="reference external" href="https://github.com/twbs/bootstrap-sass">https://github.com/twbs/bootstrap-sass</a></li>
+<li>Open the file <code class="docutils literal"><span class="pre">assets/scss/superlist-custom.scss</span></code> and change colors to your preference. Now you can compile your new color combination entering following commands:</li>
+</ol>
+<div class="highlight-none"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre>$ cd wp-content/themes/superlist
+$ npm install gulp gulp-sass gulp-sourcemaps globule
+$ gulp compile
+</pre></div>
+</td></tr></table></div>
+<ol class="arabic simple" start="3">
+<li>After successful compilation copy <code class="docutils literal"><span class="pre">assets/css/superlist-custom.css</span></code> to your child theme (e.g. <code class="docutils literal"><span class="pre">superlist-child/superlist-custom.css</span></code>). Now you need to tell your child theme to use your new color combination.</li>
+</ol>
+<p>Add following code into <code class="docutils literal"><span class="pre">functions.php</span></code> of child theme.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span class="sd">/**</span>
+<span class="sd"> * Enqueue scripts &amp; styles</span>
+<span class="sd"> *</span>
+<span class="sd"> * @action wp_enqueue_scripts</span>
+<span class="sd"> * @return void</span>
+<span class="sd"> */</span>
+<span class="k">function</span> <span class="nf">superlist_child_enqueue_files</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1"># Remove original style</span>
+    <span class="nx">wp_dequeue_style</span><span class="p">(</span> <span class="s1">&#39;superlist&#39;</span> <span class="p">);</span>
+
+    <span class="c1"># Register style for custom appearance</span>
+    <span class="nx">wp_register_style</span><span class="p">(</span> <span class="s1">&#39;superlist-custom&#39;</span><span class="p">,</span> <span class="nx">get_stylesheet_directory_uri</span><span class="p">()</span> <span class="o">.</span> <span class="s1">&#39;/superlist-custom.css&#39;</span> <span class="p">);</span>
+
+    <span class="c1"># Include new styles</span>
+    <span class="nx">wp_enqueue_style</span><span class="p">(</span> <span class="s1">&#39;superlist-custom&#39;</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">add_action</span><span class="p">(</span> <span class="s1">&#39;wp_enqueue_scripts&#39;</span><span class="p">,</span> <span class="s1">&#39;superlist_child_enqueue_files&#39;</span> <span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="video">
+<h3>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h3>
+<div style="padding-bottom:50px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LDf78nHeG9s" frameborder="0" allowfullscreen></iframe>
+</div><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you are using custom stylesheet, you will need to regenerate the file every time a new theme update releases to cover all new elements and components of course. Otherwise your stylesheet won&#8217;t &#8220;know&#8221; how to render theme and it can look ugly. Makes sense, right? Or, you can skip dequeuing original stylesheet and theme will inherit appearance from it.</p>
+</div>
+</div>
+</div>
+<div class="section" id="writing-custom-css">
+<h2>Writing custom CSS<a class="headerlink" href="#writing-custom-css" title="Permalink to this headline">¶</a></h2>
+<p>If you are not familiar with Sass nor gulp, you can still write your own plain <a class="reference external" href="https://www.w3schools.com/css/">CSS</a> into custom stylesheet.
+To override original theme appearance you will need to use stronger selector in your .css file. Learn more about <a class="reference external" href="https://www.w3.org/TR/css3-selectors/#specificity">Calculating a selector&#8217;s specificity</a>.</p>
+<p>To find out a selector of specific element in the HTML DOM you can use Inspector Development Tool in your browser.</p>
+<p>Follow this <a class="reference external" href="https://dailypost.wordpress.com/2013/07/25/css-selectors/">useful guide</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you would like to have custom theme appearance and you lack of required skills, you can request <a class="reference internal" href="../helpdesk/support.html"><em>custom work</em></a> and we may help you.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="custom-listing-post-types.html" class="btn btn-neutral float-right" title="Custom Listing Post Types" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../user-guide/thumbnails.html" class="btn btn-neutral" title="Thumbnails" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Pragmatic Mates.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'recent',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

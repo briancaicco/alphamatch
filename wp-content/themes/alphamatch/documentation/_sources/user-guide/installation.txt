@@ -1,0 +1,123 @@
+Installation
+############
+
+Installation video is available at YouTube_.
+
+.. _YouTube: https://www.youtube.com/watch?v=fTFQQCSRNmY
+
+Minimal Requirements
+********************
+
+If you're planning to build a website using WordPress, you must first ensure your hosting provider meets WP's requirements.
+
+Database
+========
+
+* MySQL 5.0.15 or higher with PDO
+
+PHP
+===
+
+* PHP 5.3.4
+* PHP5 GD library installed
+* Disabled error_reporting flag on production server
+* Enabled mod_rewrite in Apache for clean URLs
+* Memory limit set up at least 96MB
+
+Plugins
+=======
+
+* CMB2 is **required**
+* WP REST API is *optional*
+
+.. warning:: To make everything working as smooth as possible, it is recommended not to use cheap hostings. We have best experience with VPS.
+
+.. note:: PHP 5.2 is minimal supported PHP, but it is always good to use most recent version.
+
+
+Activation
+**********
+
+Theme
+=====
+
+1. Copy both theme and child-theme folders into ``wp-content/themes``
+2. Navigate into admin *"Appearance - Themes"*
+3. Activate **child** theme
+
+.. note:: It is recommended to use child theme instead of regular theme if you are going to do some custom work or change default behaviour or appearance, because it prevents custom changes loss after updating parent theme. You can change all content of primary theme through child theme with custom actions and filters described in this documentation. Read more about child theme in official WordPress documentation: http://codex.wordpress.org/Child_Themes
+
+.. warning:: But be noticed, that switching to other theme (including child theme) will discard your existing theme customisation options and widget settings. So be sure you always do a backup before switching theme or updating any plugin. https://codex.wordpress.org/WordPress_Backups
+
+
+Switching to Child Theme
+========================
+
+As mentioned before, it is always recommended to use child theme because of easier maintenance of your custom modifications (own CSS file, hooking on WordPress filters or actions). If you have already activated and configured your parent theme, you need to migrate all theme settings including customization options, widgets (& widget logic) and appearance stuff manually or using you can use some helpful plugins as described below.
+
+1. Export Widget Settings using `Widget Settings Importer/Exporter`_ plugin and navigating to Tools > Widget Settings Export
+2. Export `Widget Logic`_ Options in the Appearance > Widgets screen
+3. Export theme customization options using `Customizer Export/Import`_ plugin in the Appearance > Customize > Export/Import
+4. Switch your current theme to child theme
+5. Import previously exported settings
+
+.. note:: If you meet some misconfiguration, check settings manually. 
+
+
+Plugins
+=======
+
+1. Copy plugins into ``wp-content/plugins``
+2. Navigate into admin *"Plugins"*
+3. Activate all necessary plugins
+4. Resave permalinks in *"Settings - Permalinks"*.
+
+Demo content
+************
+
+You can either use *"One-click installation"* which will import data including demo content, widget settings and customizer options, or just demo content import.
+
+One click installation
+======================
+
+For the One-Click installation please enable *"One click"* plugin which is bundled with theme. After that navigate to *"Tools - One click installation"* and run the installation process. All data will be imported. Run the installation only on fresh WordPress installation. If the installation is incomplete, check your PHP error log for more information. You can investigate an issue in developer console in browser by sniffing the content of XHR queries.
+
+For best One-Click installation performance, set following requirements to your PHP configuration and reload your server:
+
+.. code-block:: php
+
+    upload_max_filesize = 32M
+    post_max_size = 64M
+    memory_limit = 1000M
+    max_input_time = 1000
+    max_execution_time = 1000
+
+
+.. note:: You can change these settings back to default values after successful content installation. 
+
+
+Manual import
+=============
+
+1. Install `WordPress Importer`_ plugin
+2. Navigate in admin to *"Tools - Import"*
+3. Click on import for *"WordPress"*
+4. Look for exports folder in your theme
+5. Locate and choose ``demo_content.xml`` file
+6. Confirm
+
+.. _`WordPress Importer`: https://wordpress.org/plugins/wordpress-importer/
+
+.. note:: This will import only the demo content. All other settings like widgets or customizer options will NOT be imported.
+
+.. note:: Demo data is containing only the placeholder images.
+
+In exports folder you can find ``widget_data.json`` and ``widget_logic.json`` which can be used for importing the widgets. All widgets can be imported by using plugins
+`Widget Logic`_ and `Widget Settings Importer/Exporter`_.
+
+.. _`Customizer Export/Import`: https://wordpress.org/plugins/customizer-export-import/ 
+.. _`Widget Logic`: https://wordpress.org/plugins/widget-logic/
+.. _`Widget Settings Importer/Exporter`: https://wordpress.org/plugins/widget-settings-importexport
+
+
+.. note:: There is no option to manually import customizer settings.

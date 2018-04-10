@@ -1,0 +1,26 @@
+select[name="rating"] {
+    width: 200px;
+}
+
+.column-comment h4 {
+    margin-bottom: -8px;
+    margin-top: 5px;
+}
+
+.column-comment .quickedit {
+    display: none;
+}
+
+.column-comment table {
+    width: 100%;
+}
+
+.column-comment table td {
+    width: 50%;
+    padding: 0;
+    padding-right: 20px;
+}
+
+.column-rating {
+    width: 100px !important;
+}

@@ -1,0 +1,25 @@
+Reviews
+#######
+
+With the theme is bundled plugin called **inventor-reviews**. Please enable this plugin to get an access to reviews system. This plugin changes listing comments to reviews.
+
+Settings for reviews and comments are the same, so global settings are located in *"Settings - Discussion"*. You can also disable or enable reviews for listings individually. In backend go to edit page of the listing and check or uncheck *"Allow comments"* option in section Discussion (at the bottom of the page).
+
+If you can't see this section, click at *"Screen Options"* (at the top right corner) and check *"Discussion"*. If you are logged as admin, you can edit or delete reviews in backend in section *"Comments"*.
+
+In frontend reviews are displayed on listing details. Review contains different field according to user.
+
+If user is not logged in these fields are displayed:
+
+* Name
+* Email
+* Cons
+* Pros
+* Rating
+
+If user is logged in these fields are displayed:
+
+* Cons
+* Pros
+* Attach image
+* Rating

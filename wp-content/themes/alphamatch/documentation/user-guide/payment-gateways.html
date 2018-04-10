@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Payment gateways &mdash; Inventor recent documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/inventor.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Inventor recent documentation" href="../index.html"/>
+        <link rel="next" title="Invoices" href="invoices.html"/>
+        <link rel="prev" title="Detail Banner" href="detail-banner.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Inventor
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                recent
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">USER GUIDE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updating.html">Updating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layout.html">Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building-content.html">Building content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submission-system.html">Submission System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing-tables.html">Pricing tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="detail-banner.html">Detail Banner</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Payment gateways</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#paypal">PayPal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stripe">Stripe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wire-transfer">Wire transfer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="invoices.html">Invoices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="google-map.html">Google Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviews.html">Reviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price-formatting.html">Price Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-listing-types.html">Custom Listing Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-metaboxes.html">Custom Metaboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-fields.html">Custom Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="search-queries.html">Search Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shortcodes.html">Shortcodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filter.html">Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mail-templates.html">Mail templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="widgets.html">Widgets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thumbnails.html">Thumbnails</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DEVELOPER GUIDE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/custom-appearance.html">Custom Appearance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/custom-listing-post-types.html">Custom Listing Post Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/fields-and-metaboxes.html">Fields and Metaboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/taxonomies.html">Taxonomies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/package-durations.html">Package durations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/filters.html">Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-guide/google-places.html">Google Places</a></li>
+</ul>
+<p class="caption"><span class="caption-text">HELPDESK</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/screencast.html">Screencast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/code-samples.html">Code Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/support.html">Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Inventor</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Payment gateways</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/user-guide/payment-gateways.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="payment-gateways">
+<h1>Payment gateways<a class="headerlink" href="#payment-gateways" title="Permalink to this headline">¶</a></h1>
+<p>There are 4 payment gateways available:</p>
+<ul class="simple">
+<li>Wire Transfer</li>
+<li>PayPal Account</li>
+<li>PayPal Credit Card</li>
+<li>Stripe</li>
+</ul>
+<div class="section" id="paypal">
+<h2>PayPal<a class="headerlink" href="#paypal" title="Permalink to this headline">¶</a></h2>
+<p>To enable <strong>PayPal payment gateway</strong>, you can choose if want to allow user to pay by his credit card or by his PayPal Account. Required fields are your <em>&#8220;PayPal Client ID</em>&#8221; and <em>&#8220;PayPal Client Secret&#8221;</em>. You can get it from <a class="reference external" href="https:\developer.paypal.com">PayPal Developer</a>. For debugging purpose, you can enable <em>&#8220;PayPal Sand Box mode&#8221;</em> by leaving <em>&#8220;Live Mode&#8221;</em> checkbox blank.</p>
+</div>
+<div class="section" id="stripe">
+<h2>Stripe<a class="headerlink" href="#stripe" title="Permalink to this headline">¶</a></h2>
+<p>To enable <strong>Stripe payment gateway</strong>, you need to set required fields <em>&#8220;Stripe Secret Key</em>&#8221; and <em>&#8220;Stripe Publishable Key&#8221;</em>. You can get it from <a class="reference external" href="https:\stripe.com">Stripe</a>. For debugging purpose use Stripe Test keys.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can download inventor-stripe plugin from <a class="reference external" href="https://drive.google.com/file/d/0B8SWWcjL4T-OLWs4OFdNeTRHZW8">this URL</a>.</p>
+</div>
+</div>
+<div class="section" id="wire-transfer">
+<h2>Wire transfer<a class="headerlink" href="#wire-transfer" title="Permalink to this headline">¶</a></h2>
+<p>If you want to enable <strong>wire transfer payment gateway</strong>, enter all mandatory data:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="62%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Mandatory</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Account number</td>
+<td>yes</td>
+</tr>
+<tr class="row-odd"><td>Bank code</td>
+<td>yes</td>
+</tr>
+<tr class="row-even"><td>Full name</td>
+<td>yes</td>
+</tr>
+<tr class="row-odd"><td>Street / P.O.Box</td>
+<td>no</td>
+</tr>
+<tr class="row-even"><td>Postcode / ZIP</td>
+<td>no</td>
+</tr>
+<tr class="row-odd"><td>City</td>
+<td>no</td>
+</tr>
+<tr class="row-even"><td>Country</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Wire transfer payments are not handled automatically like PayPal or Stripe payments. You will need to verify user transaction in your bank and set his package in WP admin yourself.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="invoices.html" class="btn btn-neutral float-right" title="Invoices" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="detail-banner.html" class="btn btn-neutral" title="Detail Banner" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Pragmatic Mates.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'recent',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

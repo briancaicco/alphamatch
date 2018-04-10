@@ -1,0 +1,26 @@
+Price Formatting
+################
+
+You are able to set whatever currency and formatting you want. From technical point of the view it is needed to be familiar only with `number_format`_ function, which is used for formatting. 
+
+.. _`number_format`: http://php.net/number_format
+
+It is possible to set:
+
++--------------------+--------------------------------------------+---------+
+| Setting            | Options                                    | Default |
++====================+============================================+=========+
+| Number of decimals | valid integer including 0                  | 0       |
++--------------------+--------------------------------------------+---------+
+| Decimal point      | . or ,                                     | .       |
++--------------------+--------------------------------------------+---------+
+| Thousand separator | . or , or " " (space) or "" (empty string) | ,       |
++--------------------+--------------------------------------------+---------+
+
+Default currency is set to USD with displaying the $ symbol in front of the price, but you can also use price formatting with currency symbol displayed at the end of the string as well.
+
+It is **required** to set *currency code* too. It is used in payment gateways and currency rate conversion.
+
+.. note:: `money_format`_ function can not be used because of no support on Windows system.
+
+.. _`money_format`: http://php.net/money_format

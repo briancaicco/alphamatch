@@ -1,0 +1,61 @@
+Custom Listing Post Types
+#########################
+
+If you are going to list something what is not already implemented, you must register your own listing post type. The process is almost same as registering regular post type, you just need to set ``"show_in_menu"`` attribute in ``register_post_type()`` function. By setting this value, system will recognize that you are registering listing post type and it will appear in the Listings menu in WP admin and in frontend submission.
+
+
+.. code-block:: php
+    :linenos:
+    :emphasize-lines: 23
+
+    add_action( 'init', 'register_doctor', 11 );
+    
+    function register_doctor() {
+        $labels = array(
+            'name'                  => __( 'Doctors', 'doctors' ),
+            'singular_name'         => __( 'Doctor', 'doctors' ),
+            'add_new'               => __( 'Add New Doctor', 'doctors' ),
+            'add_new_item'          => __( 'Add New Doctor', 'doctors' ),
+            'edit_item'             => __( 'Edit Doctor', 'doctors' ),
+            'new_item'              => __( 'New Doctor', 'doctors' ),
+            'all_items'             => __( 'Doctors', 'doctors' ),
+            'view_item'             => __( 'View Doctor', 'doctors' ),
+            'search_items'          => __( 'Search Doctors', 'doctors' ),
+            'not_found'             => __( 'No Doctors found', 'doctors' ),
+            'not_found_in_trash'    => __( 'No Doctors Found in Trash', 'doctors' ),
+            'parent_item_colon'     => '',
+            'menu_name'             => __( 'Doctors', 'doctors' ),
+        );
+    
+        register_post_type( 'doctor',
+            array(
+                'labels'            => $labels,
+                'show_in_menu'	    => 'listings',
+                'supports'          => array( 'title', 'editor', 'thumbnail', 'comments', 'author' ),
+                'public'            => true,
+                'has_archive'       => true,
+                'rewrite'           => array( 'slug' => __( 'doctors', 'doctors' ) ),
+                'show_ui'           => true,
+                'categories'        => array( 'listing' ),
+            )
+        );    
+    }
+
+.. warning:: After registering post type do not forget to resave permalinks. This task could be done by visiting *"Settings - Permalinks"* page in WordPress administration.
+
+One more thing... You need to tell your theme to support your new listing post type using ``add_theme_support()`` function, like example below, otherwise it won't show up.
+
+.. code-block:: php
+    :linenos:
+    :emphasize-lines: 4
+
+    function inventor_listing_types_support() {
+        add_theme_support( 'inventor-listing-types', array(
+            ...
+            'doctor',
+            ...
+        ) );
+    }
+    add_action( 'after_setup_theme', 'inventor_listing_types_support' ); 
+    
+.. note:: After registering post type, you can enable it in the WP customizer by visiting *"WP admin > Appearance > Customize > Inventor General > Post Types"*.

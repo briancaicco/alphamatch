@@ -1,0 +1,220 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Google Map\n"
+"POT-Creation-Date: 2017-04-26 09:39+0200\n"
+"PO-Revision-Date: 2017-04-26 09:39+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: gettext;__;_e;__ngettext:1,2;_n:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
+"esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: assets/js\n"
+"X-Poedit-SearchPath-2: libraries/jquery-google-map\n"
+
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:23
+msgid "Google Map"
+msgstr "Google Map"
+
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:25
+msgid "Displays listings in the google map."
+msgstr "Muestra los anuncios en el mapa google."
+
+#: templates/widgets/google-map-admin.php:42
+msgid "Title"
+msgstr "Título"
+
+#: templates/widgets/google-map-admin.php:55
+msgid "Latitude"
+msgstr "Latitud"
+
+#: templates/widgets/google-map-admin.php:68
+msgid "Longitude"
+msgstr "Longitud"
+
+#: templates/widgets/google-map-admin.php:82
+msgid "Max. pins"
+msgstr "Max. pins"
+
+#: templates/widgets/google-map-admin.php:96
+#: templates/widgets/google-map-admin.php:266
+msgid "Zoom"
+msgstr "Zoom"
+
+#: templates/widgets/google-map-admin.php:110
+msgid "Grid size"
+msgstr "Tamaño de la rejilla"
+
+#: templates/widgets/google-map-admin.php:124
+msgid "Height"
+msgstr "Alto"
+
+#: templates/widgets/google-map-admin.php:137
+msgid "Classes"
+msgstr "Clases"
+
+#: templates/widgets/google-map-admin.php:150
+msgid "Body Classes"
+msgstr "Clases de body"
+
+#: templates/widgets/google-map-admin.php:159
+msgid "Additional classes appended to body class (separated by comma)"
+msgstr "Clases adicionales anexadas la clase de body (separado por comas)"
+
+#: templates/widgets/google-map-admin.php:165
+msgid "Style"
+msgstr "Estilo"
+
+#: templates/widgets/google-map-admin.php:169
+#: templates/widgets/google-map-admin.php:336
+msgid "Default"
+msgstr "Por defecto"
+
+#: templates/widgets/google-map-admin.php:180
+msgid "Toggle default state"
+msgstr "Conmutador de estado predeterminado"
+
+#: templates/widgets/google-map-admin.php:191
+msgid "Open"
+msgstr "Abrir"
+
+#: templates/widgets/google-map-admin.php:203
+msgid "Closed"
+msgstr "Cerrado"
+
+#: templates/widgets/google-map-admin.php:209
+msgid "Intercept"
+msgstr "Intersección"
+
+#: templates/widgets/google-map-admin.php:218
+msgid "Filter queries in URL"
+msgstr "Consultas Filtrar en el URL"
+
+#: templates/widgets/google-map-admin.php:229
+msgid "Main post type in loop"
+msgstr "Tipo de puesto principal en bucle"
+
+#: templates/widgets/google-map-admin.php:240
+msgid "Main term in loop"
+msgstr "Término principal en bucle"
+
+#: templates/widgets/google-map-admin.php:244
+msgid "Toolbar"
+msgstr "Barra de herramientas"
+
+#: templates/widgets/google-map-admin.php:254
+msgid "Map types"
+msgstr "Tipos de mapa"
+
+#: templates/widgets/google-map-admin.php:278
+msgid "Geolocation"
+msgstr "Geolocalización"
+
+#: templates/widgets/google-map-admin.php:284
+msgid "Marker style"
+msgstr "Estilo del marcador"
+
+#: templates/widgets/google-map-admin.php:295
+msgid "Simple"
+msgstr "Simple"
+
+#: templates/widgets/google-map-admin.php:307
+msgid "Inventor POI"
+msgstr "Inventor POI"
+
+#: templates/widgets/google-map-admin.php:319
+msgid "Thumbnail"
+msgstr ""
+
+#: templates/widgets/google-map-admin.php:326
+msgid "Order by"
+msgstr "Ordenar por"
+
+#: templates/widgets/google-map-admin.php:348
+msgid "Random"
+msgstr "Aleatorio"
+
+#: templates/widgets/google-map-admin.php:353
+msgid "Options"
+msgstr "Opciones"
+
+#: templates/widgets/google-map-admin.php:363
+msgid "Show all markers on viewport"
+msgstr "Mostrar todos los marcadores en la ventana gráfica"
+
+#: templates/widgets/google-map-admin.php:375
+msgid "Show toggle (open/close map)"
+msgstr "Mostrar palanca (abrir/cerrar mapa)"
+
+#: templates/widgets/google-map-admin.php:387
+#: templates/widgets/google-map.php:106
+msgid "Current Position"
+msgstr "Ubicación actual"
+
+#: templates/widgets/google-map-admin.php:399
+msgid "Live Filtering"
+msgstr "Filtrado en Vivo"
+
+#: templates/widgets/google-map-admin.php:411
+msgid "Auto Submit Filter"
+msgstr "Auto Enviar Filtro"
+
+#: templates/widgets/google-map-admin.php:425
+msgid "Filter"
+msgstr "Filtro"
+
+#: templates/widgets/google-map.php:66
+msgid "Toggle Map"
+msgstr "Mostrar/Ocultar Mapa"
+
+#: templates/widgets/google-map.php:85
+msgid "Roadmap"
+msgstr "Mapa de ruta"
+
+#: templates/widgets/google-map.php:86
+msgid "Terrain"
+msgstr "Terreno"
+
+#: templates/widgets/google-map.php:87
+msgid "Satellite"
+msgstr "Satélite"
+
+#: templates/widgets/google-map.php:94
+msgid "Zoom In"
+msgstr "Zoom In"
+
+#: templates/widgets/google-map.php:98
+msgid "Zoom Out"
+msgstr "Zoom Out"
+
+#: libraries/jquery-google-map/jquery-google-map.js:132
+#: libraries/jquery-google-map/jquery-google-map.js:263
+msgid "Loading address..."
+msgstr ""
+
+#: libraries/jquery-google-map/jquery-google-map.js:146
+msgid "Failed to load address"
+msgstr ""
+
+#~ msgid "Filter Button Text"
+#~ msgstr "Botón de Filtro de Texto"
+
+#~ msgid "Input titles"
+#~ msgstr "Títulos de entrada"
+
+#~ msgid "Labels"
+#~ msgstr "Etiquetas"
+
+#~ msgid "Placeholders"
+#~ msgstr "Placeholders"
+
+#~ msgid "Filter Fields"
+#~ msgstr "Filtrar campos"

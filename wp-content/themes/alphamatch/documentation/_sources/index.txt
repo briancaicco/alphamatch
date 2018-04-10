@@ -1,0 +1,123 @@
+Documentation
+**************
+
+.. raw:: html
+
+    <div style="padding-bottom:50px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fTFQQCSRNmY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+Product is advanced directory & listing WordPress theme. It is a result of years of development. Theme is completely covering needs of directory websites & portals. We are bringing on the table absolutely new set of features bundled into one product.
+
+With this theme users are able to manage their own listings without accessing admin dashboard. They can manage their profile, password and payment backlog too. You can start charging your users and earn money. We prepared for you theme with strong monetization focus. Theme has package system already included. You can start charging for posting the listings by using wire transfers, PayPal and Stripe.
+
+Theme was designed to offer maximum flexibility and scalability as possible. Everything is built by WordPress way which makes it quite extensible. You don't have to touch theme or plugins code to implement your customizations anymore.
+
+Key Features
+------------
+
+* Predefined post types for various listings
+* Custom listing post types and fields
+* Predefined taxonomies for better organization
+* Claim listing
+* Notifications
+* Mail templates
+* Complex search and listing statistics
+* Front end listing submission (wizard form style only)
+* Advanced Google Map support
+* Geolocation support for Google Map
+* Package system (listings amount for certain duration)
+* Trial package
+* Free package
+* Stripe payments
+* PayPal account and credit card payments
+* Wire transfers
+* Invoices
+* Favorite listings
+* Saved search queries / watchodgs
+* Multiple currencies support
+* Print listing
+* Reviews and Ratings
+* Lot of price formatting options
+* Pricing tables connected to package system
+* Partners, FAQ, testimonials ...
+* All settings defined via customization API
+* Lightweight without any unnecessary libraries
+* Automatic updates
+
+
+User Guide
+----------
+
+In this section is described how to make basic configurations. It is primary focused for non developers to make a picture about the system.
+
+.. toctree::
+    :hidden:
+    :caption: USER GUIDE
+    :maxdepth: 2
+
+    user-guide/installation
+    user-guide/updating
+    user-guide/layout
+    user-guide/translations
+    user-guide/building-content
+    user-guide/settings
+    user-guide/submission-system
+    user-guide/packages
+    user-guide/pricing-tables
+    user-guide/detail-banner
+    user-guide/payment-gateways
+    user-guide/invoices
+    user-guide/google-map
+    user-guide/reviews
+    user-guide/price-formatting
+    user-guide/custom-listing-types
+    user-guide/custom-metaboxes
+    user-guide/custom-fields
+    user-guide/search-queries
+    user-guide/statistics
+    user-guide/shortcodes
+    user-guide/filter
+    user-guide/notifications
+    user-guide/mail-templates
+    user-guide/widgets
+    user-guide/thumbnails
+	
+
+Developer Guide
+---------------
+
+If you are developer and you want to extend the system, here you can find hints how to change it without touching the plugin's code.
+
+.. toctree::
+    :hidden:
+    :caption: DEVELOPER GUIDE
+    :maxdepth: 2
+
+    developer-guide/custom-appearance
+    developer-guide/custom-listing-post-types
+    developer-guide/fields-and-metaboxes
+    developer-guide/templates
+    developer-guide/taxonomies
+    developer-guide/package-durations
+    developer-guide/actions
+    developer-guide/filters
+    developer-guide/google-places
+
+Helpdesk
+--------
+
+* :doc:`helpdesk/faq`
+* :doc:`helpdesk/screencast`
+* :doc:`helpdesk/code-samples`
+* :doc:`helpdesk/support`
+
+.. toctree::
+    :hidden:
+    :caption: HELPDESK
+    :maxdepth: 2
+
+    helpdesk/faq
+    helpdesk/screencast
+    helpdesk/code-samples
+    helpdesk/support

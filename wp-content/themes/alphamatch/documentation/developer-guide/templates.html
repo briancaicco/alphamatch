@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Templates &mdash; Inventor recent documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/inventor.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Inventor recent documentation" href="../index.html"/>
+        <link rel="next" title="Taxonomies" href="taxonomies.html"/>
+        <link rel="prev" title="Fields and Metaboxes" href="fields-and-metaboxes.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Inventor
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                recent
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">USER GUIDE</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/updating.html">Updating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/layout.html">Layout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/translations.html">Translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/building-content.html">Building content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/submission-system.html">Submission System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/packages.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/pricing-tables.html">Pricing tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/detail-banner.html">Detail Banner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/payment-gateways.html">Payment gateways</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/invoices.html">Invoices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/google-map.html">Google Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/reviews.html">Reviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/price-formatting.html">Price Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-listing-types.html">Custom Listing Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-metaboxes.html">Custom Metaboxes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/custom-fields.html">Custom Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/search-queries.html">Search Queries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/shortcodes.html">Shortcodes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/filter.html">Filter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/notifications.html">Notifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/mail-templates.html">Mail templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/widgets.html">Widgets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide/thumbnails.html">Thumbnails</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DEVELOPER GUIDE</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="custom-appearance.html">Custom Appearance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom-listing-post-types.html">Custom Listing Post Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fields-and-metaboxes.html">Fields and Metaboxes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loading-hierarchy">Loading Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loader-usages">Loader Usages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-listing-detail-sections-order">Custom listing detail sections order</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="taxonomies.html">Taxonomies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="package-durations.html">Package durations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="google-places.html">Google Places</a></li>
+</ul>
+<p class="caption"><span class="caption-text">HELPDESK</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/screencast.html">Screencast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/code-samples.html">Code Samples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpdesk/support.html">Support</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Inventor</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>Templates</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/developer-guide/templates.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="templates">
+<h1>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h1>
+<p>Plugin contains simple template loader. Idea is to bring default templates into plugins which could be simply overwritten from theme. All default files are located inside plugin&#8217;s <code class="docutils literal"><span class="pre">templates</span></code> folder. Implementation can be found in <code class="docutils literal"><span class="pre">class-inventor-template-loader.php</span></code>.</p>
+<p>Loader is used to define some default templates for single and archive templates. Custom post types defined by theme which are public have default fallbacks in plugin templates folder.</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">archive-listing.php</span></code></li>
+<li><code class="docutils literal"><span class="pre">content-listing.php</span></code></li>
+<li><code class="docutils literal"><span class="pre">single-listing.php</span></code></li>
+<li><code class="docutils literal"><span class="pre">taxonomy-listing.php</span></code></li>
+</ul>
+<div class="section" id="loading-hierarchy">
+<h2>Loading Hierarchy<a class="headerlink" href="#loading-hierarchy" title="Permalink to this headline">¶</a></h2>
+<p>Template loader has its hierarchy for loading the templates. First of all it checks child theme, if it is used. Then it looks into theme folder and at the end loads default template from plugin folder.</p>
+</div>
+<div class="section" id="loader-usages">
+<h2>Loader Usages<a class="headerlink" href="#loader-usages" title="Permalink to this headline">¶</a></h2>
+<p>Below you can see an example how it is possible to output list of listings in rows. We will use custom query to fetch all listings in database.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">query_posts</span><span class="p">(</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;post_type&#39;</span>        <span class="o">=&gt;</span> <span class="nx">Inventor_Custom_Post_Type</span><span class="o">::</span><span class="na">get_listing_post_types</span><span class="p">(),</span>
+    <span class="s1">&#39;posts_per_page&#39;</span>   <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">)</span> <span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span> <span class="nx">have_posts</span><span class="p">()</span> <span class="p">)</span><span class="o">:</span>
+    <span class="k">while</span><span class="p">(</span> <span class="nx">have_posts</span> <span class="p">)</span><span class="o">:</span> <span class="nx">the_post</span><span class="p">();</span>
+        <span class="k">include</span> <span class="nx">Inventor_Template_Loader</span><span class="o">::</span><span class="na">locate</span><span class="p">(</span> <span class="s1">&#39;listings/row&#39;</span> <span class="p">);</span>
+    <span class="k">endwhile</span><span class="p">;</span>
+<span class="k">endif</span><span class="p">;</span>
+</pre></div>
+</td></tr></table></div>
+<p>If you want to save the output into variable, use <code class="docutils literal"><span class="pre">load()</span></code> method instead of <code class="docutils literal"><span class="pre">locate()</span></code>. Method is using <code class="docutils literal"><span class="pre">locate()</span></code>, but it implements <code class="docutils literal"><span class="pre">ob_start()</span></code> functionality to return template content as variable.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">// This will return the template path</span>
+<span class="nx">Inventor_Template_Loader</span><span class="o">::</span><span class="na">locate</span><span class="p">(</span> <span class="s1">&#39;listings/row&#39;</span> <span class="p">);</span>
+
+<span class="c1">// Output the content</span>
+<span class="k">include</span> <span class="nx">Inventor_Template_Loader</span><span class="o">::</span><span class="na">locate</span><span class="p">(</span> <span class="s1">&#39;listings/row&#39;</span> <span class="p">);</span>
+
+<span class="c1">// In $row we have template content</span>
+<span class="nv">$row</span> <span class="o">=</span> <span class="nx">Inventor_Template_Loader</span><span class="o">::</span><span class="na">load</span><span class="p">(</span> <span class="s1">&#39;listings/row&#39;</span> <span class="p">);</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="custom-listing-detail-sections-order">
+<h2>Custom listing detail sections order<a class="headerlink" href="#custom-listing-detail-sections-order" title="Permalink to this headline">¶</a></h2>
+<p>If you need to change order of sections at listing detail page, you can use <code class="docutils literal"><span class="pre">inventor_listing_detail_sections</span></code> WP filter.
+It takes two arguments, the first one is an associative array of displayed sections. Key of the array is a section name and the value is its title. The second argument is a post type name of current listing.
+So for example, lets say, you want to reassign the order in which video section will be at the very top of the page:</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">add_filter</span><span class="p">(</span> <span class="s1">&#39;inventor_listing_detail_sections&#39;</span><span class="p">,</span> <span class="s1">&#39;custom_sections_order&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span>
+
+<span class="k">function</span> <span class="nf">custom_sections_order</span><span class="p">(</span> <span class="nv">$sections</span><span class="p">,</span> <span class="nv">$post_type</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">&#39;video&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Video&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;gallery&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Gallery&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Description&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;overview&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Details&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;food-menu&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Meals And Drinks&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;opening-hours&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Opening Hours&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;location&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Location&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;contact&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Contact&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;social&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Social connections&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;faq&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;FAQ&#39;</span><span class="p">,</span> <span class="s1">&#39;inventor&#39;</span> <span class="p">),</span>
+                <span class="s1">&#39;comments&#39;</span> <span class="o">=&gt;</span> <span class="k">null</span><span class="p">,</span>
+                <span class="s1">&#39;report&#39;</span> <span class="o">=&gt;</span> <span class="k">null</span>
+        <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>This WP filter is also useful when you want to show your own section with custom defined fields.
+The code below shows an example of custom skills section for doctor post type.</p>
+<div class="highlight-php"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">add_filter</span><span class="p">(</span> <span class="s1">&#39;inventor_listing_detail_sections&#39;</span><span class="p">,</span> <span class="s1">&#39;custom_skills_section&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span>
+
+<span class="k">function</span> <span class="nf">custom_skills_section</span><span class="p">(</span> <span class="nv">$sections</span><span class="p">,</span> <span class="nv">$post_type</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span> <span class="nv">$post_type</span> <span class="o">==</span> <span class="s1">&#39;doctor&#39;</span> <span class="p">)</span> <span class="p">{</span>
+<span class="hll">                <span class="nv">$doctor_skills_section</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span> <span class="s1">&#39;doctor-skills&#39;</span> <span class="o">=&gt;</span> <span class="nx">esc_attr__</span><span class="p">(</span> <span class="s1">&#39;Skills&#39;</span><span class="p">,</span> <span class="s1">&#39;text-domain&#39;</span> <span class="p">)</span> <span class="p">);</span>
+</span>                <span class="k">return</span> <span class="nb">array_merge</span><span class="p">(</span> <span class="nb">array_slice</span><span class="p">(</span> <span class="nv">$sections</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span> <span class="p">),</span> <span class="nv">$doctor_skills_section</span><span class="p">,</span> <span class="nb">array_slice</span><span class="p">(</span> <span class="nv">$sections</span><span class="p">,</span> <span class="mi">3</span> <span class="p">)</span> <span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$sections</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Notice line number 5. The section name is <cite>doctor-skills</cite>. The template loader will try to include this file:</p>
+<p><code class="docutils literal"><span class="pre">templates/listings/detail/section-doctor-skills.php</span></code></p>
+<p>You can show any information in that file. The default approach is to retrieve custom field value and print it out.
+But you can do your own business logic there of course.</p>
+<p>Before your file is included, following WP action is triggered:</p>
+<p><code class="docutils literal"><span class="pre">inventor_before_listing_detail_SECTION_NAME</span></code></p>
+<p>After your file is inclusion, following WP action is triggered:</p>
+<p><code class="docutils literal"><span class="pre">inventor_after_listing_detail_SECTION_NAME</span></code></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">SECTION_NAME is a section name in which all hyphens are replaced by underscores. So doctor-skills will become doctor_skills.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="taxonomies.html" class="btn btn-neutral float-right" title="Taxonomies" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="fields-and-metaboxes.html" class="btn btn-neutral" title="Fields and Metaboxes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Pragmatic Mates.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'recent',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

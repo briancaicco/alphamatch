@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Claims\n"
+"POT-Creation-Date: 2016-06-03 20:18+0300\n"
+"PO-Revision-Date: 2016-06-03 20:37+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"Last-Translator: \n"
+"Language: tr_TR\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+
+#: includes/class-inventor-claims-logic.php:40
+msgid "Listing was claimed"
+msgstr "Listeleme talep edildi"
+
+#: includes/class-inventor-claims-logic.php:41
+msgid "Claim was approved"
+msgstr "Talep onaylandı"
+
+#: includes/class-inventor-claims-logic.php:69
+#: includes/class-inventor-claims-logic.php:122
+msgid "Verified"
+msgstr "Doğrulandı"
+
+#: includes/class-inventor-claims-logic.php:260
+msgid "Listing is already verified."
+msgstr "Listeleme zaten doğrulandı."
+
+#: includes/class-inventor-claims-logic.php:268
+#: includes/class-inventor-claims-logic.php:408
+msgid "You already claimed this listing."
+msgstr "Bu listelemeyi zaten talep ettin"
+
+#: includes/class-inventor-claims-logic.php:279
+msgid "Listing ID is missing."
+msgstr "Listeleme ID'si kayıp"
+
+#: includes/class-inventor-claims-logic.php:399
+msgid "reCAPTCHA is not valid."
+msgstr "reCAPTCHA geçerli değil"
+
+#: includes/class-inventor-claims-logic.php:463
+msgid "Message has been successfully sent. Please, wait for admin review."
+msgstr "Mesaj başarılı bir şekilde gönderildi. Lütfen, admin incelemesini bekleyin."
+
+#: includes/class-inventor-claims-logic.php:465
+msgid "Unable to send a message."
+msgstr "Mesaj gönderilemiyor."
+
+#: includes/customizations/class-inventor-claims-customizations-claims.php:44
+msgid "Claim listing"
+msgstr "Talep listesi"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:37
+#: includes/post-types/class-inventor-claims-post-type-claim.php:43
+#: includes/post-types/class-inventor-claims-post-type-claim.php:49
+msgid "Claims"
+msgstr "Talepler"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:38
+#: templates/claims-button.php:8
+msgid "Claim"
+msgstr "Talep"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:39
+#: includes/post-types/class-inventor-claims-post-type-claim.php:40
+msgid "Add New Claim"
+msgstr "Yeni talep Ekle"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:41
+msgid "Edit Claim"
+msgstr "Talebi Düzenle"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:42
+msgid "New Claim"
+msgstr "Yeni Talep"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:44
+msgid "View Claim"
+msgstr "Talebi Gör"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:45
+msgid "Search Claim"
+msgstr "Talep ara"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:46
+msgid "No Claims found"
+msgstr "Hiçbir talep bulunamadı"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:47
+msgid "No Claims Found in Trash"
+msgstr "Çöp Kutusunda Hiç Talep Bulunamadı"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:74
+msgid "General"
+msgstr "Genel"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:83
+msgid "Listing ID"
+msgstr "Listeleme ID'si"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:93
+#: templates/claims-form.php:14 templates/claims-mail.php:8
+msgid "Name"
+msgstr "İsim"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:99
+msgid "Email"
+msgstr "E-Posta"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:105
+#: templates/claims-form.php:22 templates/claims-mail.php:16
+msgid "Phone"
+msgstr "Telefon"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:111
+#: templates/claims-form.php:26
+msgid "Message"
+msgstr "Mesaj"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:125
+msgid "Title"
+msgstr "Başlık"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:126
+msgid "Listing"
+msgstr "Listeleme"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:127
+msgid "Author"
+msgstr "Yazar"
+
+#: includes/post-types/class-inventor-claims-post-type-claim.php:128
+msgid "Date"
+msgstr "Tarih"
+
+#: templates/claims-button.php:4
+msgid "I claimed it"
+msgstr "Talep ettim"
+
+#: templates/claims-form.php:3
+msgid "You have to specify listing!"
+msgstr "Listelemeyi özelleştirmelisiniz"
+
+#: templates/claims-form.php:7
+msgid "You have already claimed this listing. Please, wait for admin review."
+msgstr "Bu listelemeyi zaten talep ettiniz. Lütfen, adminlemesini bekleyin."
+
+#: templates/claims-form.php:18 templates/claims-mail.php:12
+msgid "E-mail"
+msgstr "E-Posta"
+
+#: templates/claims-form.php:36
+#, php-format
+msgid "Claim %s"
+msgstr "Talep %s"
+
+#: templates/claims-mail.php:21
+msgid "URL"
+msgstr "URL"

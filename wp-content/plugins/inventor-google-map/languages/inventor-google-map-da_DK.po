@@ -1,0 +1,248 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Google Map v0.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-26 09:39+0200\n"
+"PO-Revision-Date: 2017-04-26 09:39+0200\n"
+"Last-Translator: cassim <mh@cassim.me>\n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-KeywordsList: gettext;__;_e;__ngettext:1,2;_n:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
+"esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: assets/js\n"
+"X-Poedit-SearchPath-2: libraries/jquery-google-map\n"
+
+# @ inventor-google-map
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:23
+msgid "Google Map"
+msgstr ""
+
+# @ inventor-google-map
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:25
+msgid "Displays listings in the google map."
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:42
+msgid "Title"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:55
+msgid "Latitude"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:68
+msgid "Longitude"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:82
+msgid "Max. pins"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:96
+#: templates/widgets/google-map-admin.php:266
+msgid "Zoom"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:110
+msgid "Grid size"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:124
+msgid "Height"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:137
+msgid "Classes"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:150
+msgid "Body Classes"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:159
+msgid "Additional classes appended to body class (separated by comma)"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:165
+msgid "Style"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:169
+#: templates/widgets/google-map-admin.php:336
+msgid "Default"
+msgstr ""
+
+#: templates/widgets/google-map-admin.php:180
+msgid "Toggle default state"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:191
+msgid "Open"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:203
+msgid "Closed"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:209
+msgid "Intercept"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:218
+msgid "Filter queries in URL"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:229
+msgid "Main post type in loop"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:240
+msgid "Main term in loop"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:244
+msgid "Toolbar"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:254
+msgid "Map types"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:278
+msgid "Geolocation"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:284
+msgid "Marker style"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:295
+msgid "Simple"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:307
+msgid "Inventor POI"
+msgstr ""
+
+#: templates/widgets/google-map-admin.php:319
+msgid "Thumbnail"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:326
+msgid "Order by"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:348
+msgid "Random"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:353
+msgid "Options"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:363
+msgid "Show all markers on viewport"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:375
+msgid "Show toggle (open/close map)"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:387
+#: templates/widgets/google-map.php:106
+msgid "Current Position"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:399
+msgid "Live Filtering"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:411
+msgid "Auto Submit Filter"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map-admin.php:425
+msgid "Filter"
+msgstr ""
+
+#: templates/widgets/google-map.php:66
+msgid "Toggle Map"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map.php:85
+msgid "Roadmap"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map.php:86
+msgid "Terrain"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map.php:87
+msgid "Satellite"
+msgstr ""
+
+# @ inventor-google-map
+#: templates/widgets/google-map.php:94
+msgid "Zoom In"
+msgstr "Zoom ind"
+
+# @ inventor-google-map
+#: templates/widgets/google-map.php:98
+msgid "Zoom Out"
+msgstr "Zoom ud"
+
+#: libraries/jquery-google-map/jquery-google-map.js:132
+#: libraries/jquery-google-map/jquery-google-map.js:263
+msgid "Loading address..."
+msgstr ""
+
+#: libraries/jquery-google-map/jquery-google-map.js:146
+msgid "Failed to load address"
+msgstr ""

@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Click\n"
+"POT-Creation-Date: 2016-08-02 09:31+0200\n"
+"PO-Revision-Date: 2016-08-02 09:31+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-one-click-menu.php:32 templates/launcher.php:2
+msgid "One Click Installation"
+msgstr "Instalarea cu un click"
+
+#: one-click.php:68
+msgid "WordPress Content"
+msgstr "Conținut WordPress"
+
+#: one-click.php:69
+msgid ""
+"Images will be downloaded from external source so please be patient. "
+"Required plugin <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+msgstr ""
+"Imaginile vor fi descărcate de la o sursă externă, te rugăm să ai răbdare. "
+"Necesită modulul <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+
+#: one-click.php:75
+msgid "Customizer Theme Options"
+msgstr "Opțiuni customizator temă"
+
+#: one-click.php:76
+msgid ""
+"Options imported from customizer. Plugin which was used to export options <a "
+"href=\"https://wordpress.org/plugins/customizer-export-import/\">Customizer "
+"Export/Import</a>."
+msgstr ""
+"Opțiuni importate de la customizator. Modulul care s-a folosit pentru "
+"exportul opțiunilor este <a href=\"https://wordpress.org/plugins/customizer-"
+"export-import/\">Customizer Export/Import</a>."
+
+#: one-click.php:82
+msgid "Widgets Content &amp; Options"
+msgstr "Conținut Piese și Opțiuni"
+
+#: one-click.php:83
+msgid ""
+"Widget content and sidebar positions. Required plugin <a href=\"https://"
+"wordpress.org/plugins/widget-settings-importexport/\">Widget Settings "
+"Importer/Exporter</a>."
+msgstr ""
+"Conținutul pieselor și poziția în bările laterale. Necesită modulul <a href="
+"\"https://wordpress.org/plugins/widget-settings-importexport/\">Widget "
+"Settings Importer/Exporter</a>."
+
+#: one-click.php:89
+msgid "Widget Logic"
+msgstr "Widget Logic"
+
+#: one-click.php:90
+msgid ""
+"Widget Logic conditional tags import for better widget management. Required "
+"plugin <a href=\"https://wordpress.org/plugins/widget-logic/\">Widget Logic</"
+"a>."
+msgstr ""
+"Widget Logic condiționează importul tagurilor pentru un management mai bun "
+"al pieselor. Necesită modulul <a href=\"https://wordpress.org/plugins/widget-"
+"logic/\">Widget Logic</a>."
+
+#: one-click.php:96
+msgid "Custom Options"
+msgstr "Opțiuni customizate"
+
+#: one-click.php:97
+msgid ""
+"Custom options import functionality to fix same basic variables or proper "
+"menu locations."
+msgstr ""
+"Opțiunile customizate se importă pentru a repara anumite variabile și o "
+"localizare mai bună a meniului."
+
+#: templates/launcher.php:12
+msgid "Exports folder in your current theme does not exists."
+msgstr "Folderul de export în tema ta curentă nu există."
+
+#: templates/launcher.php:22
+msgid "All available steps has been successfully processed."
+msgstr "Toți pașii necesari au fost procesați cu succes."
+
+#: templates/launcher.php:29
+msgid "Run Missing Steps"
+msgstr "Pornește pașii omiși"
+
+#: templates/launcher.php:31
+msgid "Launch Installation"
+msgstr "Lansează instalarea"
+
+#: templates/launcher.php:41
+msgid "Missing Plugins Detected"
+msgstr "Module lipsă detectate"
+
+#: templates/launcher.php:47
+msgid ""
+"You are missing plugins which are required for running one click "
+"installation. Please install plugins listed below."
+msgstr ""
+"Modulele necesare pentru instalarea cu un click lipsesc. Te rugăm să "
+"instalezi modulele de mai jos."

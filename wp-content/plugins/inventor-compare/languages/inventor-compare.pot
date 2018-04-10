@@ -1,0 +1,80 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Compare\n"
+"POT-Creation-Date: 2016-12-13 18:08+0100\n"
+"PO-Revision-Date: 2015-11-26 11:21+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-inventor-compare-logic.php:88
+#: includes/class-inventor-compare-logic.php:157
+#: templates/compare-info.php:7
+#, php-format
+msgid "Compare %d item"
+msgid_plural "Compare %d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-inventor-compare-logic.php:93
+msgid "Comparison list is empty."
+msgstr ""
+
+#: includes/class-inventor-compare-logic.php:99
+#: includes/class-inventor-compare-logic.php:171
+msgid "Listing ID is missing."
+msgstr ""
+
+#: includes/class-inventor-compare-logic.php:127
+msgid "This is not listing ID."
+msgstr ""
+
+#: includes/class-inventor-compare-logic.php:145
+#, php-format
+msgid "You can compare at most %d listings"
+msgstr ""
+
+#: includes/class-inventor-compare-logic.php:164
+msgid "Listing is already in list"
+msgstr ""
+
+#: includes/customizations/class-inventor-compare-customizations-compare.php:44
+msgid "Compare listings"
+msgstr ""
+
+#: templates/compare-button.php:3 templates/compare-button.php:7
+msgid "Compare"
+msgstr ""
+
+#: templates/compare-button.php:3 templates/compare-button.php:7
+msgid "Remove from comparison"
+msgstr ""
+
+#: templates/compare.php:27
+msgid "Featured"
+msgstr ""
+
+#: templates/compare.php:31
+msgid "Reduced"
+msgstr ""
+
+#: templates/compare.php:62
+msgid "Type"
+msgstr ""
+
+#: templates/compare.php:90
+msgid "Nothing to compare."
+msgstr ""

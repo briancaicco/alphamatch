@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Reviews\n"
+"POT-Creation-Date: 2016-04-28 13:25+0200\n"
+"PO-Revision-Date: 2016-04-28 13:25+0200\n"
+"Last-Translator: Cristian Dragos <dpcdpc11@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+
+#: includes/class-inventor-reviews-logic.php:61
+#: includes/class-inventor-reviews-logic.php:73
+#: includes/class-inventor-reviews-logic.php:417
+#: templates/admin/review-admin-field-rating.php:2
+#: templates/review-field-rating.php:3 templates/review-listing-rating.php:12
+#: templates/review-single.php:53 templates/widgets/filter-fields/rating.php:4
+#: templates/widgets/filter-fields/rating.php:12
+msgid "Rating"
+msgstr "Reseña"
+
+#: includes/class-inventor-reviews-logic.php:148
+msgid "PROS: "
+msgstr "PROS:"
+
+#: includes/class-inventor-reviews-logic.php:148
+msgid "CONS: "
+msgstr "CONTRAS:"
+
+#: includes/class-inventor-reviews-logic.php:371
+#: templates/admin/review-admin-field-pros.php:2
+#: templates/review-field-pros.php:4 templates/review-single.php:69
+msgid "Pros"
+msgstr "Pros"
+
+#: includes/class-inventor-reviews-logic.php:373
+#: templates/admin/review-admin-field-cons.php:2
+#: templates/review-field-cons.php:4 templates/review-single.php:78
+msgid "Cons"
+msgstr "CONS"
+
+#: templates/review-field-author.php:3
+msgid "Name"
+msgstr "Nombre"
+
+#: templates/review-field-comment.php:2
+msgid "comment"
+msgstr "comentario"
+
+#: templates/review-field-email.php:3
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/review-field-file.php:4
+msgid "Attach image"
+msgstr "Adjuntar imagen"
+
+#: templates/review-field-file.php:8
+msgid "Upload Image"
+msgstr "Subir imagen"
+
+#: templates/review-list.php:6
+#, php-format
+msgid "One review on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s reviews on &ldquo;%2$s&rdquo;"
+msgstr[0] "Una opinión en \"%2$s\""
+msgstr[1] "%1$s opiniónes en \"%2$s\""
+
+#: templates/review-list.php:21
+msgid "Older Reviews"
+msgstr "Opiniones Anteriores"
+
+#: templates/review-list.php:22
+msgid "Newer Reviews"
+msgstr "Opiniones Recientes"
+
+#: templates/review-list.php:27
+msgid "Reviews are closed."
+msgstr "Las opiniones están cerradas."
+
+#: templates/review-list.php:39
+msgid "Post New Review"
+msgstr "Publicar Nueva Opinión"
+
+#: templates/review-list.php:40
+msgid "Submit Review"
+msgstr "Envíe su opinión"
+
+#: templates/review-single.php:18
+msgid "Your review is awaiting moderation."
+msgstr "Su opinión está en espera de moderación."
+
+#: templates/review-single.php:29
+msgid "Edit"
+msgstr "Editar"
+
+#: templates/review-single.php:35
+msgid "Spam"
+msgstr "Spam"
+
+#: templates/review-single.php:42
+msgid "Delete"
+msgstr "Eliminar"
+
+#: templates/review-total-rating.php:9
+#, php-format
+msgid ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d review</a>"
+msgid_plural ""
+"<strong>%.2f / 5 </strong> from <a href=\"#listing-detail-section-reviews\">"
+"%d reviews</a>"
+msgstr[0] ""
+"<strong>%.2f / 5 </strong> de <a href=\"#listing-detail-section-reviews\">%d "
+"opinión</a>"
+msgstr[1] ""
+"<strong>%.2f / 5 </strong> de <a href=\"#listing-detail-section-reviews\">%d "
+"opiniónes</a>"
+
+#: templates/widgets/filter-fields/rating.php:14
+msgid "Any rating"
+msgstr "Cualquier reseña"

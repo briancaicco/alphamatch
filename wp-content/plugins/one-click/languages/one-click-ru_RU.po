@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Click\n"
+"POT-Creation-Date: 2016-08-03 17:54+0600\n"
+"PO-Revision-Date: 2016-08-03 18:30+0600\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-one-click-menu.php:32 templates/launcher.php:2
+msgid "One Click Installation"
+msgstr "Установка в Один Клик"
+
+#: one-click.php:68
+msgid "WordPress Content"
+msgstr "Контент WordPress"
+
+#: one-click.php:69
+msgid ""
+"Images will be downloaded from external source so please be patient. "
+"Required plugin <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+msgstr ""
+"Изображения будут скачаны из внешнего источника, поэтому пожалуйста будьте "
+"терпеливы. Необходимый плагин <a href=\"https://wordpress.org/plugins/"
+"wordpress-importer/\">WordPress Importer</a>."
+
+#: one-click.php:75
+msgid "Customizer Theme Options"
+msgstr "Кастомайзер Опции Темы"
+
+#: one-click.php:76
+msgid ""
+"Options imported from customizer. Plugin which was used to export options <a "
+"href=\"https://wordpress.org/plugins/customizer-export-import/\">Customizer "
+"Export/Import</a>."
+msgstr ""
+"Параметры импортированы из кастомайзера. Плагин который был использован для "
+"экспорта параметров <a href=\"https://wordpress.org/plugins/customizer-"
+"export-import/\">Customizer Export/Import</a>."
+
+#: one-click.php:82
+msgid "Widgets Content &amp; Options"
+msgstr "Контент Виджетов и Параметры"
+
+#: one-click.php:83
+msgid ""
+"Widget content and sidebar positions. Required plugin <a href=\"https://"
+"wordpress.org/plugins/widget-settings-importexport/\">Widget Settings "
+"Importer/Exporter</a>."
+msgstr ""
+"Контент виджета и расположение сайдбара. Требуемый плагин <a href=\"https://"
+"wordpress.org/plugins/widget-settings-importexport/\">Widget Settings "
+"Importer/Exporter</a>."
+
+#: one-click.php:89
+msgid "Widget Logic"
+msgstr "Алгоритм Виджета"
+
+#: one-click.php:90
+msgid ""
+"Widget Logic conditional tags import for better widget management. Required "
+"plugin <a href=\"https://wordpress.org/plugins/widget-logic/\">Widget Logic</"
+"a>."
+msgstr ""
+"Импорт условных тегов Алгоритма Виджета для более удобного управления "
+"виджетом. Требуемый плагин <a href=\"https://wordpress.org/plugins/widget-"
+"logic/\">Widget Logic</a>."
+
+#: one-click.php:96
+msgid "Custom Options"
+msgstr "Пользовательские параметры"
+
+#: one-click.php:97
+msgid ""
+"Custom options import functionality to fix same basic variables or proper "
+"menu locations."
+msgstr ""
+"Импорт функционала пользовательских параметров  для исправления основных "
+"переменных или соответствующие расположение меню."
+
+#: templates/launcher.php:12
+msgid "Exports folder in your current theme does not exists."
+msgstr "Экспортируемая папка отсутствует в вашей текущей теме."
+
+#: templates/launcher.php:22
+msgid "All available steps has been successfully processed."
+msgstr "Все доступные шаги были успешно обработаны."
+
+#: templates/launcher.php:29
+msgid "Run Missing Steps"
+msgstr "Запустить Пропущенные Шаги"
+
+#: templates/launcher.php:31
+msgid "Launch Installation"
+msgstr "Запустить Установку"
+
+#: templates/launcher.php:41
+msgid "Missing Plugins Detected"
+msgstr "Обнаружены Недостающие Плагины"
+
+#: templates/launcher.php:47
+msgid ""
+"You are missing plugins which are required for running one click "
+"installation. Please install plugins listed below."
+msgstr ""
+"Вы пропустили плагины которые нужны для запуска установки в один клик. "
+"Пожалуйста установите плагины из списка ниже."

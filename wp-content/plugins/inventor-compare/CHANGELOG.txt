@@ -1,0 +1,18 @@
+Version: 0.9.0
+Release date: 2016-12-13
+What's new:
+- First release
+
+
+Version: 1.0.0
+Release date: 2017-01-31
+What's new:
+- responsive compare table labels
+- option to remove listing from comparison
+
+
+Version: 1.1.0
+Release date: 2017-11-02
+What's new:
+- applied inventor_listing_banner_actions
+- tooltip above "Compare" button

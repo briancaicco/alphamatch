@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Google Map\n"
+"POT-Creation-Date: 2017-04-26 09:40+0200\n"
+"PO-Revision-Date: 2017-04-26 09:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: gettext;__;_e;__ngettext:1,2;_n:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
+"esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: assets/js\n"
+"X-Poedit-SearchPath-2: libraries/jquery-google-map\n"
+
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:23
+msgid "Google Map"
+msgstr "Google Карта"
+
+#: includes/widgets/class-inventor-google-map-widget-google-map.php:25
+msgid "Displays listings in the google map."
+msgstr "Показывать листинг в google карте."
+
+#: templates/widgets/google-map-admin.php:42
+msgid "Title"
+msgstr "Название"
+
+#: templates/widgets/google-map-admin.php:55
+msgid "Latitude"
+msgstr "Широта"
+
+#: templates/widgets/google-map-admin.php:68
+msgid "Longitude"
+msgstr "Долгота"
+
+#: templates/widgets/google-map-admin.php:82
+msgid "Max. pins"
+msgstr "Макс. пинов"
+
+#: templates/widgets/google-map-admin.php:96
+#: templates/widgets/google-map-admin.php:266
+msgid "Zoom"
+msgstr "Увеличить"
+
+#: templates/widgets/google-map-admin.php:110
+msgid "Grid size"
+msgstr "Размер сетки"
+
+#: templates/widgets/google-map-admin.php:124
+msgid "Height"
+msgstr "Высота"
+
+#: templates/widgets/google-map-admin.php:137
+msgid "Classes"
+msgstr "Классы"
+
+#: templates/widgets/google-map-admin.php:150
+msgid "Body Classes"
+msgstr "Классы тела (Body)"
+
+#: templates/widgets/google-map-admin.php:159
+msgid "Additional classes appended to body class (separated by comma)"
+msgstr "Дополнительные классы приложенные к классу тела (через запятую)"
+
+#: templates/widgets/google-map-admin.php:165
+msgid "Style"
+msgstr "Стиль"
+
+#: templates/widgets/google-map-admin.php:169
+#: templates/widgets/google-map-admin.php:336
+msgid "Default"
+msgstr "По умолчанию"
+
+#: templates/widgets/google-map-admin.php:180
+msgid "Toggle default state"
+msgstr "Переключить состояние по умолчанию"
+
+#: templates/widgets/google-map-admin.php:191
+msgid "Open"
+msgstr "Открыто"
+
+#: templates/widgets/google-map-admin.php:203
+msgid "Closed"
+msgstr "Закрыто"
+
+#: templates/widgets/google-map-admin.php:209
+msgid "Intercept"
+msgstr "Перехват"
+
+#: templates/widgets/google-map-admin.php:218
+msgid "Filter queries in URL"
+msgstr "Фильтр запросов в Ссылке"
+
+#: templates/widgets/google-map-admin.php:229
+msgid "Main post type in loop"
+msgstr "Основной тип поста в цикле"
+
+#: templates/widgets/google-map-admin.php:240
+msgid "Main term in loop"
+msgstr "Главное слагаемое в цикле"
+
+#: templates/widgets/google-map-admin.php:244
+msgid "Toolbar"
+msgstr "Тулбар"
+
+#: templates/widgets/google-map-admin.php:254
+msgid "Map types"
+msgstr "Типы карт"
+
+#: templates/widgets/google-map-admin.php:278
+msgid "Geolocation"
+msgstr "Геолокация"
+
+#: templates/widgets/google-map-admin.php:284
+msgid "Marker style"
+msgstr "Стиль маркера"
+
+#: templates/widgets/google-map-admin.php:295
+msgid "Simple"
+msgstr "Простой"
+
+#: templates/widgets/google-map-admin.php:307
+msgid "Inventor POI"
+msgstr "POI разработчика"
+
+#: templates/widgets/google-map-admin.php:319
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: templates/widgets/google-map-admin.php:326
+msgid "Order by"
+msgstr "Сортировать по"
+
+#: templates/widgets/google-map-admin.php:348
+msgid "Random"
+msgstr "Случайный"
+
+#: templates/widgets/google-map-admin.php:353
+msgid "Options"
+msgstr "Опции"
+
+#: templates/widgets/google-map-admin.php:363
+msgid "Show all markers on viewport"
+msgstr "Показать все маркеры на видовом экране"
+
+#: templates/widgets/google-map-admin.php:375
+msgid "Show toggle (open/close map)"
+msgstr "Показать переключатель (открыть / закрыть карту)"
+
+#: templates/widgets/google-map-admin.php:387
+#: templates/widgets/google-map.php:106
+msgid "Current Position"
+msgstr "Текущая Позиция"
+
+#: templates/widgets/google-map-admin.php:399
+msgid "Live Filtering"
+msgstr "Онлайн Фильтрация"
+
+#: templates/widgets/google-map-admin.php:411
+msgid "Auto Submit Filter"
+msgstr "Фильтр Авто Отправления"
+
+#: templates/widgets/google-map-admin.php:425
+msgid "Filter"
+msgstr "Фильтр"
+
+#: templates/widgets/google-map.php:66
+msgid "Toggle Map"
+msgstr "Переключить карту"
+
+#: templates/widgets/google-map.php:85
+msgid "Roadmap"
+msgstr "Дорожная карта"
+
+#: templates/widgets/google-map.php:86
+msgid "Terrain"
+msgstr "Местность"
+
+#: templates/widgets/google-map.php:87
+msgid "Satellite"
+msgstr "Спутник"
+
+#: templates/widgets/google-map.php:94
+msgid "Zoom In"
+msgstr "Приблизить"
+
+#: templates/widgets/google-map.php:98
+msgid "Zoom Out"
+msgstr "Отдалить"
+
+#: libraries/jquery-google-map/jquery-google-map.js:132
+#: libraries/jquery-google-map/jquery-google-map.js:263
+msgid "Loading address..."
+msgstr ""
+
+#: libraries/jquery-google-map/jquery-google-map.js:146
+msgid "Failed to load address"
+msgstr ""
+
+#~ msgid "Filter Button Text"
+#~ msgstr "Текст Кнопки Фильтра"
+
+#~ msgid "Input titles"
+#~ msgstr "Ввести название"
+
+#~ msgid "Labels"
+#~ msgstr "Ярлыки"
+
+#~ msgid "Placeholders"
+#~ msgstr "Заполнители"
+
+#~ msgid "Filter Fields"
+#~ msgstr "Поля фильтра"

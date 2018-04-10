@@ -1,0 +1,83 @@
+Building content
+****************
+
+Whole website content based on inventor plugin ecosystem is build upon regular `WordPress widgets`_ and `shortcodes`_ you should be very familiar with. 
+You don't need any third party plugin, but feel free to use it if you wish to.
+
+.. _`WordPress widgets`: https://codex.wordpress.org/WordPress_Widgets
+.. _`shortcodes`: https://codex.wordpress.org/Shortcode
+
+Widgets can be configured in the *WP admin > Appearance > Widgets*. Defined widget areas are described in the chapter :doc:`Layout <../user-guide/layout>`.
+Some of the widgets and their common settings are mentioned in the :doc:`Widgets <../user-guide/widgets>` chapter.
+
+You can use theme widgets also in your custom pages using shortcodes. This `free plugin`_ might be useful for you.
+
+.. _`free plugin`: https://wordpress.org/plugins/amr-shortcode-any-widget/
+
+Most of the shortcodes are self-explanatory. List of the available shortcodes is written in the chapter :doc:`Shortcodes <../user-guide/shortcodes>`. 
+Some of them render forms, lists of objects, tables and others just a simple link. Few lines below we will describe purpose of each shortcode and its functionality.
+
+All theme settings can be set in the WP customizer (*WP admin > Appearance > Customize*). Most of them are described in :doc:`Settings <../user-guide/settings>`.
+
+If it is not enough for you, you can use your own CSS to modify original appearance.
+
+.. note:: Don't forget to use a :doc:`child theme <../user-guide/installation>` for custom modifications.
+
+
+Related listings
+################
+
+In the :doc:`Settings <../user-guide/settings>`, it is possible to enable relationship between two listings as a parent and child listing.
+It is useful for listing types like apartments for example. Once activated, new metabox will be available in the listing edit page in the WP admin backend.
+All related sublistings will be shown on the parent listing detail page on frontend automatically.
+
+Booking listings
+################
+
+Listing types like "Hotel" and "Food & Drink" can be booked (to reserve a hotel room or restaurant table). 
+Global booking configuration can be set in the :doc:`Settings <../user-guide/settings>`. 
+It is also required to set a listing price, fill in booking configuration for each listing and place a **Booking Form** widget on the listing detail page (sidebar is suitable area).
+If you want to enable booking/reservation details on frontend, put a ``[inventor_booking_detail]`` into a new page and set it in the *Inventor Pages* settings in the WP customizer.
+
+Compare listings
+################
+
+Inventor allows users to see listings side by side in comparison table. 
+If you want to enable this functionality, just put a ``[inventor_compare]`` shortcode into a new page and set it in the *Inventor Pages* settings in the WP customizer.
+
+Simple eshop
+############
+
+.. warning:: This documentation chapter is not yet ready.
+
+Favorite listings and collections
+#################################
+
+.. warning:: This documentation chapter is not yet ready.
+
+Claiming listings
+#################
+
+Once you create a listing in the WP admin, you can let users to claim it. 
+You will receive a new notification about this action and once the Claim request is approved (published in WordPress), the listing author will be changed to a new user. 
+If you also use frontend submission functionality, new author will be able to manage his listing himself directly from his dashboard.
+Already claimed listings can't be reclaimed again and they are marked as "verified". This verification process is up to your communication with your customer.
+
+To enable claiming, you need to create a page with ``[inventor_claim_form]`` shortcode and assign it to **Claim listing** in the *Inventor Pages* settings in the WP customizer.
+
+Frontend Submission
+###################
+
+This functionality is described in its own chapter :doc:`Submission system <../user-guide/submission-system>`.
+
+Reporting listings
+##################
+
+If you are using frontend submission functionality without admin approval, you should consider placing "Report Form" into your website. 
+Is it possible to do so using ``[inventor_report_form]`` shortcode in a new page which has to be set in the *Inventor Pages* settings in the WP customizer.
+Once done, a link to this form will be shown automatically on the very bottom of the listing detail page.
+
+Packages and pricing tables
+###########################
+
+This functionality is described in their own chapters :doc:`Packages <../user-guide/packages>` and :doc:`Pricing tables <../user-guide/pricing-tables>`.

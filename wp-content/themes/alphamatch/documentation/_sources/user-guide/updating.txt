@@ -1,0 +1,33 @@
+Updating
+########
+
+First of all, always do a **full backup before any update** (database, files and widget logic).
+
+.. warning:: If you are using custom color scheme in your own CSS file, you will need to regenerate the file once again.
+
+
+Automatic Updates
+=================
+
+Easiest way how to update is to use automatic updates, both for theme and all included plugins.
+
+When accessing *"Plugins"* or *"Themes"* menu you can see which plugins/themes have available update. Update workflow is exactly the same as updating regular plugins from WordPress.org but you need to insert your purchase code into the field under the plugin name.
+
+Your purchase code is available on ThemeForest. You can found it by accessing *"Downloads - Superlist - Download - License certificate & purchase code (text)"*. After the save, WordPress will be able to access plugins ZIP files. If you make a mistake and the purchase code is for example from wrong theme, you can visit *"Customizer - Inventor General"* and change or remove the purchase code.
+
+.. note:: It is recommended to not edit the plugins files. You can change all the functionality from child theme.
+
+
+Manual Updating
+===============
+
+To install new update manually, do the following steps:
+
+1. Replace old theme folder with the new one. You don't need to delete it, just be sure you override it (NOT merge).
+
+2. Do the same with the plugin folders.
+
+3. Theme options won't be affected if you won't switch between themes. If you have some issues with widgets, import previously backed up widget options. If you don't see some menu items, check if all plugins are activated.
+
+
+.. note:: If something screwed up, check your server error logs. It will help to investigate the issue.

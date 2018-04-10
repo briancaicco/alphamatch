@@ -1,0 +1,548 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inventor Billplz\n"
+"POT-Creation-Date: 2017-01-31 15:36+0100\n"
+"PO-Revision-Date: 2017-01-31 15:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-inventor-bookings-logic.php:52
+msgid "Awaiting approval"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:53
+msgid "Pending payment"
+msgstr "В ожидании оплаты"
+
+#: includes/class-inventor-bookings-logic.php:54
+msgid "Approved"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:55
+msgid "Cancelled"
+msgstr "Отменен"
+
+#: includes/class-inventor-bookings-logic.php:56
+msgid "No-show"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:90
+#: includes/class-inventor-bookings-logic.php:402
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:38
+msgid "Booking"
+msgstr "Бронирование"
+
+#: includes/class-inventor-bookings-logic.php:91
+#, php-format
+msgid "Booking of %s"
+msgstr "Бронирование в %s"
+
+#: includes/class-inventor-bookings-logic.php:132
+msgid "Booking has been successfully paid."
+msgstr "Бронь была успешна оплачена."
+
+#: includes/class-inventor-bookings-logic.php:148
+msgid "Bookings configuration"
+msgstr "Конфигурации брони"
+
+#: includes/class-inventor-bookings-logic.php:158
+msgid "Enabled"
+msgstr "Включено"
+
+#: includes/class-inventor-bookings-logic.php:159
+msgid "Allow/disallow listing booking (also price needs to be set)."
+msgstr "Разрешить/запретить бронь листингов (также нужно задать цену)"
+
+#: includes/class-inventor-bookings-logic.php:169
+msgid "Period unit"
+msgstr "Единица периода"
+
+#: includes/class-inventor-bookings-logic.php:170
+msgid ""
+"Final booking price depends on booking range, period unit and listing price."
+msgstr ""
+"Окончательное цена брони, зависит от диапазона бронирования, единицы периода "
+"и цены листинга."
+
+#: includes/class-inventor-bookings-logic.php:173
+msgid "Hour"
+msgstr "Час"
+
+#: includes/class-inventor-bookings-logic.php:174
+msgid "Day"
+msgstr "День"
+
+#: includes/class-inventor-bookings-logic.php:175
+msgid "Night"
+msgstr "Ночь"
+
+#: includes/class-inventor-bookings-logic.php:183
+msgid "Min period"
+msgstr "Мин. период"
+
+#: includes/class-inventor-bookings-logic.php:184
+msgid "Minimum booking period required"
+msgstr "Необходим минимальный период брони"
+
+#: includes/class-inventor-bookings-logic.php:198
+msgid "Max period"
+msgstr "Макс. период"
+
+#: includes/class-inventor-bookings-logic.php:199
+msgid "Maximum booking period allowed"
+msgstr "Максимальный период брони разрешен"
+
+#: includes/class-inventor-bookings-logic.php:213
+msgid "Price per person"
+msgstr "Цена на человека"
+
+#: includes/class-inventor-bookings-logic.php:214
+msgid ""
+"Check if you want to calculate total booking price depending on number of "
+"persons."
+msgstr ""
+"Отметьте, если вы хотите, чтобы стоимость бронирования рассчитывалась в "
+"зависимости от количества человек."
+
+#: includes/class-inventor-bookings-logic.php:226
+msgid "Min persons"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:227
+msgid "Minimum persons needed for booking"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:243
+msgid "Max persons"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:244
+msgid "Total person capacity per booking"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:259
+msgid "Additional information"
+msgstr "Дополнительная информация"
+
+#: includes/class-inventor-bookings-logic.php:260
+msgid "Reservation details for customers"
+msgstr "Детали Бронирование для клиентов"
+
+#: includes/class-inventor-bookings-logic.php:269
+msgid "Check-in"
+msgstr "Регистрация (Чек-ин)"
+
+#: includes/class-inventor-bookings-logic.php:270
+msgid "When the user can check-in"
+msgstr "Когда пользователь может  зарегистрироваться "
+
+#: includes/class-inventor-bookings-logic.php:279
+msgid "Check-out"
+msgstr "Выписка"
+
+#: includes/class-inventor-bookings-logic.php:280
+msgid "When the user can check-out"
+msgstr "Когда пользователь сможет выписаться "
+
+#: includes/class-inventor-bookings-logic.php:289
+msgid "Cancellation policy"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:302
+msgid "Week availability"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:313
+msgid "Exceptions"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:322
+msgid "Item"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:323
+msgid "Add Another"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:324
+msgid "Remove"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:330
+msgid "Date"
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:363
+msgid "Booking range is invalid."
+msgstr "Диапазон бронирования недействительный."
+
+#: includes/class-inventor-bookings-logic.php:371
+msgid "Invalid number of persons."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:378
+msgid "Same booking request already exists."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:393
+msgid "reCAPTCHA is not valid."
+msgstr "reCAPTCHA не действительна."
+
+#: includes/class-inventor-bookings-logic.php:433
+msgid "Booking request"
+msgstr "Запрос на бронь"
+
+#: includes/class-inventor-bookings-logic.php:490
+msgid "Booking request has been successfully sent."
+msgstr "Запрос на бронь был успешно отправлен."
+
+#: includes/class-inventor-bookings-logic.php:493
+msgid "Unable to send a booking request."
+msgstr "Невозможно отправить запрос на бронь."
+
+#: includes/class-inventor-bookings-logic.php:538
+msgid "Booking reviewed"
+msgstr "Бронь рассмотрена"
+
+#: includes/class-inventor-bookings-logic.php:543
+msgid "Booking approved"
+msgstr "Бронь одобрена"
+
+#: includes/class-inventor-bookings-logic.php:551
+msgid "Booking cancelled"
+msgstr "Бронь отменена"
+
+#: includes/class-inventor-bookings-logic.php:557
+msgid "Unable to moderate booking."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:576
+msgid "Booking successfully moderated."
+msgstr ""
+
+#: includes/class-inventor-bookings-logic.php:578
+msgid "Booking status was changed but it wasn't able to send email."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:44
+msgid "Booking detail"
+msgstr "Детали бронирования"
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:51
+msgid "Inventor Bookings"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:64
+msgid "Minimum persons"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:67
+msgid "Limitation of minimum persons needed for each booking."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:79
+msgid "Maximum persons"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:82
+msgid "Limitation of maximum persons allowed for each booking."
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:94
+msgid "Default ordering for listing archive"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:109
+msgid "Prepaid bookings"
+msgstr ""
+
+#: includes/customizations/class-inventor-bookings-customizations-bookings.php:110
+msgid "Check if the approved booking has to be paid by customer."
+msgstr ""
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:37
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:43
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:49
+msgid "Bookings"
+msgstr "Брони"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:39
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:40
+msgid "Add New Booking"
+msgstr "Добавить Новую Бронь"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:41
+msgid "Edit Booking"
+msgstr "Редактировать Бронь"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:42
+msgid "New Booking"
+msgstr "Новая Бронь"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:44
+msgid "View Booking"
+msgstr "Просмотр Брони"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:45
+msgid "Search Booking"
+msgstr "Поиск Брони"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:46
+msgid "No Bookings found"
+msgstr "Брони не найдены"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:47
+msgid "No Bookings Found in Trash"
+msgstr "Брони не найдены в Корзине"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:91
+msgid "General"
+msgstr "Общее"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:99
+#: templates/bookings/detail.php:22 templates/mails/booking-approval.php:24
+#: templates/mails/booking-cancellation.php:24
+#: templates/mails/booking-request.php:19
+msgid "Book from"
+msgstr "Бронь от"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:105
+#: templates/bookings/detail.php:26 templates/mails/booking-approval.php:29
+#: templates/mails/booking-cancellation.php:29
+#: templates/mails/booking-request.php:23
+msgid "Book to"
+msgstr "Бронь до"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:111
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:193
+#: templates/bookings/detail.php:34 templates/mails/booking-approval.php:39
+#: templates/mails/booking-request.php:31
+msgid "Price"
+msgstr "Цена"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:125
+msgid "Listing ID"
+msgstr "ID листинга"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:131
+#: templates/bookings/detail.php:30 templates/mails/booking-approval.php:34
+#: templates/mails/booking-cancellation.php:34
+#: templates/mails/booking-request.php:27 templates/widgets/booking-form.php:80
+msgid "Number of persons"
+msgstr "Количество персон"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:142
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:191
+#: templates/bookings/detail.php:42 templates/mails/booking-approval.php:49
+#: templates/mails/booking-cancellation.php:44
+#: templates/mails/booking-request.php:39
+#: templates/widgets/booking-form-admin.php:54
+#: templates/widgets/booking-form.php:116
+msgid "E-mail"
+msgstr "E-mail"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:148
+#: templates/bookings/detail.php:38 templates/mails/booking-approval.php:44
+#: templates/mails/booking-cancellation.php:39
+#: templates/mails/booking-request.php:35
+#: templates/widgets/booking-form-admin.php:40
+#: templates/widgets/booking-form.php:111
+msgid "Name"
+msgstr "Имя"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:154
+#: templates/bookings/detail.php:46 templates/mails/booking-approval.php:54
+#: templates/mails/booking-cancellation.php:49
+#: templates/mails/booking-request.php:43
+#: templates/widgets/booking-form-admin.php:67
+#: templates/widgets/booking-form.php:121
+msgid "Phone"
+msgstr "Телефон"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:160
+#: templates/bookings/detail.php:50 templates/mails/booking-approval.php:59
+#: templates/mails/booking-cancellation.php:54
+#: templates/mails/booking-request.php:47
+#: templates/widgets/booking-form-admin.php:80
+#: templates/widgets/booking-form.php:127
+msgid "Message"
+msgstr "Сообщение"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:166
+msgid "Hash"
+msgstr "Крошить (Hash)"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:172
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:194
+#: templates/bookings/detail.php:11
+msgid "Status"
+msgstr "Статус"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:188
+#: templates/widgets/booking-form-admin.php:19
+msgid "Title"
+msgstr "Загаловок"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:189
+#: templates/bookings/detail.php:18 templates/mails/booking-approval.php:14
+#: templates/mails/booking-cancellation.php:14
+#: templates/mails/booking-request.php:10
+msgid "Listing"
+msgstr "Листинг"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:190
+msgid "Period"
+msgstr "Период"
+
+#: includes/post-types/class-inventor-bookings-post-type-booking.php:192
+#: templates/widgets/booking-form.php:72
+msgid "Persons"
+msgstr "Персоны"
+
+#: includes/widgets/class-inventor-bookings-widget-booking-form.php:23
+msgid "Booking Form"
+msgstr "Форма Брони"
+
+#: includes/widgets/class-inventor-bookings-widget-booking-form.php:25
+msgid "Booking form."
+msgstr "Форма брони."
+
+#: templates/bookings/detail.php:2
+msgid "Booking not found."
+msgstr "Бронь не найдена."
+
+#: templates/bookings/detail.php:7
+msgid "Booking ID"
+msgstr "ID брони"
+
+#: templates/bookings/detail.php:58
+msgid "Cancel booking"
+msgstr "Отменить бронь"
+
+#: templates/bookings/detail.php:59
+msgid "Approve booking"
+msgstr "Одобрить бронь"
+
+#: templates/bookings/detail.php:70
+msgid "Pay booking"
+msgstr "Оплатить бронь"
+
+#: templates/bookings/payment-form-before.php:7
+msgid "Price is not set."
+msgstr "Цена не задана."
+
+#: templates/bookings/payment-form-before.php:12
+#, php-format
+msgid ""
+"You are going to pay <strong>%s</strong> for booking of <strong>\"%s\"</"
+"strong>."
+msgstr ""
+"Вы собираетесь заплатить <strong>%s</strong>  за бронь в <strong>%s</strong> "
+
+#: templates/bookings/payment-form-before.php:19
+msgid "Missing listing."
+msgstr "Листинг отсутствует"
+
+#: templates/field-types/week-availability.php:56
+msgid "Discount"
+msgstr ""
+
+#: templates/field-types/week-availability.php:65
+msgid "Closed"
+msgstr ""
+
+#: templates/mails/booking-approval.php:7
+msgid "Your following booking was approved:"
+msgstr "Ваша следующая бронь была одобрена:"
+
+#: templates/mails/booking-approval.php:68
+msgid "Please confirm your booking at this URL:"
+msgstr "Пожалуйста подтвердите вашу бронь по этой ссылке."
+
+#: templates/mails/booking-cancellation.php:7
+msgid "Your following booking was cancelled:"
+msgstr "Ваша следующая бронь была отклонена:"
+
+#: templates/mails/booking-request.php:55
+msgid "Please approve or cancel booking at this URL:"
+msgstr "Пожалуйста одобрите или отмените бронь по этой ссылке:"
+
+#: templates/widgets/booking-form-admin.php:29
+msgid "Form fields"
+msgstr "Поля формы"
+
+#: templates/widgets/booking-form-admin.php:108
+msgid "Site admin"
+msgstr "Администратор сайта"
+
+#: templates/widgets/booking-form-admin.php:121
+msgid "Listing author"
+msgstr "Автор листинга"
+
+#: templates/widgets/booking-form-admin.php:134
+msgid "Listing email"
+msgstr "Email листинга"
+
+#: templates/widgets/booking-form-admin.php:139
+msgid "If none selected, post author will receive an email by default."
+msgstr "Если ничего не выбрано, автор поста получить email по умолчанию."
+
+#: templates/widgets/booking-form.php:46 templates/widgets/booking-form.php:52
+#: templates/widgets/booking-form.php:65
+msgid "From"
+msgstr "От"
+
+#: templates/widgets/booking-form.php:59
+msgid "To"
+msgstr "До"
+
+#: templates/widgets/booking-form.php:91 templates/widgets/booking-form.php:98
+msgid "Min: "
+msgstr "Мин:"
+
+#: templates/widgets/booking-form.php:92 templates/widgets/booking-form.php:99
+msgid "Max: "
+msgstr "Макс:"
+
+#: templates/widgets/booking-form.php:98 templates/widgets/booking-form.php:99
+msgid "person"
+msgid_plural "persons"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: templates/widgets/booking-form.php:105
+msgid "Contact information"
+msgstr "Контактная информация"
+
+#: templates/widgets/booking-form.php:138
+msgid "Request"
+msgstr "Запрос"
+
+#~ msgid "Booking request already exists."
+#~ msgstr "Запрос на бронь уже существует."
+
+#~ msgid "Booking review has been successfully sent."
+#~ msgstr "Обзор брони была успешна отправлена."
+
+#~ msgid "Unable to send a booking review."
+#~ msgstr "Невозможно отправить обзор брони."
+
+#~ msgid "Waiting for review"
+#~ msgstr "Ожидает обзора"
+
+#~ msgid "Paid"
+#~ msgstr "Оплачен"

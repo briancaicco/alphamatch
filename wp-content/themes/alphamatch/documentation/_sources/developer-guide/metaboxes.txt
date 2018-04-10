@@ -1,0 +1,4 @@
+Metaboxes
+#########
+
+In chapter :doc:`fields` you can read how to add new fields and metaboxes to your listing post type.

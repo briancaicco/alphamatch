@@ -1,0 +1,36 @@
+Translations
+============
+
+For translation of theme or plugins is best to use Poedit_. Open theme or plugin which you want to translate and copy the file with ``.po`` extension into ``wp-content/languages`` folder. If that folder does not exists, create it. Proper format for file is **PLUGIN_NAME-LANGUAGE_CODE.po**, for instance ``inventor-en_EN.po``. When translating theme please make sure that you also translated all plugins which are bundled. We do not include all strings in the main theme language file.
+
+.. _Poedit: https://poedit.net/
+
+**Here is the sample structure for language folders**
+
+.. code-block:: none
+
+   # Theme
+   wp-content/languages/themes/superlist-en_EN.po
+   wp-content/languages/themes/superlist-en_EN.mo
+
+   # Plugins
+   wp-content/languages/plugins/inventor-en_EN.po
+   wp-content/languages/plugins/inventor-en_EN.mo
+
+   wp-content/languages/plugins/inventor-properties-en_EN.po
+   wp-content/languages/plugins/inventor-properties-en_EN.mo
+
+   ... etc
+
+
+.. note:: If you are missing some strings make sure that all catalogues are up to date. You can update catalogues easily by using Poedit. Open the PO file in Poedit and then click on *"Update"*.
+
+When editing the strings make sure that Poedit is automatically compiling it into `.mo`_ file. Without that the change won't be visible. After translation of all strings, check if you have set proper language in WordPress admin.
+
+.. _`.mo`: https://en.wikipedia.org/wiki/.mo
+
+.. note:: Out there are many other WordPress plugins which can help you to translate theme. If something went wrong and your translation is not working, it is recommended to contact third party providers because theme and bundled plugins are using standard way for strings translation using ``__( 'string', 'domain' )`` function.
+
+Read more about Localization in `official WordPress documentation`_. 
+
+.. _`official WordPress documentation`: https://developer.wordpress.org/plugins/internationalization/localization/

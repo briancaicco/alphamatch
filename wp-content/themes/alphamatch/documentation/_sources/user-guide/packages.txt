@@ -1,0 +1,59 @@
+Packages
+########
+
+Inventor provides package system as a submission type. It allows users to buy packages with their features. Each of them is defined by price, duration, maximum allowed number of published listings and by list of listing permissions.
+
+Once user package expires, all of user listings go draft / not published automatically and the not allowed metaboxes will be hidden from the listing detail page.
+
+
+Package types and settings
+==========================
+
+Generaly there are 4 types of packages:
+
++--------------+-------+-----------+----------------------------------------------------------------+
+| Package type | Price | Duration  | Description                                                    |
++==============+=======+===========+================================================================+
+| **Free**     | 0     | not set   | User does not have to pay for package features.                |
++--------------+-------+-----------+----------------------------------------------------------------+
+| **Trial**    | 0     | set       | User gets all package features for free for a limited time.    |
++--------------+-------+-----------+----------------------------------------------------------------+
+| **Simple**   | > 0   | not set   | One-time fee package (without duration).                       |
++--------------+-------+-----------+----------------------------------------------------------------+
+| **Regular**  | > 0   | set       | Paid package with subscription.                                |
++--------------+-------+-----------+----------------------------------------------------------------+
+
+
+.. warning:: Price is defined by amount without currency. Currency is taken from settings in *"Appearance > Customize > Inventor Currency"*.
+
+Besides of price and duration, you can set **how many listings** can user publish by setting *"Max Listings"* attribute. To unlimited number set "-1".
+
+There is also a similar setting for **maximum allowed number od category per listing**. For unlimited categories keep the field blank.
+
+You may need to hide some packages from regular users. For example if you want to set unlimited package type for your VIP users or admins. In such cases you can mark package as **private**.
+
+.. note:: Trial and private packages can not be set in pricing table.
+
+
+Default package
+===============
+
+If you are using *"Package system"*, you can specify, which package should be **set as default** for new registered user (In *"WP Admin / Appearance / Customize / Inventor Packages"*). It is suitable for using **trial packages** for instance.
+
+
+Permissions
+===========
+
+You can even choose, which listing **metaboxes** are available for listing authors, including custom metaboxes:
+
+* Video
+* Gallery
+* Reviews
+* Location
+* Opening hours
+* Contact
+
+Restrictions
+============
+
+Using package restrictions you can define which **listing types** can user create in the frontend submission.

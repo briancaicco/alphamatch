@@ -1,0 +1,116 @@
+Templates
+#########
+
+Plugin contains simple template loader. Idea is to bring default templates into plugins which could be simply overwritten from theme. All default files are located inside plugin's ``templates`` folder. Implementation can be found in ``class-inventor-template-loader.php``.
+
+Loader is used to define some default templates for single and archive templates. Custom post types defined by theme which are public have default fallbacks in plugin templates folder.
+
+* ``archive-listing.php``
+* ``content-listing.php``
+* ``single-listing.php``
+* ``taxonomy-listing.php``
+
+Loading Hierarchy
+=================
+
+Template loader has its hierarchy for loading the templates. First of all it checks child theme, if it is used. Then it looks into theme folder and at the end loads default template from plugin folder.
+
+Loader Usages
+=============
+
+Below you can see an example how it is possible to output list of listings in rows. We will use custom query to fetch all listings in database.
+
+.. code-block:: php
+    :linenos:
+    
+    query_posts( array(
+        'post_type' 	   => Inventor_Custom_Post_Type::get_listing_post_types(),
+        'posts_per_page'   => -1
+    ) );
+    
+    if ( have_posts() ):
+        while( have_posts ): the_post();
+    	    include Inventor_Template_Loader::locate( 'listings/row' );
+        endwhile;
+    endif;
+
+
+If you want to save the output into variable, use ``load()`` method instead of ``locate()``. Method is using ``locate()``, but it implements ``ob_start()`` functionality to return template content as variable.
+
+.. code-block:: php
+    :linenos:
+
+    // This will return the template path
+    Inventor_Template_Loader::locate( 'listings/row' );
+   
+    // Output the content
+    include Inventor_Template_Loader::locate( 'listings/row' );
+   
+    // In $row we have template content
+    $row = Inventor_Template_Loader::load( 'listings/row' );
+
+Custom listing detail sections order
+====================================
+
+If you need to change order of sections at listing detail page, you can use ``inventor_listing_detail_sections`` WP filter. 
+It takes two arguments, the first one is an associative array of displayed sections. Key of the array is a section name and the value is its title. The second argument is a post type name of current listing.
+So for example, lets say, you want to reassign the order in which video section will be at the very top of the page: 
+
+.. code-block:: php
+	:linenos:
+	
+	add_filter( 'inventor_listing_detail_sections', 'custom_sections_order', 10, 2 );
+
+	function custom_sections_order( $sections, $post_type ) {
+		return array(
+			'video' => esc_attr__( 'Video', 'inventor' ),
+			'gallery' => esc_attr__( 'Gallery', 'inventor' ),
+			'description' => esc_attr__( 'Description', 'inventor' ),
+			'overview' => esc_attr__( 'Details', 'inventor' ),
+			'food-menu' => esc_attr__( 'Meals And Drinks', 'inventor' ),
+			'opening-hours' => esc_attr__( 'Opening Hours', 'inventor' ),
+			'location' => esc_attr__( 'Location', 'inventor' ),
+			'contact' => esc_attr__( 'Contact', 'inventor' ),
+			'social' => esc_attr__( 'Social connections', 'inventor' ),
+			'faq' => esc_attr__( 'FAQ', 'inventor' ),
+			'comments' => null,
+			'report' => null
+		);
+	}
+	
+
+This WP filter is also useful when you want to show your own section with custom defined fields.
+The code below shows an example of custom skills section for doctor post type.
+
+.. code-block:: php
+	:linenos:
+	:emphasize-lines: 5
+	
+	add_filter( 'inventor_listing_detail_sections', 'custom_skills_section', 10, 2 );
+
+	function custom_skills_section( $sections, $post_type ) {
+		if ( $post_type == 'doctor' ) {
+			$doctor_skills_section = array( 'doctor-skills' => esc_attr__( 'Skills', 'text-domain' ) );
+			return array_merge( array_slice( $sections, 0, 3 ), $doctor_skills_section, array_slice( $sections, 3 ) );
+		}
+		return $sections;
+	}
+	
+Notice line number 5. The section name is `doctor-skills`. The template loader will try to include this file:
+
+``templates/listings/detail/section-doctor-skills.php`` 
+
+You can show any information in that file. The default approach is to retrieve custom field value and print it out. 
+But you can do your own business logic there of course.
+
+Before your file is included, following WP action is triggered:
+
+``inventor_before_listing_detail_SECTION_NAME``
+
+After your file is inclusion, following WP action is triggered:
+
+``inventor_after_listing_detail_SECTION_NAME``
+
+.. note::
+
+	SECTION_NAME is a section name in which all hyphens are replaced by underscores. So doctor-skills will become doctor_skills.

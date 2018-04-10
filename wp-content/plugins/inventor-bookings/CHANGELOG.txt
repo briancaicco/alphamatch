@@ -1,0 +1,32 @@
+Version: 0.1.0
+Release date: 2016-07-01
+What's new:
+- First release with default settings and booking form
+
+
+Version: 0.2.0
+Release date: 2017-01-31
+What's new:
+- min/max persons per booking
+- global settings for min/max persons
+- booking post_type changed to custom post meta field: status
+- week availability and exceptions (disabled by default)
+- cancellation policy
+- New WP action: inventor_booking_created
+
+
+Version: 0.3.0
+Release date: 2017-04-28
+What's new:
+- missing index bug fix
+- Inventor_Bookings_Post_Type_Booking::is_past() helper
+- Inventor_Bookings_Post_Type_Booking::time_until_start() helper
+- admin name replaced by website name in email headers
+- list of user bookings
+- list of bookings of user listings
+- option to filter bookings in admin by listing
+- fixed timezone issues
+- "No-show" and "Completed" booking statuses
+- New WP shortcode: [inventor_bookings]
+- New WP shortcode: [inventor_bookings_manager]
+- New WP filter: inventor_bookings_allowed_listing_post_types

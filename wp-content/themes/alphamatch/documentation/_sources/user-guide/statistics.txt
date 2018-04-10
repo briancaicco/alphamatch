@@ -1,0 +1,8 @@
+Statistics
+##########
+
+With the **inventor-statistics** plugin you can log incoming requests. Plugin is logging all search queries and listing detail visits. In WordPress admin you can now check charts displaying number of search queries for the last two weeks, locations, categories, price searches and listing detail visits for the last two weeks.
+
+On the front end, we are displaying listings views on listing detail. In the *"My Listings"* page we are displaying views count as well. It is also possible to order listings by their popularity.
+
+If you are on slow hosting, it is recommended to disable inventor-statistics plugin. Plugin is creating two custom tables ``TABLE_PREFIX_query_stats`` and ``TABLE_PREFIX_listing_stats`` for logging.

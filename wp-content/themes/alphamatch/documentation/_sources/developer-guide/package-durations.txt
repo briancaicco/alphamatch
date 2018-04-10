@@ -1,0 +1,25 @@
+Package durations
+#################
+
+If *"week"*, *"month"* and *"year"* does not fit your requirements as a package duration, you can add your own using ``inventor_package_durations`` filter.
+
+Example how to add *"3 days"* package duration:
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_package_durations', 'add_package_duration' );
+    
+    function add_package_duration( $package_durations ) {
+        $package_durations[] = array(
+            'key' => 'three_days',
+            'display' => __( '3 days', 'inventor' ),
+            'length' => '+3 day'
+        );
+        return $package_durations;
+    }
+   
+
+.. warning:: Value of ``length`` attribute have to be parameter for `strtotime`_ function.
+
+.. _`strtotime`: http://php.net/manual/en/function.strtotime.php

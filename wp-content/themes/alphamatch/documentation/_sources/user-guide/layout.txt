@@ -1,0 +1,17 @@
+Layout
+######
+
+.. image:: /img/layout.png
+
+Examples
+********
+
+Front Page
+==========
+
+.. image:: /img/layout-front.jpg
+
+Listing detail
+==============
+
+.. image:: /img/layout-detail.jpg

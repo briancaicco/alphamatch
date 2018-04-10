@@ -1,0 +1,276 @@
+Code Samples
+************
+
+Below you can find some useful code samples which use plugin's WP :doc:`filters <../developer-guide/filters>` and :doc:`actions <../developer-guide/actions>`.
+Use them in ``functions.php`` file of your `Child theme`_.
+
+.. _`Child theme`: http://codex.wordpress.org/Child_Themes
+
+
+inventor_listing_type_icon
+##########################
+
+If you don't like the chosen icon for the predefined listing type, you can change it using following approach:
+
+.. code-block:: php
+    :linenos:
+
+    add_action( 'inventor_listing_type_icon', function ( $icon, $post_type ) {
+    	if ( $post_type == 'car' ) {
+            return 'inventor-poi-bus';
+        }
+        
+        return $icon;
+    }, 10, 2 );
+    
+    
+inventor_listing_content
+########################
+
+This action allows you to show your own content in the listing display templates (row, box, column and masonry) pretty easily:
+
+.. code-block:: php
+    :linenos:
+
+    add_action( 'inventor_listing_content', function ( $listing_id, $display = null ) {
+    	if ( $display == 'row' ) {
+            echo '<dt>' . __( 'Custom title', 'domain' ) . '</dt>';
+            echo '<dd>Custom value</dd>';
+        }
+    }, 10, 2 );
+
+
+inventor_listing_detail_sections
+################################
+
+If you want to change default order of listing sections at its detail page, you can use following code snippet. Notice that you can change sections of specific post type or modify input array directly if necessary.
+
+.. code-block:: php
+    :linenos:
+    
+    add_filter( 'inventor_listing_detail_sections', function( $sections, $post_type ) {
+        return array(
+            'overview'      	=> __( 'Details', 'inventor' ),
+            'contact'       	=> __( 'Contact', 'inventor' ),
+            'location'      	=> __( 'Location', 'inventor' ),
+            'opening_hours' 	=> __( 'Opening Hours', 'inventor' ),
+            'social'        	=> __( 'Social connections', 'inventor' ),
+            'description'   	=> __( 'Description', 'inventor' ),
+            'gallery'       	=> __( 'Gallery', 'inventor' ),
+            'video'         	=> __( 'Video', 'inventor' ),
+            'food_menu'     	=> __( 'Meals And Drinks', 'inventor' ),
+            'faq'           	=> __( 'FAQ', 'inventor' ),
+            'children-listings'	=> __( 'Related listings', 'inventor' ),
+            'comments'      	=> null,
+            'report'        	=> null
+        );
+    }, 10, 2 );
+	
+inventor_poi_icons
+##################
+
+If you need to extend default icon set, you can use this filter to add your own icons. Each icon has to have its unique identifier and you need to handle its CSS styling. The example below adds few from the `Font Awesome`_ icons:
+
+.. _`Font Awesome`: http://fontawesome.io/icons/
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_poi_icons', function( $icons ) {
+        $icons['book'] = '<i class="fa fa-book"></i>';
+        $icons['bus'] = '<i class="fa fa-bus"></i>';
+        $icons['bicycle'] = '<i class="fa fa-bicycle"></i>';
+        return $icons;
+    } );
+
+inventor_metabox_social_networks
+################################
+
+Using this filter you can modify predefined **social networks** either modifying input list or returning whole new array:
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_metabox_social_networks', 'custom_social_networks', 10, 2 );
+    
+    function custom_social_networks( $social_networks, $post_type ) {
+        return array(
+            'facebook' 		=> 'Facebook',
+            'twitter' 		=> 'Twitter',
+            'instagram' 	=> 'Instagram',
+            'youtube' 		=> 'YouTube',
+            'linkedin' 		=> 'LinkedIn',
+            'skype' 		=> 'Skype',
+        );
+    }
+
+
+inventor_submission_allowed_listing_post_types
+##############################################
+
+Somebody may need to disable some of the listing post types for users at frontend submission, but want to keep them enabled for internal management in WP admin. It can be done: 
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_submission_allowed_listing_post_types', 'disable_on_frontend' );
+
+    function disable_on_frontend( $post_types ) {
+        return array_diff( $post_types, ['hotel', 'car']);
+    }
+
+    
+inventor_submission_steps
+#########################
+
+By default, submission contains steps for every listing metabox. Each metabox has its unique key. Using this filter you can change order of submission steps or modify title and description of each metabox in the submission process. In the following example we changed the order and removed some steps:
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_submission_steps', function( $steps, $post_type ) {
+    	return array(
+            'general' => $steps['general'],
+            'contact' => $steps['contact'],
+            'gallery' => $steps['gallery'],
+        );
+    }, 10, 2 );
+
+
+Keys of predefined metaboxes are: ``general``, ``banner``, ``gallery``, ``video``, ``location``, ``price``, ``contact``, ``listing_category``, ``opening_hours``, ``social``, ``faq``, ``branding``, ``color``, ``date``, ``time``, ``date_interval``, ``datetime_interval``, ``time_interval``, ``date_and_time_interval``.
+
+.. note:: Key of custom metaboxes is a metabox ID without ``listing_<post_type>_`` prefix.
+
+
+inventor_metabox_assigned
+#########################
+
+Listing type manager allows you to create custom post types, metaboxes and fields. But if you need to disable some metaboxes of predefined listing types, you can use code below:  
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_metabox_assigned', 'unassign_metabox', 10, 3 );
+    
+    function unassign_metabox( $assigned, $metabox, $post_type ) {
+        if( 'contact' == $metabox && $post_type == 'business' ) {
+            return false;
+        }
+        
+        return $assigned;
+    }
+    
+
+.. note:: List of all predefined metaboxes is mentioned in the chapter :doc:`Fields and metaboxes <../developer-guide/fields-and-metaboxes>`
+
+
+inventor_metabox_field_enabled
+##############################
+
+You can also disable any metabox **field** of specific listing type. For example if you need to disable street view in location metabox, use this code snippet:
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_metabox_field_enabled', 'disable_street_view', 10, 4 );
+    
+    function disable_street_view( $enabled, $metabox_id, $field_id, $post_type ) {
+        if( 'listing_street_view' == $field_id ) {
+            return false;
+        }
+        
+        return $enabled;
+    }
+
+
+.. note:: List of all predefined fields is mentioned in the chapter :doc:`Fields and metaboxes <../developer-guide/fields-and-metaboxes>`
+    
+
+inventor_metabox_field_type
+###########################
+
+You can change **field type** of specific metabox field very easily. For example if you need to change location to multicheck instead of single select box, use this code snipet:
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_metabox_field_type', 'multiple_locations', 10, 4 );
+    
+    function multiple_locations( $field_type, $metabox_id, $field_id, $post_type ) {
+        if( 'listing_locations' == $field_id ) {
+            return 'taxonomy_multicheck_hierarchy';
+        }
+        
+        return $field_type;
+    }
+    
+    
+inventor_metabox_field_name
+###########################
+
+If you need, you can change **field** name. For example code snippet below rename "Location" field to "Region":
+
+.. code-block:: php
+    :linenos:
+
+    add_filter( 'inventor_metabox_field_name', 'rename_field', 10, 4 );
+    
+    function rename_field( $name, $metabox_id, $field_id, $post_type ) {
+        if( 'listing_locations' == $field_id ) {
+            return __( 'Region', 'textdomain' );
+        }
+        
+        return $name;
+    }
+    
+
+inventor_metabox_field_attributes
+#################################
+
+Some of the fields can contain special HTML **attributes**. Snippet below adds "required" attribute to the "Featured Image" field:
+
+.. code-block:: php
+    :linenos:
+    
+    add_filter( 'inventor_metabox_field_attributes', function ( $attributes, $metabox_id, $field_id, $post_type ) {
+        if ( 'listing_featured_image' == $field_id ) {
+            $attributes['required'] = 'required';
+        }
+
+        return $attributes;
+    }, 10, 4 );
+    
+    
+inventor_compare_fields
+#######################
+
+Default comparison functionality compares the most common predefined fields. Using this filter you can add your own custom fields to the comparison table.
+
+.. code-block:: php
+    :linenos:
+    
+    add_filter( 'inventor_compare_fields', function( $fields_to_compare ) {
+        $fields_to_compare['listing_my_first_field_id'] = __( 'Name of first field', 'inventor' );
+        $fields_to_compare['listing_my_second_field_id'] = __( 'Name of second field', 'inventor' );
+        return $fields_to_compare;
+    } );
+
+
+inventor_filter_sort_by_choices
+###############################
+
+If you don't need the some of the sorting options, you can disable them easily. Here is a sample how to disable sorting by price:
+
+.. code-block:: php
+    :linenos:
+    
+    add_filter( 'inventor_filter_sort_by_choices', function( $choices ) {
+        if( array_key_exists( 'price', $choices ) ) {
+            unset( $choices['price'] );
+        }
+        
+        return $choices;
+    }, 11 );
+
+    
+Available sorting choices are: *price*, *title*, *published*, *rating*, *popularity*

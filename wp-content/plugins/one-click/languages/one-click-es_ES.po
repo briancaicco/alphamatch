@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: One Click\n"
+"POT-Creation-Date: 2016-04-06 09:41+0200\n"
+"PO-Revision-Date: 2016-05-01 13:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: includes/class-one-click-menu.php:32 templates/launcher.php:2
+msgid "One Click Installation"
+msgstr ""
+
+#: one-click.php:68
+msgid "WordPress Content"
+msgstr ""
+
+#: one-click.php:69
+msgid ""
+"Images will be downloaded from external source so please be patient. "
+"Required plugin <a href=\"https://wordpress.org/plugins/wordpress-importer/"
+"\">WordPress Importer</a>."
+msgstr ""
+
+#: one-click.php:75
+msgid "Customizer Theme Options"
+msgstr ""
+
+#: one-click.php:76
+msgid ""
+"Options imported from customizer. Plugin which was used to export options <a "
+"href=\"https://wordpress.org/plugins/customizer-export-import/\">Customizer "
+"Export/Import</a>."
+msgstr ""
+
+#: one-click.php:82
+msgid "Widgets Content &amp; Options"
+msgstr ""
+
+#: one-click.php:83
+msgid ""
+"Widget content and sidebar positions. Required plugin <a href=\"https://"
+"wordpress.org/plugins/widget-settings-importexport/\">Widget Settings "
+"Importer/Exporter</a>."
+msgstr ""
+
+#: one-click.php:89
+msgid "Widget Logic"
+msgstr ""
+
+#: one-click.php:90
+msgid ""
+"Widget Logic conditional tags import for better widget management. Required "
+"plugin <a href=\"https://wordpress.org/plugins/widget-logic/\">Widget Logic</"
+"a>."
+msgstr ""
+
+#: one-click.php:96
+msgid "Custom Options"
+msgstr ""
+
+#: one-click.php:97
+msgid ""
+"Custom options import functionality to fix same basic variables or proper "
+"menu locations."
+msgstr ""
+
+#: templates/launcher.php:12
+msgid "Exports folder in your current theme does not exists."
+msgstr ""
+
+#: templates/launcher.php:22
+msgid "All available steps has been successfully processed."
+msgstr ""
+
+#: templates/launcher.php:29
+msgid "Run Missing Steps"
+msgstr ""
+
+#: templates/launcher.php:31
+msgid "Launch Installation"
+msgstr ""
+
+#: templates/launcher.php:41
+msgid "Missing Plugins Detected"
+msgstr ""
+
+#: templates/launcher.php:47
+msgid ""
+"You are missing plugins which are required for running one click "
+"installation. Please install plugins listed below."
+msgstr ""
