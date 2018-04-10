@@ -504,15 +504,15 @@ add_filter( 'init', 'redirect_registration_page' );
 
 function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
 
-$message = "Someone has requested a password reset for the following account:
+$message = "<p>Someone has requested a password reset for the following account:</p>
 
 " . sprintf(__('%s'), $user_data->user_email) . "
 
-If this was a mistake, just ignore this email and nothing will happen.
+<p>If this was a mistake, just ignore this email and nothing will happen.</p>
 
-To reset your password, visit the following address:
+<p>To reset your password, visit the following address:</p>
 
-" . network_site_url("wp-login.php?action=rp&key=$key&login=" . rawurlencode($user_login), 'login') . "\r\n";
+<a href=' " . network_site_url('wp-login.php?action=rp&key=$key&login=' . rawurlencode($user_login), 'login') . "\r\n > Click here to reset password.</a> ";
 
 
   return $message;
