@@ -483,32 +483,39 @@ function isFuture($time)
 
 // add_action( 'init','redirect_login_page' );
 
-function alpha_login_redirect( $redirect_to, $request, $user ) {
-    //is there a user to check?
-    if (isset($user->roles) && is_array($user->roles)) {
-        //check for subscribers
-        if (in_array('subscriber', $user->roles)) {
-            // redirect them to another URL, in this case, the homepage 
-            $redirect_to =  home_url();
-        }
-    }
 
-    return $redirect_to;
-}
-
-add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+add_filter( 'login_redirect', function( $url, $query, $user ) {
+	return home_url();
+}, 10, 3 );
 
 
-function redirect_registration_page()
-{
-	global $pagenow;
 
-	if ( ( strtolower($pagenow) == 'wp-login.php') && ( strtolower( $_GET['action']) == 'register' ) ) {
-		wp_redirect( home_url('/register'));
-	}
-}
+// function alpha_login_redirect( $redirect_to, $request, $user ) {
+//     //is there a user to check?
+//     if (isset($user->roles) && is_array($user->roles)) {
+//         //check for subscribers
+//         if !(in_array('administrator', $user->roles)) {
+//             // redirect them to another URL, in this case, the homepage 
+//             $redirect_to =  home_url();
+//         }
+//     }
 
-add_filter( 'init', 'redirect_registration_page' );
+//     return $redirect_to;
+// }
+
+// add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+
+
+// function redirect_registration_page()
+// {
+// 	global $pagenow;
+
+// 	if ( ( strtolower($pagenow) == 'wp-login.php') && ( strtolower( $_GET['action']) == 'register' ) ) {
+// 		wp_redirect( home_url('/register'));
+// 	}
+// }
+
+// add_filter( 'init', 'redirect_registration_page' );
 
 
 
