@@ -484,9 +484,9 @@ function isFuture($time)
 // add_action( 'init','redirect_login_page' );
 
 
-add_filter( 'login_redirect', function( $url, $query, $user ) {
-	return home_url();
-}, 10, 3 );
+// add_filter( 'login_redirect', function( $url, $query, $user ) {
+// 	return home_url();
+// }, 10, 3 );
 
 
 
