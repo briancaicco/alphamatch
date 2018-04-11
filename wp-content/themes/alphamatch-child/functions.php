@@ -467,22 +467,36 @@ function isFuture($time)
  * @since 0.1.0
  * @uses wp_login_form() Displays the login form.
  */
-function redirect_login_page(){
+// function redirect_login_page(){
 
-    // Store for checking if this page equals wp-login.php
-    $page_viewed = basename( $_SERVER['REQUEST_URI'] );
+//     // Store for checking if this page equals wp-login.php
+//     $page_viewed = basename( $_SERVER['REQUEST_URI'] );
 
-    // permalink to the custom login page
-    $login_page  = get_permalink( '10' );
+//     // permalink to the custom login page
+//     $login_page  = get_permalink( '10' );
 
-    if( $page_viewed == "wp-login.php" ) {
-        wp_redirect( $login_page );
-        exit();
+//     if( $page_viewed == "wp-login.php" ) {
+//         wp_redirect( $login_page );
+//         exit();
+//     }
+// }
+
+// add_action( 'init','redirect_login_page' );
+
+function alpha_login_redirect( $redirect_to, $request, $user ) {
+    //is there a user to check?
+    if (isset($user->roles) && is_array($user->roles)) {
+        //check for subscribers
+        if (in_array('subscriber', $user->roles)) {
+            // redirect them to another URL, in this case, the homepage 
+            $redirect_to =  home_url();
+        }
     }
+
+    return $redirect_to;
 }
 
-add_action( 'init','redirect_login_page' );
-
+add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 
 function redirect_registration_page()

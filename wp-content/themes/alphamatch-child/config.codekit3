@@ -118,6 +118,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/assets\/css\/superlist-custom.css.bak": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/assets\/css\/superlist-custom.css.bak",
+		"oF": 0
+		},
 	"\/assets\/css\/superlist-green-dark.css": {
 		"aP": 1,
 		"bl": 0,
@@ -375,32 +382,32 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/js\/alpha-msg-seller-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/alpha-msg-seller-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/js\/alpha-msg-seller.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/alpha-msg-seller-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/assets\/js\/superlist.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/superlist-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/validate-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/validate-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/validate.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/validate-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3695,6 +3702,152 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/libraries\/raty\/fonts\/raty.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/fonts\/raty.eot",
+		"oF": 0
+		},
+	"\/libraries\/raty\/fonts\/raty.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/libraries\/raty\/fonts\/raty.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/libraries\/raty\/fonts\/raty.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/fonts\/raty.ttf",
+		"oF": 0
+		},
+	"\/libraries\/raty\/fonts\/raty.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/fonts\/raty.woff",
+		"oF": 0
+		},
+	"\/libraries\/raty\/images\/cancel-off.png": {
+		"ft": 32768,
+		"iS": 699,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/images\/cancel-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/libraries\/raty\/images\/cancel-on.png": {
+		"ft": 32768,
+		"iS": 715,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/images\/cancel-on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/libraries\/raty\/images\/star-half.png": {
+		"ft": 32768,
+		"iS": 667,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/images\/star-half.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/libraries\/raty\/images\/star-half.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/libraries\/raty\/images\/star-half.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/libraries\/raty\/images\/star-off.png": {
+		"ft": 32768,
+		"iS": 685,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/images\/star-off.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/libraries\/raty\/images\/star-off.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/libraries\/raty\/images\/star-off.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/libraries\/raty\/images\/star-on.png": {
+		"ft": 32768,
+		"iS": 631,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/images\/star-on.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/libraries\/raty\/images\/star-on.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/libraries\/raty\/images\/star-on.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/libraries\/raty\/jquery.raty-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/jquery.raty-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/libraries\/raty\/jquery.raty.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/jquery.raty-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/libraries\/raty\/jquery.raty.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/libraries\/raty\/jquery.raty-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/page-dashboard.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3772,6 +3925,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/superlist-custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/superlist-custom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/tag.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3807,6 +3970,13 @@
 		"oAP": "\/templates\/archive-listing.php",
 		"oF": 0
 		},
+	"\/templates\/class-inventor-metaboxes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/class-inventor-metaboxes.php",
+		"oF": 0
+		},
 	"\/templates\/content-page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3826,6 +3996,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/templates\/content-post.php",
+		"oF": 0
+		},
+	"\/templates\/content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/content.php",
 		"oF": 0
 		},
 	"\/templates\/document-title.php": {
@@ -3884,11 +4061,32 @@
 		"oAP": "\/templates\/header-parts\/header-user-menu.php",
 		"oF": 0
 		},
+	"\/templates\/listing-upgrade.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/listing-upgrade.php",
+		"oF": 0
+		},
 	"\/templates\/listings-row.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/templates\/listings-row.php",
+		"oF": 0
+		},
+	"\/templates\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/login.php",
+		"oF": 0
+		},
+	"\/templates\/payment\/payment-form.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/payment\/payment-form.php",
 		"oF": 0
 		},
 	"\/templates\/users\/card.php": {
