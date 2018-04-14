@@ -631,6 +631,17 @@ div.dropdown-menu{
 }
 
 
+.listing-column-title{
+	h3{
+		a{
+			&:hover{
+				color: #fff !important;
+			}
+		}
+	}
+}
+
+
 // Submission
 ///////////////////////////////////////////////////////////////////////////////
 .submission-choose-type{
