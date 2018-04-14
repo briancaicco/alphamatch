@@ -15288,8 +15288,19 @@ div.dropdown-menu {
 .inventor-slider-item-info-button a:hover {
   color: #fff !important; }
 
-.listing-column-title h3 a:hover {
-  color: #fff !important; }
+.listing-column {
+  box-shadow: none;
+  border-bottom: 1px solid #ddd; }
+
+.listing-column-title {
+  background: #fff !important; }
+  .listing-column-title h3 {
+    line-height: 18px; }
+    .listing-column-title h3 a {
+      color: #333; }
+
+.listing-column-bottom-title .inventor-reviews-rating {
+  display: none; }
 
 .submission-choose-type li a:hover {
   color: #fff !important; }

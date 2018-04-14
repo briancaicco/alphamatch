@@ -4097,6 +4097,13 @@
 		"oAP": "\/templates\/login.php",
 		"oF": 0
 		},
+	"\/templates\/modal.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/modal.php",
+		"oF": 0
+		},
 	"\/templates\/payment\/payment-form.php": {
 		"cB": 0,
 		"ft": 8192,

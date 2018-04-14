@@ -630,14 +630,27 @@ div.dropdown-menu{
 	}
 }
 
+.listing-column{
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+}
 
 .listing-column-title{
+	background: #fff !important;
 	h3{
+		line-height: 18px;
 		a{
+			color: #333;
 			&:hover{
-				color: #fff !important;
+				// color: #fff !important;
 			}
 		}
+	}
+}
+
+.listing-column-bottom-title{
+	.inventor-reviews-rating{
+		display: none;
 	}
 }
 
