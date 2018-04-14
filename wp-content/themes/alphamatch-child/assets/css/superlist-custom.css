@@ -14887,13 +14887,17 @@ ul.collections {
 .breadcrumb {
   display: none; }
 
-.alert.alert-primary, .alert.alert-error, .alert.alert-dismissible, .alert.alert-success {
+.alert.alert-primary,
+.alert.alert-error,
+.alert.alert-dismissible,
+.alert.alert-success {
   background: #ecad20 !important; }
 
 h1.detail-title {
   color: #555 !important; }
 
-.pum-theme-8182 .pum-container, .pum-theme-default-theme .pum-container {
+.pum-theme-8182 .pum-container,
+.pum-theme-default-theme .pum-container {
   padding: 0px !important; }
 
 .clearfix, .cmb-form, .quicktags-toolbar, .header-bar-inner, .header-top, .footer-top-inner, .footer-bottom, #primary .widget_filter form, .infobox-item, .map-content form, .listing-detail-attributes, .listing-detail-contact, .listing-detail-property-price-comparison, .amenities, .listing-detail-food, .listings-slider-dots, .post, .filter .checkbox-wrapper, .sidebar .filter-sorting-inner ul, .tab-content, .footer .widget_inventor_boxes .row > div, .footer .widget_inventor_boxes .listing-categories-cards > div, .footer .widget_inventor_boxes .listing-types-cards > div, .footer .widget_inventor_boxes .locations-posters > div, .footer .widget_inventor_boxes .listing-detail-resume-experience .listing-detail-resume-experience-levels > div, .listing-detail-resume-experience .footer .widget_inventor_boxes .listing-detail-resume-experience-levels > div, .footer .widget_inventor_boxes .blog #primary .content > div, .blog #primary .footer .widget_inventor_boxes .content > div, .footer .widget_inventor_boxes .widget_faq .faq > div, .widget_faq .footer .widget_inventor_boxes .faq > div, .footer .widget_inventor_boxes .tab-content ul > div, .tab-content .footer .widget_inventor_boxes ul > div, .footer .widget_inventor_boxes .video-cover-filter form > div, .video-cover-filter .footer .widget_inventor_boxes form > div, .footer .widget_inventor_boxes .submission-choose-type ul > div, .submission-choose-type .footer .widget_inventor_boxes ul > div, .footer .widget_inventor_boxes .user-list > div, .footer .widget_inventor_boxes .user-listings > div, .footer .widget_inventor_boxes .applicants-list > div, .footer .widget_inventor_boxes .inventor-cover-filter form > div, .inventor-cover-filter .footer .widget_inventor_boxes form > div, .testimonial-title, .comment-form, .watchdog-lookup {
@@ -14975,7 +14979,8 @@ h1.detail-title {
 .errText.is-hidden {
   display: none; }
 
-.billing-details .billing-registration-number, .billing-details .billing-vat-number {
+.billing-details .billing-registration-number,
+.billing-details .billing-vat-number {
   display: none !important; }
 
 .header-wrapper {
@@ -15008,7 +15013,11 @@ h1.detail-title {
   bottom: -4px !important;
   background-color: transparent !important; }
 
-.header-navigation .nav > li.current-menu-item:after, .header-navigation .footer-top .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-top .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after, .header-navigation .footer-top .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-top .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after {
+.header-navigation .nav > li.current-menu-item:after, .header-navigation .footer-top .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-top .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after, .header-navigation .footer-bottom .widget.widget_nav_menu ul > li.current-menu-item:after, .footer-bottom .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after,
+.header-navigation .footer-top .widget.widget_nav_menu ul > li.current-menu-item:after,
+.footer-top .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after,
+.header-navigation .footer-bottom .widget.widget_nav_menu ul > li.current-menu-item:after,
+.footer-bottom .widget.widget_nav_menu .header-navigation ul > li.current-menu-item:after {
   background-color: transparent !important; }
 
 .header-user-menu-avatar {
@@ -15050,24 +15059,91 @@ div.dropdown-menu {
 .listing-types-card-image i, .pagination .page-numbers, .marker-thumbnail, .listing-box, .listing-column, .listing-column-label-special, .listing-row, .listing-small, .listings-system-legend li, .listings-system-legend a, .listing-system, .listing-author, .listing-author-image, .listing-detail-section-content-wrapper, .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper,
 .listing-detail-description-wrapper, .listing-detail-attributes, .listing-detail-contact, .listing-detail-section-faq-list, .listing-detail-property-price-comparison, .listing-detail-property-amenities ul li a, .widget_listing_details, .listing-detail-gallery-preview .owl-item div img, .listing-detail-section-generic .taxonomy_multicheck a,
 .listing-detail-section-generic .taxonomy_multicheck_inline a,
-.listing-detail-section-generic .taxonomy_multicheck_hierarchy a, .listing-detail-location-wrapper, .opening-hours, .listing-detail-food-wrapper, .listing-detail-resume-working-history dl, .listing-detail-resume-experience, .post-meta, .post.post-masonry .post-masonry-content, .faq-item, .review-image, .review-inner, .comment-form, .widget .submission-steps, .submission-choose-type, .package-info-wrapper, .watchdog-row, .coupon-small, .coupon-box, .widget_coupon_detail, .invoices-table, .transactions-table, .inventor-slider-list .owl-prev, .inventor-slider-list .owl-next, .compare-table-label-special, #compare-info, ul.collections, #collection-pickup, .cmb-form, .header-user-menu .dropdown-menu ul, .header-action-inner, .widget.widget_filter form, .widget.widget_booking_form form, .sidebar_dashboard ul.menu, .widget_listings .listing-carousel.owl-carousel .owl-prev, .widget_listings .listing-carousel.owl-carousel .owl-next, .widget_packages .packages, .listing-categories-card, .listing-types-card, .location-poster, .listing-categories-card-image i, .listing-types-card-image i, .pagination .page-numbers, .marker-thumbnail, .listing-box, .listing-column, .listing-column-label-special, .listing-row, .listing-small, .listings-system-legend li, .listings-system-legend a, .listing-system, .listing-author, .listing-author-image, .listing-detail-section-content-wrapper, .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper,
-.listing-detail-description-wrapper, .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper,
-.listing-detail-section-generic .listing-detail-description-wrapper, .listing-detail-description-wrapper, .listing-detail-attributes, .listing-detail-contact, .listing-detail-section-faq-list, .listing-detail-property-price-comparison, .listing-detail-property-amenities ul li a, .widget_listing_details, .listing-detail-gallery-preview .owl-item div img, .listing-detail-section-generic .taxonomy_multicheck a, .listing-detail-section-generic .taxonomy_multicheck_inline a, .listing-detail-section-generic .taxonomy_multicheck_hierarchy a, .listing-detail-location-wrapper, .opening-hours, .listing-detail-food-wrapper, .listing-detail-resume-working-history dl, .listing-detail-resume-experience, .post-meta, .post.post-masonry .post-masonry-content, .faq-item, .review-image, .review-inner, .comment-form, .widget .submission-steps, .submission-choose-type, .package-info-wrapper, .watchdog-row, .coupon-small, .coupon-box, .widget_coupon_detail, .invoices-table, .transactions-table, .inventor-slider-list .owl-prev, .inventor-slider-list .owl-next, .compare-table-label-special, #compare-info, ul.collections, #collection-pickup {
+.listing-detail-section-generic .taxonomy_multicheck_hierarchy a, .listing-detail-location-wrapper, .opening-hours, .listing-detail-food-wrapper, .listing-detail-resume-working-history dl, .listing-detail-resume-experience, .post-meta, .post.post-masonry .post-masonry-content, .faq-item, .review-image, .review-inner, .comment-form, .widget .submission-steps, .submission-choose-type, .package-info-wrapper, .watchdog-row, .coupon-small, .coupon-box, .widget_coupon_detail, .invoices-table, .transactions-table, .inventor-slider-list .owl-prev, .inventor-slider-list .owl-next, .compare-table-label-special, #compare-info, ul.collections, #collection-pickup,
+.cmb-form,
+.header-user-menu .dropdown-menu ul,
+.header-action-inner,
+.widget.widget_filter form,
+.widget.widget_booking_form form,
+.sidebar_dashboard ul.menu,
+.widget_listings .listing-carousel.owl-carousel .owl-prev,
+.widget_listings .listing-carousel.owl-carousel .owl-next,
+.widget_packages .packages,
+.listing-categories-card,
+.listing-types-card,
+.location-poster,
+.listing-categories-card-image i,
+.listing-types-card-image i,
+.pagination .page-numbers,
+.marker-thumbnail,
+.listing-box,
+.listing-column,
+.listing-column-label-special,
+.listing-row,
+.listing-small,
+.listings-system-legend li,
+.listings-system-legend a,
+.listing-system,
+.listing-author,
+.listing-author-image, .listing-detail-section-content-wrapper, .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper,
+.listing-detail-description-wrapper,
+.listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper,
+.listing-detail-section-generic .listing-detail-description-wrapper,
+.listing-detail-description-wrapper,
+.listing-detail-attributes,
+.listing-detail-contact,
+.listing-detail-section-faq-list,
+.listing-detail-property-price-comparison,
+.listing-detail-property-amenities ul li a,
+.widget_listing_details,
+.listing-detail-gallery-preview .owl-item div img,
+.listing-detail-section-generic .taxonomy_multicheck a,
+.listing-detail-section-generic .taxonomy_multicheck_inline a,
+.listing-detail-section-generic .taxonomy_multicheck_hierarchy a,
+.listing-detail-location-wrapper,
+.opening-hours,
+.listing-detail-food-wrapper,
+.listing-detail-resume-working-history dl,
+.listing-detail-resume-experience,
+.post-meta,
+.post.post-masonry .post-masonry-content,
+.faq-item,
+.review-image,
+.review-inner,
+.comment-form,
+.widget .submission-steps,
+.submission-choose-type,
+.package-info-wrapper,
+.watchdog-row,
+.coupon-small,
+.coupon-box,
+.widget_coupon_detail,
+.invoices-table,
+.transactions-table,
+.inventor-slider-list .owl-prev,
+.inventor-slider-list .owl-next,
+.compare-table-label-special,
+#compare-info,
+ul.collections,
+#collection-pickup {
   box-shadow: none;
   border-bottom: 1px solid #ddd; }
 
-.pum-theme-8340 .pum-content + .pum-close, .pum-theme-nav-popover .pum-content + .pum-close {
+.pum-theme-8340 .pum-content + .pum-close,
+.pum-theme-nav-popover .pum-content + .pum-close {
   position: absolute;
   right: 0px;
   top: -60px;
   background: transparent !important; }
 
-.pum-theme-8340 .pum-content, .pum-theme-nav-popover .pum-content a {
+.pum-theme-8340 .pum-content,
+.pum-theme-nav-popover .pum-content a {
   color: #fff !important;
   padding: 5px 0 !important;
   display: block;
   transition: all .35s ease-in-out; }
-  .pum-theme-8340 .pum-content:hover, .pum-theme-nav-popover .pum-content a:hover {
+  .pum-theme-8340 .pum-content:hover,
+  .pum-theme-nav-popover .pum-content a:hover {
     color: #ecad20 !important; }
 
 #pum-8338 .pum-theme-nav-popover .pum-content h1 {
@@ -15114,7 +15190,12 @@ div.dropdown-menu {
 .detail-banner-meta-info {
   font-size: 22px; }
 
-.detail-banner .detail-banner-btn.heart.marked i:before, .detail-banner .heart.marked.inventor-favorites-btn-toggle i:before, .detail-banner .heart.marked.inventor-compare-btn-toggle i:before, .detail-banner .heart.marked.inventor-jobs-apply-btn i:before, .detail-banner .heart.marked.print-listing i:before, .detail-banner .heart.marked.share-listing i:before, .detail-banner .heart.marked.inventor-favorites-btn-toggle i:before, .detail-banner .heart.marked.inventor-compare-btn-toggle i:before, .detail-banner .heart.marked.inventor-jobs-apply-btn i:before, .detail-banner .heart.marked.print-listing i:before, .detail-banner .heart.marked.share-listing i:before {
+.detail-banner .detail-banner-btn.heart.marked i:before, .detail-banner .heart.marked.inventor-favorites-btn-toggle i:before, .detail-banner .heart.marked.inventor-compare-btn-toggle i:before, .detail-banner .heart.marked.inventor-jobs-apply-btn i:before, .detail-banner .heart.marked.print-listing i:before, .detail-banner .heart.marked.share-listing i:before,
+.detail-banner .heart.marked.inventor-favorites-btn-toggle i:before,
+.detail-banner .heart.marked.inventor-compare-btn-toggle i:before,
+.detail-banner .heart.marked.inventor-jobs-apply-btn i:before,
+.detail-banner .heart.marked.print-listing i:before,
+.detail-banner .heart.marked.share-listing i:before {
   color: #ecad20 !important; }
 
 .cta-banner .inventor-slider-item-info-button {
@@ -15133,10 +15214,12 @@ div.dropdown-menu {
 .cta-banner-footer .inventor-slider-item-info-wrapper {
   padding-left: 300px; }
 
-#inventor_slider-3 .owl-controls, #inventor_slider-4 .owl-controls {
+#inventor_slider-3 .owl-controls,
+#inventor_slider-4 .owl-controls {
   display: none !important; }
 
-.home .filter-sorting-options, .archive .filter-sorting-options {
+.home .filter-sorting-options,
+.archive .filter-sorting-options {
   border: none !important; }
 
 .post-type-archive-listing .document-title h1 {
@@ -15293,16 +15376,19 @@ div.dropdown-menu {
     .footer .inventor-slider-item-info-wrapper .inventor-slider-item-info .inventor-slider-item-info-headline {
       padding-top: 13px; }
 
-.home .widget.widget_filter form, .archive .widget.widget_filter form {
+.home .widget.widget_filter form,
+.archive .widget.widget_filter form {
   box-shadow: none !important;
   border-bottom: 1px solid #ddd !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
   background: transparent !important; }
-  .home .widget.widget_filter form .filter-sorting-inner, .archive .widget.widget_filter form .filter-sorting-inner {
+  .home .widget.widget_filter form .filter-sorting-inner,
+  .archive .widget.widget_filter form .filter-sorting-inner {
     padding-left: 0px;
     padding-right: 0px; }
-  .home .widget.widget_filter form .filter-sorting-inner-styles, .archive .widget.widget_filter form .filter-sorting-inner-styles {
+  .home .widget.widget_filter form .filter-sorting-inner-styles,
+  .archive .widget.widget_filter form .filter-sorting-inner-styles {
     padding-right: 0px; }
 
 .inventor-slider-item-info-button a:hover {
@@ -15336,10 +15422,13 @@ div.dropdown-menu {
   color: #868686 !important;
   clear: both;
   margin: 0px; }
-  #fep-wrapper #fep-menu-newmessage, #fep-wrapper #fep-menu-settings, #fep-wrapper #fep-menu-directory {
+  #fep-wrapper #fep-menu-newmessage,
+  #fep-wrapper #fep-menu-settings,
+  #fep-wrapper #fep-menu-directory {
     display: none !important; }
 
-#fep-header, #fep-footer {
+#fep-header,
+#fep-footer {
   border: 0px !important; }
 
 .fep-form-field {
@@ -15352,7 +15441,9 @@ div.dropdown-menu {
   font-size: 14px;
   font-weight: bold; }
 
-#fep-menu .fep-button, .fep-button, .fep-button-active {
+#fep-menu .fep-button,
+.fep-button,
+.fep-button-active {
   display: inline-block;
   color: #fff !important;
   font-size: 13px;
@@ -15368,7 +15459,8 @@ div.dropdown-menu {
   text-decoration: none !important;
   cursor: pointer; }
 
-#fep-menu .fep-button:hover, .fep-button-active {
+#fep-menu .fep-button:hover,
+.fep-button-active {
   /* background:#D3EEF5; */
   /* color: #333; */
   font-size: 13px;
@@ -15407,7 +15499,7 @@ div.dropdown-menu {
       text-decoration: underline; }
 
 #fep-content form {
-  margin: 0  0 30px 0px !important; }
+  margin: 0 0 30px 0px !important; }
 
 .fep-messagebox-search-form-field {
   padding: 0 20px;
@@ -15419,7 +15511,8 @@ div.dropdown-menu {
 #fep-messagebox-search-form {
   margin-top: 0px; }
 
-.fep-bulk-action, .fep-filter {
+.fep-bulk-action,
+.fep-filter {
   padding: 0px !important; }
 
 .fep-button {
@@ -15443,7 +15536,9 @@ div.dropdown-menu {
   color: #fff; }
 
 /*Notify Styling*/
-.fep-error, .fep-success, .fep-wp-error {
+.fep-error,
+.fep-success,
+.fep-wp-error {
   color: #af8016 !important;
   background-color: rgba(236, 173, 32, 0.5) !important;
   border: 0px !important;
@@ -15535,6 +15630,94 @@ div.dropdown-menu {
   display: flex;
   flex-direction: column; }
 
+.modal-inner {
+  display: none; }
+
+.modal-screen {
+  transition: all linear .2s;
+  visibility: hidden; }
+
+.modal-screen.open {
+  background-color: rgba(0, 0, 0, 0.9);
+  bottom: 0;
+  visibility: visible;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999; }
+
+.modal-screen .modal-close {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 32px;
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  transition: color .15s linear; }
+
+.modal-screen .modal-close:hover {
+  color: #fff; }
+
+.modal-screen .modal-inner {
+  background-color: transparent;
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%); }
+
+.modal-screen .modal-inner h2, .modal-screen .modal-inner .comment-reply-title,
+.modal-screen .modal-inner .comment-reply-title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 400;
+  margin: 0 0 120px 0;
+  text-align: center; }
+
+@media (max-width: 991px) {
+  .modal-screen .modal-inner h2, .modal-screen .modal-inner .comment-reply-title,
+  .modal-screen .modal-inner .comment-reply-title {
+    font-size: 26px;
+    margin: 0 0 50px 0; } }
+
+.modal-screen .modal-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 1200px) {
+  .modal-screen .modal-inner ul {
+    width: 815px; } }
+
+.modal-screen .modal-inner ul li {
+  display: inline-block;
+  margin: 5px 30px; }
+
+.modal-screen .modal-inner ul .fa {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.8) !important;
+  display: block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  width: 140px; }
+
+.modal-screen .modal-inner ul .fa:active, .modal-screen .modal-inner ul .fa:hover, .modal-screen .modal-inner ul .fa:focus {
+  background-color: #fff !important;
+  border: 0;
+  color: rgba(0, 0, 0, 0.8) !important; }
+
+@media (max-width: 991px) {
+  .modal-screen .modal-inner ul .fa {
+    font-size: 30px;
+    height: 70px;
+    line-height: 70px;
+    width: 70px; } }
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .detail-banner.detail-banner-simple {
@@ -15542,8 +15725,22 @@ div.dropdown-menu {
   .detail-banner-actions {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px; }
-  .share-listing, .inventor-compare-btn-toggle, .inventor-favorites-btn-toggle {
+    float: none !important;
+    margin-top: 0px !important;
+    margin-bottom: 30px !important;
+    flex-wrap: wrap; }
+    .detail-banner-actions .actions .share-listing {
+      display: none !important; }
+    .detail-banner-actions .actions .inventor-compare-btn-toggle {
+      margin-left: 0px !important; }
+  .share-buttons-addthis {
+    margin-top: 20px;
+    width: 100%; }
+  .detail-banner .detail-banner-meta {
+    margin-bottom: 20px !important; }
+  .share-listing,
+  .inventor-compare-btn-toggle,
+  .inventor-favorites-btn-toggle {
     width: auto !important; }
   .header-regular .header-navigation .nav > li > a, .header-regular .header-navigation .footer-top .widget.widget_nav_menu ul > li > a, .footer-top .widget.widget_nav_menu .header-regular .header-navigation ul > li > a, .header-regular .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a, .footer-bottom .widget.widget_nav_menu .header-regular .header-navigation ul > li > a {
     color: #333; }
@@ -15585,8 +15782,11 @@ div.dropdown-menu {
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .share-buttons-addthis {
+    width: auto;
+    margin-top: 0px; }
   .detail-banner-actions {
-    width: 45% !important; }
+    width: 100% !important; }
   .header-regular .header-navigation .nav > li > a, .header-regular .header-navigation .footer-top .widget.widget_nav_menu ul > li > a, .footer-top .widget.widget_nav_menu .header-regular .header-navigation ul > li > a, .header-regular .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a, .footer-bottom .widget.widget_nav_menu .header-regular .header-navigation ul > li > a {
     color: #fff; }
   .filter-sorting-inner {

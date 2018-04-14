@@ -13,7 +13,12 @@
         </div><!-- /.detail-banner-meta -->
 
         <div class="detail-banner-actions">
-            <?php do_action( 'inventor_listing_banner_actions', get_the_ID() ); ?>
+            <div class="actions">
+                <?php do_action( 'inventor_listing_banner_actions', get_the_ID() ); ?>
+            </div>
+            <div class="share-buttons-addthis">
+                <div class="addthis_inline_share_toolbox"></div>
+            </div>
         </div><!-- /.detail-banner-after -->
     </div><!-- /.detail-banner-wrapper -->
 </div><!-- /.container -->
