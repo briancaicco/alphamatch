@@ -262,6 +262,23 @@ div.dropdown-menu{
 	height: 0px !important;
 }
 
+
+.pop-up-nav{
+	h1{
+		
+	}
+}
+
+
+// Widgets
+///////////////////////////////////////////////////////////////////////////
+.box-shadow, .cmb-form, .header-user-menu .dropdown-menu ul, .header-action-inner, .widget.widget_filter form, .widget.widget_booking_form form, .sidebar_dashboard ul.menu, .widget_listings .listing-carousel.owl-carousel .owl-prev, .widget_listings .listing-carousel.owl-carousel .owl-next, .widget_packages .packages, .listing-categories-card, .listing-types-card, .location-poster, .listing-categories-card-image i, .listing-types-card-image i, .pagination .page-numbers, .marker-thumbnail, .listing-box, .listing-column, .listing-column-label-special, .listing-row, .listing-small, .listings-system-legend li, .listings-system-legend a, .listing-system, .listing-author, .listing-author-image, .listing-detail-section-content-wrapper, .listing-detail-gallery-wrapper, .listing-detail-section-generic .listing-detail-section-content-wrapper, .listing-detail-description-wrapper, .listing-detail-attributes, .listing-detail-contact, .listing-detail-section-faq-list, .listing-detail-property-price-comparison, .listing-detail-property-amenities ul li a, .widget_listing_details, .listing-detail-gallery-preview .owl-item div img, .listing-detail-section-generic .taxonomy_multicheck a, .listing-detail-section-generic .taxonomy_multicheck_inline a, .listing-detail-section-generic .taxonomy_multicheck_hierarchy a, .listing-detail-location-wrapper, .opening-hours, .listing-detail-food-wrapper, .listing-detail-resume-working-history dl, .listing-detail-resume-experience, .post-meta, .post.post-masonry .post-masonry-content, .faq-item, .review-image, .review-inner, .comment-form, .widget .submission-steps, .submission-choose-type, .package-info-wrapper, .watchdog-row, .coupon-small, .coupon-box, .widget_coupon_detail, .invoices-table, .transactions-table, .inventor-slider-list .owl-prev, .inventor-slider-list .owl-next, .compare-table-label-special, #compare-info, ul.collections, #collection-pickup {
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
 // POP overs
 ////////////////////////////////////////////////////////////////////////////
 
@@ -328,6 +345,31 @@ div.dropdown-menu{
 .alpha-logo-full{
 	max-width: 320px !important;
 }
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Listing
+///////////////////////////////////////////////////////////////////////////////
+// Hide star ratings
+.review-rating-total{
+	display: none !important;
+}
+
+.detail-banner-meta-info {
+	font-size: 22px;
+}
+
+.detail-banner .detail-banner-btn.heart.marked i:before, .detail-banner .heart.marked.inventor-favorites-btn-toggle i:before, .detail-banner .heart.marked.inventor-compare-btn-toggle i:before, .detail-banner .heart.marked.inventor-jobs-apply-btn i:before, .detail-banner .heart.marked.print-listing i:before, .detail-banner .heart.marked.share-listing i:before{
+	color: #ecad20 !important;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -927,10 +969,32 @@ div.dropdown-menu{
 	flex-direction: column;
 }
 
-/*==========  Mobile First Method  ==========*/
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+// Mobile First Method  
+//////////////////////////////////////////////////////////////////////////////////////
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
+
+
+	.detail-banner.detail-banner-simple{
+		height: 350px;
+	}
+
+	.detail-banner-actions{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 10px;
+
+	}
+
+	.share-listing, .inventor-compare-btn-toggle, .inventor-favorites-btn-toggle{
+		width: auto !important
+	}
+
+
 	.header-regular .header-navigation .nav > li > a {
 		color: #333;
 	}
@@ -998,6 +1062,11 @@ div.dropdown-menu{
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
+	.detail-banner-actions{
+		width: 45% !important;
+
+	}
+
 	.header-regular .header-navigation .nav > li > a {
 		color: #fff;
 	}
@@ -1013,6 +1082,10 @@ div.dropdown-menu{
 
 	 .home .widget_listings{
 		order: 2;
+	}
+
+	.detail-banner .detail-banner-wrapper{
+		top: 40px;
 	}
 
 }

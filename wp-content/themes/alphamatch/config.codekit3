@@ -8337,27 +8337,6 @@
 		"oAP": "\/plugins\/inventor\/templates\/banner-types\/video.php",
 		"oF": 0
 		},
-	"\/plugins\/inventor\/templates\/content-listing-banner-info.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/plugins\/inventor\/templates\/content-listing-banner-info.php",
-		"oF": 0
-		},
-	"\/plugins\/inventor\/templates\/content-listing-banner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/plugins\/inventor\/templates\/content-listing-banner.php",
-		"oF": 0
-		},
-	"\/plugins\/inventor\/templates\/content-listing.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/plugins\/inventor\/templates\/content-listing.php",
-		"oF": 0
-		},
 	"\/plugins\/inventor\/templates\/controls\/checkbox-multiple.php": {
 		"cB": 0,
 		"ft": 8192,
