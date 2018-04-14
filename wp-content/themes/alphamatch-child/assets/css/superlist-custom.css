@@ -15037,6 +15037,14 @@ a:hover, a:focus {
 div.dropdown-menu {
   border: 0px !important; }
 
+.header-user-menu-name a {
+  color: #fff !important; }
+  .header-user-menu-name a:hover {
+    color: #ecad20 !important; }
+
+.header-user-menu-name:after {
+  height: 0px !important; }
+
 .pum-theme-8340 .pum-content + .pum-close, .pum-theme-nav-popover .pum-content + .pum-close {
   position: absolute;
   right: 0px;

@@ -249,6 +249,18 @@ div.dropdown-menu{
 	border:  0px !important;	
 }
 
+.header-user-menu-name{
+
+	a{
+		color: #fff !important;
+		&:hover{
+			color: #ecad20 !important;
+		}
+	}
+}
+.header-user-menu-name:after{
+	height: 0px !important;
+}
 
 // POP overs
 ////////////////////////////////////////////////////////////////////////////
