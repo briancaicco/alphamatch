@@ -7,7 +7,7 @@
 		"uuidString": "EB560170-7E4A-45E9-B373-EFE540CC7C91"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -290,6 +290,7 @@
 	"\/assets\/img\/map.jpg": {
 		"ft": 16384,
 		"iS": 82767,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/img\/map.jpg",
 		"oF": 0,
@@ -1644,6 +1645,7 @@
 	"\/assets\/libraries\/colorbox\/content\/daisy.jpg": {
 		"ft": 16384,
 		"iS": 101126,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/daisy.jpg",
 		"oF": 0,
@@ -1654,6 +1656,7 @@
 	"\/assets\/libraries\/colorbox\/content\/daisy@2x.jpg": {
 		"ft": 16384,
 		"iS": 335898,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/daisy@2x.jpg",
 		"oF": 0,
@@ -1664,6 +1667,7 @@
 	"\/assets\/libraries\/colorbox\/content\/homer.jpg": {
 		"ft": 16384,
 		"iS": 8584,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/homer.jpg",
 		"oF": 0,
@@ -1674,6 +1678,7 @@
 	"\/assets\/libraries\/colorbox\/content\/marylou.jpg": {
 		"ft": 16384,
 		"iS": 52286,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/marylou.jpg",
 		"oF": 0,
@@ -1684,6 +1689,7 @@
 	"\/assets\/libraries\/colorbox\/content\/ohoopee1.jpg": {
 		"ft": 16384,
 		"iS": 71685,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/ohoopee1.jpg",
 		"oF": 0,
@@ -1694,6 +1700,7 @@
 	"\/assets\/libraries\/colorbox\/content\/ohoopee2.jpg": {
 		"ft": 16384,
 		"iS": 111141,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/ohoopee2.jpg",
 		"oF": 0,
@@ -1704,6 +1711,7 @@
 	"\/assets\/libraries\/colorbox\/content\/ohoopee3.jpg": {
 		"ft": 16384,
 		"iS": 69240,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/libraries\/colorbox\/content\/ohoopee3.jpg",
 		"oF": 0,
@@ -4126,7 +4134,8 @@
 	"creationDate": 537548469,
 	"displayValue": "alphamatch-child",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-facepalm"
+	"iconImageName": "meme-facepalm",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -5929,6 +5938,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

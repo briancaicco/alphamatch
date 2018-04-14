@@ -13,7 +13,7 @@
     </div><!-- /.main -->
 
     <footer class="footer">
-                <?php dynamic_sidebar( 'bottom' ); ?>
+        <?php dynamic_sidebar( 'bottom' ); ?>
 
     <section class="footer-nav">
     	<div class="container">
