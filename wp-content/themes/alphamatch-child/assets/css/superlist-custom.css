@@ -14905,6 +14905,32 @@ h1.detail-title {
 .wp-social-login-connect-with {
   display: none !important; }
 
+.wp-social-login-provider-facebook:before {
+  top: 10px; }
+
+.wp-social-login-provider-google:before {
+  top: 9px; }
+
+.wp-social-login-provider-twitter:before {
+  top: 8px; }
+
+.post-content .wp-social-login-widget {
+  padding: 20px 0px; }
+  .post-content .wp-social-login-widget a:hover {
+    color: #fff !important; }
+
+.login-form {
+  display: flex;
+  flex-direction: column; }
+  .login-form button.button {
+    order: 1; }
+
+.wp-social-login-widget {
+  order: 2; }
+
+.extra-actions {
+  order: 3; }
+
 .pulse {
   margin: 100px;
   display: block;
@@ -15007,6 +15033,9 @@ a:hover, a:focus {
 
 .site-search-toggle span {
   padding-left: 6px; }
+
+div.dropdown-menu {
+  border: 0px !important; }
 
 .pum-theme-8340 .pum-content + .pum-close, .pum-theme-nav-popover .pum-content + .pum-close {
   position: absolute;
@@ -15459,6 +15488,11 @@ a:hover, a:focus {
 .fep-odd-even > div:nth-child(odd) {
   background: rgba(236, 173, 32, 0.2); }
 
+/*==========  Flexbox adjustments  ==========*/
+.home .container {
+  display: flex;
+  flex-direction: column; }
+
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -15469,8 +15503,7 @@ a:hover, a:focus {
     padding-right: 0px; }
   .filter-create-listing {
     display: block;
-    width: 100%;
-    margin-top: 40px; }
+    width: 100%; }
   .home .widget .widget-pt {
     padding-top: 0px; }
   .cta-banner-footer .inventor-slider-item-info-wrapper {
@@ -15491,22 +15524,33 @@ a:hover, a:focus {
   #menu-footer-meta li {
     width: 100%;
     text-align: center !important;
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .home .widget_filter {
+    order: 2; }
+  .home .widget_listings {
+    order: 1; }
+  .filter-sorting-inner-styles .filter-create-listing {
+    width: 100% !important;
+    display: block; } }
 
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .header-regular .header-navigation .nav > li > a, .header-regular .header-navigation .footer-top .widget.widget_nav_menu ul > li > a, .footer-top .widget.widget_nav_menu .header-regular .header-navigation ul > li > a, .header-regular .header-navigation .footer-bottom .widget.widget_nav_menu ul > li > a, .footer-bottom .widget.widget_nav_menu .header-regular .header-navigation ul > li > a {
     color: #fff; }
-  .filter-sorting-inner-group {
-    display: inline; }
-  .filter-sorting-inner-styles {
-    display: inline;
-    float: right; }
-  .filter-create-listing {
-    margin-top: 0px !important;
-    width: auto !important;
-    display: inline !important; } }
+  .filter-sorting-inner {
+    display: flex;
+    justify-content: space-between; }
+  .home .widget_filter {
+    order: 1; }
+  .home .widget_listings {
+    order: 2; } }
 
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .filter-sorting-inner-styles {
+    display: inline !important;
+    float: right;
+    width: auto !important; } }
+
 /* Large Devices, Wide Screens */

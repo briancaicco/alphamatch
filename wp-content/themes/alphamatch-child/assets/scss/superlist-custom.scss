@@ -45,6 +45,45 @@ h1.detail-title {
 	display: none !important;
 }
 
+.wp-social-login-provider-facebook:before{
+	top: 10px;
+}
+
+.wp-social-login-provider-google:before{
+	top: 9px;
+}
+
+.wp-social-login-provider-twitter:before{
+	top: 8px;
+}
+
+.post-content{
+
+	.wp-social-login-widget{
+		padding: 20px 0px;
+
+		a{
+			&:hover{
+				color: #fff !important;
+			}
+		}
+	}
+}
+
+.login-form{
+	display: flex;
+	flex-direction: column;
+	button.button{
+		order: 1
+	}
+}
+
+.wp-social-login-widget{
+	order: 2;
+}
+.extra-actions{
+	order: 3;
+}
 
 // Pulse Effect
 ///////////////////////////////////////////////////////////////////////////////
@@ -203,6 +242,11 @@ a:hover, a:focus {
 
 .site-search-toggle span {
     padding-left: 6px;
+}
+
+
+div.dropdown-menu{
+	border:  0px !important;	
 }
 
 
@@ -841,6 +885,11 @@ a:hover, a:focus {
 	background: rgba(236, 173, 32, .2);
 }
 
+/*==========  Flexbox adjustments  ==========*/
+.home .container{
+	display: flex;
+	flex-direction: column;
+}
 
 /*==========  Mobile First Method  ==========*/
 
@@ -857,7 +906,7 @@ a:hover, a:focus {
 	.filter-create-listing{
 		display: block;
 		width: 100%;
-		margin-top: 40px;
+		//margin-top: 40px;
 	}
 	
 	.home .widget .widget-pt {
@@ -889,11 +938,24 @@ a:hover, a:focus {
 		text-align: center !important;
 		margin-left: 0px;
 	}
+	 .home .widget_filter{
+		order: 2;
+	}
+
+	 .home .widget_listings{
+		order: 1;
+	}
+
+	.filter-sorting-inner-styles{
+		.filter-create-listing{
+			width: 100% !important;
+			display: block;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-
 
 }
 
@@ -904,25 +966,28 @@ a:hover, a:focus {
 		color: #fff;
 	}
 
-	.filter-sorting-inner-group{
-		display: inline;
+	.filter-sorting-inner{
+		display: flex;
+		justify-content: space-between;
 	}
 
-	.filter-sorting-inner-styles{
-		display: inline;
-		float: right;
+		.home .widget_filter{
+		order: 1;
 	}
-	.filter-create-listing{
-		margin-top: 0px !important;
-		width: auto !important;;
-		display: inline !important;
+
+	 .home .widget_listings{
+		order: 2;
 	}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.filter-sorting-inner-styles{
+		display: inline !important;
+		float: right;
+		width: auto !important;
+	}
 }
 
 /* Large Devices, Wide Screens */
