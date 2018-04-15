@@ -15718,6 +15718,9 @@ ul.collections,
     line-height: 70px;
     width: 70px; } }
 
+.cmb-td {
+  text-align: left; }
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .detail-banner.detail-banner-simple {
