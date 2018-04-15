@@ -359,8 +359,7 @@ ul.collections,
 
 
 
-
-// POP overs
+// POP overs - plugin
 ////////////////////////////////////////////////////////////////////////////
 .pum-theme-8340 .pum-content+.pum-close,
 .pum-theme-nav-popover .pum-content+.pum-close {
@@ -521,6 +520,7 @@ ul.collections,
 ///////////////////////////////////////////////////////////////////////////////
 .document-title {
 	margin-top: 40px;
+	display: visible;
 
 	h1 {
 		color: $color-primary;
