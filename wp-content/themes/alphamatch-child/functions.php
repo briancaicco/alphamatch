@@ -462,6 +462,21 @@ function isFuture($time)
 
 
 /**
+ * Redirect non-admins to the homepage after logging into the site.
+ *
+ * @since 	1.0
+ */
+function alpha_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+}
+add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+
+
+
+
+
+
+/**
  * Login Page redirect
  *
  * @since 0.1.0
@@ -484,9 +499,9 @@ function isFuture($time)
 // add_action( 'init','redirect_login_page' );
 
 
-add_filter( 'login_redirect', function( $url, $query, $user ) {
-	return home_url();
-}, 10, 3 );
+// add_filter( 'login_redirect', function( $url, $query, $user ) {
+// 	return home_url();
+// }, 10, 3 );
 
 
 
