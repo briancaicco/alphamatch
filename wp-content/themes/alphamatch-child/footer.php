@@ -138,6 +138,7 @@
 
 <?php wp_footer(); ?>
 
+<?php if ( is_page( 70 )){ ?>
 <script type="text/javascript">
 
 	$( "form" ).submit(function( event ) {
@@ -173,9 +174,8 @@
 	}
 
 });
-
-
 </script>
+<?php } ?>
 
 </body>
 </html>
