@@ -15234,7 +15234,8 @@ ul.collections,
     color: #fff !important; }
 
 .document-title {
-  margin-top: 40px; }
+  margin-top: 40px;
+  display: visible; }
   .document-title h1 {
     color: #ecad20;
     font-weight: 900;
