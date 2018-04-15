@@ -503,7 +503,7 @@ function alpha_login_redirect( $redirect_to, $request, $user ) {
     return $redirect_to;
 }
 
-add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+add_filter( 'init', 'alpha_login_redirect');
 
 
 // function redirect_registration_page()
