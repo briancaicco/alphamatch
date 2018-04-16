@@ -462,6 +462,21 @@ function isFuture($time)
 
 
 /**
+ * Redirect non-admins to the homepage after logging into the site.
+ *
+ * @since 	1.0
+ */
+function alpha_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+}
+add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+
+
+
+
+
+
+/**
  * Login Page redirect
  *
  * @since 0.1.0
@@ -490,20 +505,21 @@ function isFuture($time)
 
 
 
-function alpha_login_redirect( $redirect_to, $request, $user ) {
-    //is there a user to check?
-    if (isset($user->roles) && is_array($user->roles)) {
-        //check for subscribers
-        if (!in_array('administrator', $user->roles)) {
-            // redirect them to another URL, in this case, the homepage 
-            $redirect_to =  home_url();
-        }
-    }
 
-    return $redirect_to;
-}
+// function alpha_login_redirect( $redirect_to, $request, $user ) {
+//     //is there a user to check?
+//     if (isset($user->roles) && is_array($user->roles)) {
+//         //check for subscribers
+//         if (!in_array('administrator', $user->roles)) {
+//             // redirect them to another URL, in this case, the homepage 
+//             $redirect_to =  home_url();
+//         }
+//     }
 
-add_filter( 'init', 'alpha_login_redirect');
+//     return $redirect_to;
+// }
+
+// add_filter( 'init', 'alpha_login_redirect');
 
 
 // function redirect_registration_page()

@@ -15289,12 +15289,62 @@ ul.collections,
 #listing-detail-location li a[aria-controls="simple-map-panel"] {
   display: none !important; }
 
-.listing-column-label-special {
-  left: 20px !important;
-  right: auto !important; }
-
 .widget.widget_listings .alert {
   display: none; }
+
+.listing-detail-menu {
+  background-color: rgba(86, 86, 86, 0.9);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99; }
+
+.filter-sorting-inner ul li a {
+  border: 0;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  min-width: 40px;
+  padding: 7px 12px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.filter-sorting-inner strong {
+  text-transform: uppercase; }
+
+.listing-column-label-special {
+  background-color: #ecad20;
+  color: #444;
+  font-size: 15px;
+  padding: 3px 15px;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 153px;
+  white-space: nowrap;
+  z-index: 2;
+  font-weight: bold; }
+
+.listing-column-title {
+  color: #444;
+  padding: 17px 20px;
+  background-color: #fff;
+  min-height: auto; }
+
+.listing-column-title a {
+  color: #444; }
+
+.listing-column-title a:hover {
+  color: #dfa013; }
+
+.listing-column:hover .listing-column-title {
+  background-color: #fff; }
+
+.home .filter-sorting-options {
+  background-color: #fff;
+  padding: 30px 30px 0 15px;
+  margin: 0 0 30px 0; }
 
 .alpha-favorite-listings .widgettitle {
   line-height: 20px !important;
