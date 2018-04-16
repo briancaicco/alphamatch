@@ -476,9 +476,6 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 
 
-
-
-
 /**
  * Login Page redirect
  *
@@ -505,7 +502,6 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 // add_filter( 'login_redirect', function( $url, $query, $user ) {
 // 	return home_url();
 // }, 10, 3 );
-
 
 
 
@@ -542,31 +538,93 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 // Reset Password Link missing from email fix.
 /////////////////////////////////////////////////////////////////////////////////
 
-function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
+// function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
 
-$user_login = $user_data->user_login;
-$user_email = $user_data->user_email;
-$key = get_password_reset_key( $user_data );
-if ( is_wp_error( $key ) ) {
-    return $key;
+// $message = "<p>Someone has requested a password reset for the following account:</p>
+
+// " . sprintf(__('%s'), $user_data->user_email) . "
+
+// <p>If this was a mistake, just ignore this email and nothing will happen.</p>
+
+// <p>To reset your password, visit the following address:</p>
+
+// " . network_site_url('wp-login.php?action=rp&key=$key&login=' . rawurlencode($user_login), 'login') . "\r\n ";
+
+
+//   return $message;
+
+// }
+
+
+// add_filter("retrieve_password_message", "mapp_custom_password_reset", 99, 4);
+
+
+
+add_filter ('retrieve_password_message', 'custom_retrieve_password_message', 99, 4);
+
+function custom_retrieve_password_message($content, $key) {
+global $wpdb;
+if ( empty( $_POST['user_login'] ) ) {
+
+     wp_die('<strong>ERROR</strong>: Enter a username or e-mail address.');
+
+ } else if ( strpos( $_POST['user_login'], '@' ) ) {
+
+     $user_data = get_user_by( 'email', trim( $_POST['user_login'] ) );
+
+ }else if(!empty( $_POST['user_login'] )){
+
+     $user_data = get_user_by('login', trim( $_POST['user_login']));
+
+ }elseif ( empty( $user_data ) ){
+     wp_die('invalid_email', __('<strong>ERROR</strong>: There is no user registered with that email address.'));
+
+ }
+
+$user_login_name = $user_data->user_login;
+ob_start();
+
+$email_subject = 'Your password has been changed';
+
+?>
+
+<p>It looks like you need to reset your password.</p>
+<p>To reset your password, <a href="<?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?>">click here</a>.</p>
+<p>Otherwise, just ignore this email and nothing will happen.<p>
+
+<?php
+
+$message = ob_get_contents();
+
+ob_end_clean();
+
+return $message;
+
 }
 
-$message = "<p>Someone has requested a password reset for the following account:</p>
-
-" . sprintf(__('%s'), $user_data->user_email) . "
-
-<p>If this was a mistake, just ignore this email and nothing will happen.</p>
-
-<p>To reset your password, visit the following address:</p>
-
-" . network_site_url('wp-login.php?action=rp&key=' .$key. '&login=' . rawurlencode($user_login), 'login') . "\r\n ";
 
 
-  return $message;
 
+/**
+ * Login Page Customizations
+ *
+ * @since 0.1.0
+ * @uses 
+ */
+
+function alphas_login_logo() { ?>
+
+<?php }
+add_action( 'login_enqueue_scripts', 'alphas_login_logo' );
+
+
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/assets/css/style-login.css' );
+    //wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/style-login.js' );
 }
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 
-add_filter("retrieve_password_message", "mapp_custom_password_reset", 99, 4);
+
 
 
