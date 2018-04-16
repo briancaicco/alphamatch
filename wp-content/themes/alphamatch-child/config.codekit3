@@ -58,6 +58,16 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/assets\/css\/style-login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style-login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/superlist-blue-dark.css": {
 		"aP": 1,
 		"bl": 0,
@@ -244,6 +254,17 @@
 		"oAP": "\/assets\/css\/superlist-turquoise-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/assets\/img\/alpha_logo.png": {
+		"ft": 32768,
+		"iS": 275655,
+		"oA": 0,
+		"oAP": "\/assets\/img\/alpha_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/img\/facebook.png": {
 		"ft": 32768,
