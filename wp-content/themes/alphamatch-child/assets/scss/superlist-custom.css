@@ -15314,10 +15314,6 @@ ul.collections,
   text-align: center;
   text-transform: uppercase; }
 
-.filter-sorting-inner {
-  font-size: 12px;
-  padding: 5px 0 33px 16px; }
-
 .filter-sorting-inner strong {
   text-transform: uppercase; }
 
@@ -15370,9 +15366,6 @@ ul.collections,
   display: block;
   line-height: 40px;
   overflow: hidden; }
-
-.filter-sorting-inner-styles button {
-  margin: -3px 0 0 0; }
 
 .alpha-favorite-listings .widgettitle {
   line-height: 20px !important;
