@@ -544,6 +544,13 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
 
+$user_login = $user_data->user_login;
+$user_email = $user_data->user_email;
+$key = get_password_reset_key( $user_data );
+if ( is_wp_error( $key ) ) {
+    return $key;
+}
+
 $message = "<p>Someone has requested a password reset for the following account:</p>
 
 " . sprintf(__('%s'), $user_data->user_email) . "
