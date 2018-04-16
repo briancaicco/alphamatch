@@ -34,7 +34,7 @@ get_header(); ?>
         <?php global $wpdb;
         
         $error = '';
-        $success = '';
+        $success = ''; 
         
         // check if we're in reset form
         if( isset( $_POST['action'] ) && 'reset' == $_POST['action'] ) 

@@ -3448,6 +3448,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/superlist-custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/scss\/superlist-custom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/scss\/superlist-custom.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3456,8 +3466,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/superlist-custom.css",
-		"oF": 2,
+		"oAP": "\/assets\/scss\/superlist-custom.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
