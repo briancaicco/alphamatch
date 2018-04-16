@@ -494,6 +494,9 @@ ul.collections,
 	.filter-sorting-options {
 		border: none !important;
 	}
+	.filter-sorting-options {
+		background-color: #ffffff;
+	}
 }
 
 
@@ -624,6 +627,10 @@ ul.collections,
     text-align: center;
     text-transform: uppercase;
 }
+.filter-sorting-inner {
+    font-size: 12px;
+    padding: 5px 0 33px 16px;
+}
 .filter-sorting-inner strong {
     text-transform: uppercase;
 }
@@ -655,12 +662,30 @@ ul.collections,
 .listing-column:hover .listing-column-title {
      background-color: #fff; 
 }
-.home .filter-sorting-options {
+.home .filter-sorting-options, .archive .filter-sorting-options {
     background-color: #fff;
     padding: 30px 30px 0 15px;
     margin: 0 0 30px 0;
 }
-
+.listing-detail-attributes ul li span.value {
+    color: #363636;
+    display: block;
+    float: right;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 9px 0 9px 0;
+    width: 76%;
+}
+.listing-detail-attributes ul li {
+    border-bottom: 0;
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+}
+.filter-sorting-inner-styles button {
+    margin: -3px 0 0 0;
+}
 
 // Sidebar
 ///////////////////////////////////////////////////////////////////////////////
