@@ -3904,6 +3904,13 @@
 		"oAP": "\/page-no-title.php",
 		"oF": 0
 		},
+	"\/page-reset-password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-reset-password.php",
+		"oF": 0
+		},
 	"\/page-user-profile.php": {
 		"cB": 0,
 		"ft": 8192,

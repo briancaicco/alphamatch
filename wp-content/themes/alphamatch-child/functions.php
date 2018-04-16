@@ -476,6 +476,9 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 
 
+
+
+
 /**
  * Login Page redirect
  *
