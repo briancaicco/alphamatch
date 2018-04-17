@@ -6,16 +6,6 @@
  */
 
 
-get_header(); ?>
-
-<div class="row">
-	<div class="col-sm-12">
-        <div id="primary">
-			<?php dynamic_sidebar( 'content-top' ); ?>
-
-
-
-<?php
 global $wpdb, $user_ID;
 
 function tg_validate_url() {
@@ -117,11 +107,14 @@ if (!$user_ID) { //block logged in users
 } else { ?>
 
 
+<? get_header(); ?>
+
+<div class="row">
+	<div class="col-sm-12">
+        <div id="primary">
+			<?php dynamic_sidebar( 'content-top' ); ?>
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $post_meta = get_post_meta($post->ID); ?>
-
-
-					<?php the_content(); ?>
 
 					<form class="user_form login-form" id="loginform" action="" method="post">
 						<div class="form-group">
@@ -157,6 +150,14 @@ if (!$user_ID) { //block logged in users
 
 
 
+			<?php dynamic_sidebar( 'content-bottom' ); ?>
+
+        </div><!-- #primary -->
+	</div><!-- /.col-* -->
+</div><!-- /.row -->
+
+<?php get_footer(); ?>
+
 	<?php
 
 }
@@ -167,13 +168,7 @@ if (!$user_ID) { //block logged in users
 
 
 
-			<?php dynamic_sidebar( 'content-bottom' ); ?>
 
-        </div><!-- #primary -->
-	</div><!-- /.col-* -->
-</div><!-- /.row -->
-
-<?php get_footer(); ?>
 
 
 
