@@ -118,7 +118,7 @@ if (!$user_ID) { //block logged in users
 
 					<?php the_content(); ?>
 
-					<form class="user_form login-form" id="loginform" action="" method="post">
+					<form class="user_form login-form" id="reset-form" action="" method="post">
 
 						<div id="result"></div> <!-- To hold validation results -->
 						<br/>
@@ -134,9 +134,9 @@ if (!$user_ID) { //block logged in users
 					</form>
 
 					<script type="text/javascript">
-						jQuery("#loginform").submit(function() {
+						jQuery("#reset-form").submit(function() {
 							jQuery('#result').html('<div class="loading alert alert-warning">Validating...</div>').fadeIn();
-							var input_data = jQuery('#loginform').serialize();
+							var input_data = jQuery('#reset-form').serialize();
 							jQuery.ajax({
 								type: "POST",
 								url:  "<?php echo get_permalink( $post->ID ); ?>",
