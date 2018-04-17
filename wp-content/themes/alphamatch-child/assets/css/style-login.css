@@ -1,0 +1,88 @@
+body.login {background: #fafafa;}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a:hover { color: #ecad20; transition: all ease-in-out .25s }
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a:hover { color: #ecad20; transition: all ease-in-out .25s }
+
+.login form{
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.login form .wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+	border: 0;
+    border-radius: 0;
+    min-height: 40px;
+	background-color: #ecad20 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 15px;
+    transition: background-color .15s linear;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    font-size: 14px;
+    line-height: 1.428571429;
+    text-shadow: none;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.login form .wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large:hover{
+	background-color: #dfa013 !important;
+    box-shadow: none !important;
+    outline: 0px !important;
+    text-decoration: none;
+}
+
+input:focus {
+	outline: #ddd solid 2px;
+}
+
+.login form input[type=text]:focus, .login form input[type=text]:active, .login form input[type=text]:hover {
+	box-shadow: none;
+	border-color: 1px solid #ddd !important;
+}
+
+#login h1 a, .login h1 a {
+	background-image: url(../img/alpha_logo.png);
+	height:200px;
+	width:225px;
+	background-size: 225px 200px;
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+}
+
+.login #login_error, .login .message{
+	border-left: none;
+	background-color: #EEE0B7;
+    border: 1px solid #e4ce8e;
+    color: #9b7d25 !important;
+    border-radius: 0;
+    color: #fff;
+    line-height: 2;
+    overflow: hidden;
+    padding: 12px;
+    width: 296px;
+    margin-bottom: 20px;
+}

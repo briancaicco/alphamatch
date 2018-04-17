@@ -538,24 +538,99 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 // Reset Password Link missing from email fix.
 /////////////////////////////////////////////////////////////////////////////////
 
-function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
+// function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
 
-$message = "<p>Someone has requested a password reset for the following account:</p>
+// $message = "<p>Someone has requested a password reset for the following account:</p>
 
-" . sprintf(__('%s'), $user_data->user_email) . "
+// " . sprintf(__('%s'), $user_data->user_email) . "
 
-<p>If this was a mistake, just ignore this email and nothing will happen.</p>
+// <p>If this was a mistake, just ignore this email and nothing will happen.</p>
 
-<p>To reset your password, visit the following address:</p>
+// <p>To reset your password, visit the following address:</p>
 
-" . network_site_url('wp-login.php?action=rp&key=$key&login=' . rawurlencode($user_login), 'login') . "\r\n ";
+// " . network_site_url('wp-login.php?action=rp&key=$key&login=' . rawurlencode($user_login), 'login') . "\r\n ";
 
 
-  return $message;
+//   return $message;
+
+// }
+
+
+// add_filter("retrieve_password_message", "mapp_custom_password_reset", 99, 4);
+
+
+
+add_filter ('retrieve_password_message', 'custom_retrieve_password_message', 99, 4);
+
+function custom_retrieve_password_message($content, $key) {
+global $wpdb;
+if ( empty( $_POST['user_login'] ) ) {
+
+     wp_die('<strong>ERROR</strong>: Enter a username or e-mail address.');
+
+ } else if ( strpos( $_POST['user_login'], '@' ) ) {
+
+     $user_data = get_user_by( 'email', trim( $_POST['user_login'] ) );
+
+ }else if(!empty( $_POST['user_login'] )){
+
+     $user_data = get_user_by('login', trim( $_POST['user_login']));
+
+ }elseif ( empty( $user_data ) ){
+     wp_die('invalid_email', __('<strong>ERROR</strong>: There is no user registered with that email address.'));
+
+ }
+
+$user_login_name = $user_data->user_login;
+ob_start();
+
+$email_subject = 'Your password has been changed';
+
+?>
+
+<p>It looks like you need to reset your password.</p>
+<p>To reset your password, <a href="<?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?>">click here</a>.</p>
+<p>Otherwise, just ignore this email and nothing will happen.<p>
+
+<?php
+
+$message = ob_get_contents();
+
+ob_end_clean();
+
+return $message;
 
 }
 
 
-add_filter("retrieve_password_message", "mapp_custom_password_reset", 99, 4);
+
+// Redefine user notification function
+if ( !function_exists('wp_new_user_notification') ) {
+    function wp_new_user_notification( $user_id, $plaintext_pass = '' ) {
+        $user = new WP_User($user_id);
+
+        $user_login = stripslashes($user->user_login);
+        $user_email = stripslashes($user->user_email);
+
+        $message  = sprintf(__('New user registration on your blog %s:'), get_option('blogname')) . "\r\n\r\n";
+        $message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+        $message .= sprintf(__('E-mail: %s'), $user_email) . "\r\n";
+
+        @wp_mail(get_option('admin_email'), sprintf(__('[%s] New User Registration'), get_option('blogname')), $message);
+
+        if ( empty($plaintext_pass) )
+            return;
+
+        $message  = __('Hi there,') . "\r\n\r\n";
+        $message .= sprintf(__("Welcome to Alpha Match here's how to log in:"), get_option('blogname')) . "\r\n\r\n";
+        $message .= wp_login_url() . "\r\n";
+        $message .= sprintf(__('Username: %s'), $user_login) . "\r\n";
+        $message .= sprintf(__('Password: %s'), $plaintext_pass) . "\r\n\r\n";
+        $message .= sprintf(__('If you have any problems, please contact us at %s.'), get_option('admin_email')) . "\r\n\r\n";
+
+        wp_mail($user_email, sprintf(__('[%s] Your username and password'), get_option('blogname')), $message);
+
+    }
+}
 
 

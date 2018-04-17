@@ -58,6 +58,16 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/assets\/css\/style-login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style-login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/superlist-blue-dark.css": {
 		"aP": 1,
 		"bl": 0,
@@ -105,6 +115,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/assets\/css\/superlist-brown-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/css\/superlist-custom-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/superlist-custom-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -234,6 +254,17 @@
 		"oAP": "\/assets\/css\/superlist-turquoise-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/assets\/img\/alpha_logo.png": {
+		"ft": 32768,
+		"iS": 275655,
+		"oA": 0,
+		"oAP": "\/assets\/img\/alpha_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/img\/facebook.png": {
 		"ft": 32768,
@@ -3438,6 +3469,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/scss\/superlist-custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/scss\/superlist-custom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/scss\/superlist-custom.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -3446,8 +3487,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/css\/superlist-custom.css",
-		"oF": 2,
+		"oAP": "\/assets\/scss\/superlist-custom.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -3892,6 +3933,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page-no-title.php",
+		"oF": 0
+		},
+	"\/page-reset-password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-reset-password.php",
 		"oF": 0
 		},
 	"\/page-user-profile.php": {
