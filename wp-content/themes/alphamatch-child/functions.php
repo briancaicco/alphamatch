@@ -466,10 +466,10 @@ function isFuture($time)
  *
  * @since 	1.0
  */
-// function alpha_login_redirect( $redirect_to, $request, $user  ) {
-// 	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
-// }
-// add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
+function alpha_login_redirect( $redirect_to, $request, $user  ) {
+	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+}
+add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 
 
