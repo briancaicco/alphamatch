@@ -16,6 +16,7 @@ wp-content/themes/sos/_bak/
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+/config.codekit3
 
 # General
 *.DS_Store
