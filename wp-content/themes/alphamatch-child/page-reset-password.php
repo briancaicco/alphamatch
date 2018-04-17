@@ -2,7 +2,20 @@
 /*
  * Template Name: Forgot password page
  * Description: Page template for custom forgot password page
+
  */
+
+
+get_header(); ?>
+
+<div class="row">
+	<div class="col-sm-12">
+        <div id="primary">
+			<?php dynamic_sidebar( 'content-top' ); ?>
+
+
+
+<?php
 global $wpdb, $user_ID;
 
 function tg_validate_url() {
@@ -163,3 +176,16 @@ if (!$user_ID) { //block logged in users
 	wp_redirect( home_url() ); exit;
 }
 ?>
+
+
+
+			<?php dynamic_sidebar( 'content-bottom' ); ?>
+
+        </div><!-- #primary -->
+	</div><!-- /.col-* -->
+</div><!-- /.row -->
+
+<?php get_footer(); ?>
+
+
+
