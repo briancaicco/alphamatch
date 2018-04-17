@@ -114,37 +114,27 @@ if (!$user_ID) { //block logged in users
 		echo "<div class='success'>We have just sent you an email with Password reset instructions.</div>";
 		exit();
 	}
-} else {
-	get_header();
-	get_template_part('navbar'); ?>
+} else { ?>
 
 
 
-	<div id="content">
-
-		<div class="post login">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $post_meta = get_post_meta($post->ID); ?>
 
-				<div class="post-content">
+
 					<?php the_content(); ?>
 
 					<form class="user_form" id="loginform" action="" method="post">
-						<p>
+						<div class="form-group">
 							<label for="name_input">Username or emailaddress</label>
-							<input type="text" id="name_input" class="text" name="user_input" value="" /><br />
-						</p>
+							<input type="text" id="name_input" class="text" name="user_input" value="" />
+						</div>
 						<input type="hidden" name="action" value="tg_pwd_reset" />
 						<input type="hidden" name="tg_pwd_nonce" value="<?php echo wp_create_nonce("tg_pwd_nonce"); ?>" />
 
-						<input type="submit" id="submitbtn" class="reset_password" name="submit" value="Reset Password" />
+						<button type="submit" id="submitbtn" class="reset_password button" name="submit" >Rest Password</button>
 					</form>
-					<div id="result"></div> <!-- To hold validation results -->
-<!-- 					<div class="forgot_password">
-						<a href="/login/">Back to the loginform</a>
-					</div>
-					<div class="forgot_password">
-						<a href="/register">Register</a>
-					</div> -->
+					<div class="alert alert-warning" id="result"></div> <!-- To hold validation results -->
+
 					<script type="text/javascript">
 						jQuery("#loginform").submit(function() {
 							jQuery('#result').html('<span class="loading">Validating...</span>').fadeIn();
@@ -161,16 +151,13 @@ if (!$user_ID) { //block logged in users
 							return false;
 						});
 					</script>
-				</div>
 
 			<?php endwhile; endif; ?>
-		</div>
 
 
-	</div> <!-- #content -->
 
 	<?php
-	get_footer();
+
 }
 } else {
 	wp_redirect( home_url() ); exit;
