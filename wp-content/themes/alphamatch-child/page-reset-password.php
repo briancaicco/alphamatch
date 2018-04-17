@@ -35,20 +35,17 @@ if (!$user_ID) { //block logged in users
 			wp_set_password( $new_password, $user_data->ID );
 	  
 	  		//mailing reset details to the user
-			$message = __('<p>Your new password for the account at:</p>') . "\r\n\r\n";
-			$message .= get_option('siteurl') . "\r\n\r\n";
-			$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
-			$message .= sprintf(__('Password: %s'), $new_password) . "\r\n\r\n";
+			$message = __('<p>Your new password for the account at:') . get_option('siteurl') . '</p>' . "\r\n\r\n";
+			$message .= sprintf(__('<p>Username: %s</p>'), $user_login) . "\r\n\r\n";
+			$message .= sprintf(__('<p>Password: %s</p>'), $new_password) . "\r\n\r\n";
 			$message .= __('<p>You can now login with your new password at: ') . get_option('siteurl')."/login" .'</p>'. "\r\n\r\n";
 			
 		if ( $message && !wp_mail($user_email, 'Password Reset Request', $message) ) {
-				echo "<div class='error'>Email failed to send. Please contact us for assistance.</div>";
 				exit();
 			}
 			else {
 				$redirect_to = get_bloginfo('url')."/login?action=reset_success";
 				wp_safe_redirect($redirect_to);
-				echo "<p>Your password has been successfully reset. Please check your email for further instructions.</p>";
 				exit();
 			}
 		} else {
@@ -91,9 +88,8 @@ if (!$user_ID) { //block logged in users
 		$wpdb->update($wpdb->users, array('user_activation_key' => $key), array('user_login' => $user_login));
 	}
 	//mailing reset details to the user
-	$message = __('<p>Someone requested that the password be reset for the following account:</p>') . "\r\n\r\n";
-	$message .= get_option('siteurl') . "\r\n\r\n";
-	$message .= sprintf(__('Username: %s'), $user_login) . "\r\n\r\n";
+	$message = __('<p>Someone requested that the password be reset for the following account:') . get_option('siteurl') . '</p>' . "\r\n\r\n";
+	$message .= sprintf(__('<p>Username: %s</p>'), $user_login) . "\r\n\r\n";
 	$message .= __('<p>If this was a mistake, just ignore this email and nothing will happen.</p>') . "\r\n\r\n";
 	$message .= __('<p>To reset your password, visit the following address:</p>') . "\r\n\r\n";
 	$message .= tg_validate_url() . "action=reset_pwd&key=$key&login=" . rawurlencode($user_login) . "\r\n";
