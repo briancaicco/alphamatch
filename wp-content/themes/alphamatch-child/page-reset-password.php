@@ -116,7 +116,12 @@ if (!$user_ID) { //block logged in users
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); $post_meta = get_post_meta($post->ID); ?>
 
+					<?php the_content(); ?>
+
 					<form class="user_form login-form" id="loginform" action="" method="post">
+
+						<div id="result"></div> <!-- To hold validation results -->
+						<br/>
 						<div class="form-group">
 							<label for="name_input">Username or Email Address</label>
 							<input type="text" id="name_input" class="text" name="user_input" value="" />
@@ -127,7 +132,6 @@ if (!$user_ID) { //block logged in users
 						<button type="submit" id="submitbtn" class="reset_password button" name="submit" >Rest Password</button>
 						<br/>
 					</form>
-					<div id="result"></div> <!-- To hold validation results -->
 
 					<script type="text/javascript">
 						jQuery("#loginform").submit(function() {
