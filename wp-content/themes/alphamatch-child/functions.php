@@ -634,3 +634,24 @@ if ( !function_exists('wp_new_user_notification') ) {
 }
 
 
+
+  
+/**
+ * Gets the request parameter.
+ *
+ * @param      string  $key      The query parameter
+ * @param      string  $default  The default value to return if not found
+ *
+ * @return     string  The request parameter.
+ */
+function get_request_parameter( $key, $default = '' ) {
+    // If not request set
+    if ( ! isset( $_REQUEST[ $key ] ) || empty( $_REQUEST[ $key ] ) ) {
+        return $default;
+    }
+ 
+    // Set so process it
+    return strip_tags( (string) wp_unslash( $_REQUEST[ $key ] ) );
+}
+
+
