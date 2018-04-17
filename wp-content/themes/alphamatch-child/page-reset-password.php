@@ -73,7 +73,7 @@ if (!$user_ID) { //block logged in users
 			exit("Nice try!");
 		}
 		if(empty($_POST['user_input'])) {
-			echo "<div class='error'>Please enter your Username or E-mail address</div>";
+			echo "<div class='alert alert-warning'>Please enter your Username or E-mail address</div>";
 			exit();
 		}
 	//We shall SQL escape the input
@@ -81,14 +81,14 @@ if (!$user_ID) { //block logged in users
 		if ( strpos($user_input, '@') ) {
 			$user_data = get_user_by_email($user_input);
 	  if(empty($user_data)) { //delete the condition $user_data->caps[administrator] == 1, if you want to allow password reset for admins also
-	  	echo "<div class='error'>Please enter a valid E-mail address.</div>";
+	  	echo "<div class='alert alert-warning'>Please enter a valid E-mail address.</div>";
 	  	exit();
 	  }
 	}
 	else {
 		$user_data = get_userdatabylogin($user_input);
 	  if(empty($user_data) || $user_data->caps[administrator] == 1) { //delete the condition $user_data->caps[administrator] == 1, if you want to allow password reset for admins also
-	  	echo "<div class='error'>Please enter a valid Username.</div>";
+	  	echo "<div class='alert alert-warning'>Please enter a valid Username.</div>";
 	  	exit();
 	  }
 	}
@@ -107,11 +107,11 @@ if (!$user_ID) { //block logged in users
 	$message .= __('<p>To reset your password, visit the following address:</p>') . "\r\n\r\n";
 	$message .= tg_validate_url() . "action=reset_pwd&key=$key&login=" . rawurlencode($user_login) . "\r\n";
 	if ( $message && !wp_mail($user_email, 'Password Reset Request', $message) ) {
-		echo "<div class='error'>Email failed to send. Please contact us for assistance.</div>";
+		echo "<div class='alert alert-warning'>Email failed to send. Please contact us for assistance.</div>";
 		exit();
 	}
 	else {
-		echo "<div class='success'>We have just sent you an email with Password reset instructions.</div>";
+		echo "<div class='alert alert-warning'>We have just sent you an email with Password reset instructions.</div>";
 		exit();
 	}
 } else { ?>
@@ -123,21 +123,22 @@ if (!$user_ID) { //block logged in users
 
 					<?php the_content(); ?>
 
-					<form class="user_form" id="loginform" action="" method="post">
+					<form class="user_form login-form" id="loginform" action="" method="post">
 						<div class="form-group">
-							<label for="name_input">Username or emailaddress</label>
+							<label for="name_input">Username or Email Address</label>
 							<input type="text" id="name_input" class="text" name="user_input" value="" />
 						</div>
 						<input type="hidden" name="action" value="tg_pwd_reset" />
 						<input type="hidden" name="tg_pwd_nonce" value="<?php echo wp_create_nonce("tg_pwd_nonce"); ?>" />
 
 						<button type="submit" id="submitbtn" class="reset_password button" name="submit" >Rest Password</button>
+						<br/>
 					</form>
-					<div class="alert alert-warning" id="result"></div> <!-- To hold validation results -->
+					<div id="result"></div> <!-- To hold validation results -->
 
 					<script type="text/javascript">
 						jQuery("#loginform").submit(function() {
-							jQuery('#result').html('<span class="loading">Validating...</span>').fadeIn();
+							jQuery('#result').html('<div class="loading alert alert-warning">Validating...</div>').fadeIn();
 							var input_data = jQuery('#loginform').serialize();
 							jQuery.ajax({
 								type: "POST",
