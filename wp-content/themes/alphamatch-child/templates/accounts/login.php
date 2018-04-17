@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( ! is_user_logged_in() ) : ?>
 
-	<form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>" class="login-form">
+	<form method="post" action="https://alphamatch.com<?php //echo $_SERVER["REQUEST_URI"]; ?>" class="login-form">
 	    <div class="form-group">
 	        <label for="login-form-username"><?php echo __( 'Username or Email Address', 'inventor' ); ?></label>
 	        <input id="login-form-username" type="text" name="login" class="form-control" required="required">
