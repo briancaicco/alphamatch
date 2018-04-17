@@ -14,9 +14,43 @@ $color-primary: #ecad20;
 #primary {
 	margin-top: 60px;
 }
-
+.home #primary {
+	margin: 0;
+}
+.listing-column-image {
+    background-color: #cccccc;
+}
 .breadcrumb {
 	display: none;
+}
+.widget .widget-pb {
+    padding-bottom: 40px;
+}
+.listing-column-title h3 {
+    font-size: 15px;
+}
+.listing-column-actions {
+	bottom: 20px;
+	right: 0;
+}
+.home .filter-sorting-inner-group.filter-sorting-inner-group-types {
+    margin: 0 0 0 -15px;
+}
+.header-user-menu-name a.button.btn.bnt-lg.btn-primary {
+    background: none;
+    padding: 10px 5px;
+}
+.header-user-menu-name a {
+    font-size: 13px;
+}
+.header-user-menu-name a.button.btn.bnt-lg.btn-primary:hover {
+    background: none !important;
+}
+.header-user-menu-name a:hover, .header-user-menu-name a.button.btn.bnt-lg.btn-primary:hover {
+    color: #ecad20 !important;
+}
+.header-user-menu-name .btn:after {
+	background: none;
 }
 
 .alert.alert-primary,
@@ -44,7 +78,10 @@ h1.detail-title {
 		color: #fff;
 	}
 }
-
+.main-inner {
+	background-image: none;
+	background-color: #ffffff;
+}
 // Login
 ///////////////////////////////////////////////////////////////////////////////
 .wp-social-login-connect-with {
@@ -629,7 +666,7 @@ ul.collections,
 }
 .filter-sorting-inner {
     font-size: 12px;
-    padding: 5px 0 33px 16px;
+    padding: 5px 0 3px 16px;
 }
 .filter-sorting-inner strong {
     text-transform: uppercase;
@@ -642,14 +679,14 @@ ul.collections,
     position: absolute;
     left: 0;
     right: auto;
-    top: 153px;
+    top: 152px;
     white-space: nowrap;
     z-index: 2;
     font-weight: bold;
 }
 .listing-column-title {
     color: #444;
-    padding: 17px 20px;
+    padding: 8px 0;
     background-color: #fff;
     min-height: auto;
 }
@@ -661,11 +698,6 @@ ul.collections,
 }
 .listing-column:hover .listing-column-title {
      background-color: #fff; 
-}
-.home .filter-sorting-options, .archive .filter-sorting-options {
-    background-color: #fff;
-    padding: 30px 30px 0 15px;
-    margin: 0 0 30px 0;
 }
 .listing-detail-attributes ul li span.value {
     color: #363636;
@@ -731,7 +763,12 @@ ul.collections,
 		padding-top: 30px;
 	}
 }
-
+#menu-footer-menu li {
+    margin-right: 40px !important;
+}
+.footer .container {
+    padding-top: 15px;
+}
 
 #menu-footer-meta {
 	display: inline-block;
@@ -814,7 +851,6 @@ ul.collections,
 
 
 
-
 // Widgets
 ///////////////////////////////////////////////////////////////////////////////
 .home .widget.widget_filter form,
@@ -843,7 +879,7 @@ ul.collections,
 
 .listing-column {
 	box-shadow: none;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 0;
 }
 
 .listing-column-title {
@@ -1340,9 +1376,9 @@ ul.collections,
 
 	.footer-signup {
 		display: block;
-		margin-top: 40px;
-		margin-bottom: 40px;
-		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 0;
+		width: 60%;
 	}
 	.cta-banner-footer {
 		clear: both;
@@ -1355,9 +1391,17 @@ ul.collections,
 		display: block;
 	}
 	#menu-footer-meta li {
-		width: 100%;
+		width: 30%;
 		text-align: center !important;
 		margin-left: 0px;
+		border-right: 1px solid #ecad20 !important;
+		height: 27px;
+	}
+	#menu-footer-meta li:nth-child(1) {
+		border-right: 0 !important;
+	}
+	.widget.widget_nav_menu ul li a {
+		line-height: 10px;
 	}
 	.home .widget_filter {
 		order: 2;
