@@ -14911,7 +14911,7 @@ ul.collections {
   padding: 10px 5px; }
 
 .header-user-menu-name a {
-  font-size: 13px; }
+  font-size: 12px; }
 
 .header-user-menu-name a.button.btn.bnt-lg.btn-primary:hover, .header-user-menu-name a.button.btn.bnt-lg:hover, .header-user-menu-name .cmb-row.postbox a.button.bnt-lg.cmb-remove-group-row:hover, .cmb-row.postbox .header-user-menu-name a.button.bnt-lg.cmb-remove-group-row:hover, .header-user-menu-name a.button.bnt-lg.listing-create:hover, .header-user-menu-name .listings-slider-item-info-more a.button.bnt-lg:hover, .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg:hover, .header-user-menu-name a.button.bnt-lg.payment-process:hover, .header-user-menu-name .inventor-slider-item-info-button a.button.bnt-lg:hover, .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg:hover, .header-user-menu-name a.button.bnt-lg.btn-create-collection:hover, .header-user-menu-name a.button.btn.bnt-lg.fileinput-upload-button:hover, .header-user-menu-name a.button.bnt-lg.fileinput-upload-button.listing-create:hover, .header-user-menu-name .listings-slider-item-info-more a.button.bnt-lg.fileinput-upload-button:hover, .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg.fileinput-upload-button:hover, .header-user-menu-name a.button.bnt-lg.fileinput-upload-button.payment-process:hover, .header-user-menu-name .inventor-slider-item-info-button a.button.bnt-lg.fileinput-upload-button:hover, .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg.fileinput-upload-button:hover, .header-user-menu-name a.button.bnt-lg.fileinput-upload-button.btn-create-collection:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.btn.bnt-lg.owl-next:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.btn.bnt-lg.owl-next:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-next.listing-create:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.listing-create:hover, .header-user-menu-name .listing-detail-gallery-preview .listings-slider-item-info-more a.button.bnt-lg.owl-next:hover, .listing-detail-gallery-preview .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .listings-slider-item-info-more .listing-detail-gallery-preview a.button.bnt-lg.owl-next:hover, .listings-slider-item-info-more .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-next.payment-process:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.payment-process:hover, .header-user-menu-name .listing-detail-gallery-preview .inventor-slider-item-info-button a.button.bnt-lg.owl-next:hover, .listing-detail-gallery-preview .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .inventor-slider-item-info-button .listing-detail-gallery-preview a.button.bnt-lg.owl-next:hover, .inventor-slider-item-info-button .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-next.btn-create-collection:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.btn-create-collection:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.btn.bnt-lg.owl-prev:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.btn.bnt-lg.owl-prev:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-prev.listing-create:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.listing-create:hover, .header-user-menu-name .listing-detail-gallery-preview .listings-slider-item-info-more a.button.bnt-lg.owl-prev:hover, .listing-detail-gallery-preview .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .listings-slider-item-info-more .listing-detail-gallery-preview a.button.bnt-lg.owl-prev:hover, .listings-slider-item-info-more .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-prev.payment-process:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.payment-process:hover, .header-user-menu-name .listing-detail-gallery-preview .inventor-slider-item-info-button a.button.bnt-lg.owl-prev:hover, .listing-detail-gallery-preview .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .inventor-slider-item-info-button .listing-detail-gallery-preview a.button.bnt-lg.owl-prev:hover, .inventor-slider-item-info-button .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .listing-detail-gallery-preview a.button.bnt-lg.owl-prev.btn-create-collection:hover, .listing-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.btn-create-collection:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.btn.bnt-lg.owl-next:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.btn.bnt-lg.owl-next:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-next.listing-create:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.listing-create:hover, .header-user-menu-name .coupon-detail-gallery-preview .listings-slider-item-info-more a.button.bnt-lg.owl-next:hover, .coupon-detail-gallery-preview .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .listings-slider-item-info-more .coupon-detail-gallery-preview a.button.bnt-lg.owl-next:hover, .listings-slider-item-info-more .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-next.payment-process:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.payment-process:hover, .header-user-menu-name .coupon-detail-gallery-preview .inventor-slider-item-info-button a.button.bnt-lg.owl-next:hover, .coupon-detail-gallery-preview .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .inventor-slider-item-info-button .coupon-detail-gallery-preview a.button.bnt-lg.owl-next:hover, .inventor-slider-item-info-button .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-next.btn-create-collection:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-next.btn-create-collection:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.btn.bnt-lg.owl-prev:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.btn.bnt-lg.owl-prev:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-prev.listing-create:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.listing-create:hover, .header-user-menu-name .coupon-detail-gallery-preview .listings-slider-item-info-more a.button.bnt-lg.owl-prev:hover, .coupon-detail-gallery-preview .listings-slider-item-info-more .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .listings-slider-item-info-more .coupon-detail-gallery-preview a.button.bnt-lg.owl-prev:hover, .listings-slider-item-info-more .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-prev.payment-process:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.payment-process:hover, .header-user-menu-name .coupon-detail-gallery-preview .inventor-slider-item-info-button a.button.bnt-lg.owl-prev:hover, .coupon-detail-gallery-preview .inventor-slider-item-info-button .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .inventor-slider-item-info-button .coupon-detail-gallery-preview a.button.bnt-lg.owl-prev:hover, .inventor-slider-item-info-button .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev:hover, .header-user-menu-name .coupon-detail-gallery-preview a.button.bnt-lg.owl-prev.btn-create-collection:hover, .coupon-detail-gallery-preview .header-user-menu-name a.button.bnt-lg.owl-prev.btn-create-collection:hover {
   background: none !important; }
@@ -15349,16 +15349,54 @@ ul.collections,
   display: inline-block;
   font-size: 12px;
   min-width: 40px;
-  padding: 7px 12px;
+  padding: 7px 0px 7px 20px;
   text-align: center;
   text-transform: uppercase; }
+
+.filter-sort-by-title:after, .filter-sort-by-price:after, .filter-sort-by-published:after, .filter-sort-by-popularity:after {
+  content: " \f107";
+  font-size: 18px;
+  color: #444 !important;
+  font-family: FontAwesome;
+  top: 2px;
+  position: relative; }
+
+/*.filter-sorting-options .filter-sort-order-desc:after {
+    color: #363636 !important;
+}
+*/
+.filter-sorting-inner ul li a.active:after, .listing-display-rows:after, .listing-display-grid:after {
+  color: #ecad20; }
+
+.filter-sorting-inner ul li a:hover:after, .listing-display-rows:hover:after, .listing-display-grid:hover:after {
+  color: #ecad20;
+  transition: all linear .15s; }
+
+.filter-sorting-inner ul li a.active {
+  background: none !important;
+  border: none !important;
+  color: #ecad20; }
+
+.filter-sorting-options {
+  padding: 0px 5px 0 5px; }
 
 .filter-sorting-inner {
   font-size: 12px;
   padding: 5px 0 3px 16px; }
 
 .filter-sorting-inner strong {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0; }
+
+a.filter-sort-order-asc {
+  margin-left: 20px; }
+
+.filter-sorting-inner-group.filter-sorting-inner-group-order {
+  margin: 9px 0 0 -300px; }
+
+.filter-sorting-inner-group.filter-sorting-inner-group-order a {
+  min-width: 11px;
+  width: 11px; }
 
 .listing-column-label-special {
   background-color: #ecad20;
@@ -15404,8 +15442,37 @@ ul.collections,
   line-height: 40px;
   overflow: hidden; }
 
-.filter-sorting-inner-styles button {
-  margin: -3px 0 0 0; }
+.listing-display-grid:after:hover {
+  color: yellow !important; }
+
+a.listing-display-grid:after {
+  font-family: FontAwesome;
+  content: '\f00a';
+  font-size: 20px;
+  color: #444;
+  position: relative;
+  top: 4px;
+  padding: 0 30px 0 0; }
+
+a.listing-display-rows:after {
+  font-family: FontAwesome;
+  content: '\f00b';
+  font-size: 20px;
+  color: #444;
+  position: relative;
+  top: 4px; }
+
+a.listing-display-rows span, a.listing-display-grid span {
+  display: none; }
+
+.filter-sorting-inner-group-types ul li:nth-child(2) {
+  position: relative;
+  left: -10px; }
+
+.filter-sorting-inner-group-types ul li:nth-child(3),
+.filter-sorting-inner-group-types ul li:nth-child(4) {
+  position: relative;
+  left: -20px; }
 
 .alpha-favorite-listings .widgettitle {
   line-height: 20px !important;
