@@ -25,7 +25,7 @@
                 </span>
                     <?php if ( !$is_logged_in ): ?>
                     <span class="header-user-menu-name" style="text-decoration: none !important;">
-                        <a href="<?php bloginfo( 'url' );?>/register" style="margin-left: 20px; color: #fff !important; text-transform: uppercase;" class="button btn bnt-lg btn-primary">Sign up</a>
+                        <a href="<?php bloginfo( 'url' );?>/register" style="margin-left: 20px; text-transform: uppercase;" class="button btn bnt-lg btn-primary">Sign up</a>
                     <span class="header-user-menu-name" style="text-decoration: none !important;">
                     <?php endif; ?>
             </span>
