@@ -55,9 +55,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php endif; ?>
 			<?php endif; ?>
 
+			<button type="submit" class="button" name="register_form"><?php echo __( 'Sign Up', 'inventor' ); ?></button>
+
 			<?php do_action( 'wordpress_social_login' ); ?>
 
-		    <button type="submit" class="button" name="register_form"><?php echo __( 'Sign Up', 'inventor' ); ?></button>
+		    
 		</form>
 	<?php else : ?>
 		<div class="alert alert-warning">

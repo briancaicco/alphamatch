@@ -634,7 +634,18 @@ if ( !function_exists('wp_new_user_notification') ) {
 }
 
 
-
+// Set Wordpress Admin colour scheme
+function additional_admin_color_schemes() {
+  //Get the theme directory
+  $theme_dir = get_template_directory_uri();
+ 
+  //Ocean
+  wp_admin_css_color( 'fresh', __( 'Fresh' ),
+    $theme_dir . '/admin-colors/fresh/colors.min.css',
+    array( '#ecad20', '#ecad20', '#ecad20', '#ecad20' )
+  );
+}
+add_action('admin_init', 'additional_admin_color_schemes');
   
 /**
  * Gets the request parameter.
