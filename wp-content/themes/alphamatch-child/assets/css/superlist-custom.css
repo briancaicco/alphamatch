@@ -14945,6 +14945,17 @@ h1.detail-title {
   background-image: none;
   background-color: #ffffff; }
 
+.registration-page .title-border-bottom {
+  border: 0; }
+
+.alert.alert-danger a {
+  border-bottom: 0 !important; }
+
+.alert.alert-warning {
+  background-color: #ecad20;
+  border: 0;
+  color: #333333; }
+
 .wp-social-login-connect-with {
   display: none !important; }
 
