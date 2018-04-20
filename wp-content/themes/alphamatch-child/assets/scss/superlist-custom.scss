@@ -20,6 +20,7 @@ $color-primary: #ecad20;
 .listing-column-image {
     background-color: #cccccc;
 }
+
 .breadcrumb {
 	display: none;
 }
@@ -32,9 +33,6 @@ $color-primary: #ecad20;
 .listing-column-actions {
 	bottom: 20px;
 	right: 0;
-}
-.home .filter-sorting-inner-group.filter-sorting-inner-group-types {
-    margin: 0 0 0 -15px;
 }
 .header-user-menu-name a.button.btn.bnt-lg.btn-primary {
     background: none;
@@ -1545,6 +1543,41 @@ a.listing-display-rows:after {
 
 	.detail-banner .detail-banner-wrapper {
 		top: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.item-container, .listing-container, .listing-categories-card-container, .listing-types-card-container, .location-poster-container, .user-container, .applicant-container {
+		margin: 15px 0 0 0;
+	}
+	.widget_listings .listing-container .listing-column {
+	    margin-bottom: 10px;
+	}
+	.filter-sorting-inner .filter-sorting-inner-group-types ul, .filter-sorting-inner .filter-sorting-inner-group-types ul li {
+	    float: left;
+	    padding-right: 6px;
+	    margin: 0;
+	}
+	.home .filter-sorting-inner-group.filter-sorting-inner-group-types {
+	    margin: 0;
+	}
+	.filter-sorting-inner-group.filter-sorting-inner-group-order {
+	    margin: 0 0 20px 20px;
+	    float: left;
+	}
+	.filter-sorting-inner ul li a {
+		padding: 0 0 7px 20px;
+	}
+	.filter-sorting-inner strong {
+	    float: left;
+	}
+	.filter-sorting-inner-group.filter-sorting-inner-group-types strong {
+	    position: relative;
+	    top: 9px;
+	}
+	.filter-sorting-inner-group.filter-sorting-inner-group-types .mobile_adjust {
+	    margin: 0 0 0 20px;
 	}
 }
 

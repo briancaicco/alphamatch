@@ -2,8 +2,9 @@
     <div class="filter-sorting-inner">
         <div class="filter-sorting-inner-group filter-sorting-inner-group-types">
             <?php $display_as_grid = ! empty( $_GET['listing-display'] ) && 'grid' == $_GET['listing-display'] || empty( $_GET['listing-display'] ) && get_theme_mod( 'inventor_general_show_listing_archive_as_grid', false ); ?>
-
+            
             <ul style="margin-right: 40px;">
+                <li class="mobile_adjust"><strong><?php echo esc_attr__( 'Sort', 'inventor' ); ?>:</strong></li>
                 <li>
                     <a class="listing-display-rows <?php if ( ! $display_as_grid ) : ?>active<?php endif; ?>">
                         <span><?php echo esc_attr__( 'Rows', 'inventor' ); ?></span>
@@ -19,7 +20,7 @@
                 </li>
             </ul>
 
-            <strong><?php echo esc_attr__( 'Sort', 'inventor' ); ?>:</strong>
+            
 
             <?php $default_sort = get_theme_mod( 'inventor_general_default_listing_sort', 'published' ); ?>
             <?php $current_sort = empty( $_GET['sort-by' ] ) ? $default_sort : esc_attr( $_GET['sort-by' ] ); ?>
