@@ -96,11 +96,11 @@ if (!$user_ID) { //block logged in users
 	$message .= __('<p>To initiate your password reset, click the link below:</p><br/>') . "\r\n\r\n";
 	$message .= tg_validate_url() . "action=reset_pwd&key=$key&login=" . rawurlencode($user_login) . "\r\n";
 	if ( $message && !wp_mail($user_email, 'Password Reset Request', $message) ) {
-		echo "<div class='alert alert-warning' style='color: #fff !important; >Email failed to send. Please contact us for assistance.</div>";
+		echo "<div class='alert alert-warning'>Email failed to send. Please contact us for assistance.</div>";
 		exit();
 	}
 	else {
-		echo "<div class='alert alert-warning' style='color: #fff !important;'>We have just sent you an email with Password reset instructions.</div>";
+		echo "<div class='alert alert-warning'>We have just sent you an email with Password reset instructions.</div>";
 		exit();
 	}
 } else { ?>
