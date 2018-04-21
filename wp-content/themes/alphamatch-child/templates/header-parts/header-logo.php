@@ -14,6 +14,6 @@
         </a>
     </div>
     <div class="shiftNav">
-        <?php shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
+        <?php if(function_exists('shiftnav_toggle')){ shiftnav_toggle( 'shiftnav-main' , '' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); } ?>
     </div>
 </div><!-- /.header-logo -->
