@@ -474,89 +474,9 @@ add_filter( 'login_redirect', 'alpha_login_redirect', 10, 3 );
 
 
 
-
-
-/**
- * Login Page redirect
- *
- * @since 0.1.0
- * @uses wp_login_form() Displays the login form.
- */
-// function redirect_login_page(){
-
-//     // Store for checking if this page equals wp-login.php
-//     $page_viewed = basename( $_SERVER['REQUEST_URI'] );
-
-//     // permalink to the custom login page
-//     $login_page  = get_permalink( '10' );
-
-//     if( $page_viewed == "wp-login.php" ) {
-//         wp_redirect( $login_page );
-//         exit();
-//     }
-// }
-
-// add_action( 'init','redirect_login_page' );
-
-
-// add_filter( 'login_redirect', function( $url, $query, $user ) {
-// 	return home_url();
-// }, 10, 3 );
-
-
-
-// function alpha_login_redirect( $redirect_to, $request, $user ) {
-//     //is there a user to check?
-//     if (isset($user->roles) && is_array($user->roles)) {
-//         //check for subscribers
-//         if (!in_array('administrator', $user->roles)) {
-//             // redirect them to another URL, in this case, the homepage 
-//             $redirect_to =  home_url();
-//         }
-//     }
-
-//     return $redirect_to;
-// }
-
-// add_filter( 'init', 'alpha_login_redirect');
-
-
-// function redirect_registration_page()
-// {
-// 	global $pagenow;
-
-// 	if ( ( strtolower($pagenow) == 'wp-login.php') && ( strtolower( $_GET['action']) == 'register' ) ) {
-// 		wp_redirect( home_url('/register'));
-// 	}
-// }
-
-// add_filter( 'init', 'redirect_registration_page' );
-
-
-
-
 // Reset Password Link missing from email fix.
 /////////////////////////////////////////////////////////////////////////////////
 
-// function mapp_custom_password_reset($message, $key, $user_login, $user_data )    {
-
-// $message = "<p>Someone has requested a password reset for the following account:</p>
-
-// " . sprintf(__('%s'), $user_data->user_email) . "
-
-// <p>If this was a mistake, just ignore this email and nothing will happen.</p>
-
-// <p>To reset your password, visit the following address:</p>
-
-// " . network_site_url('wp-login.php?action=rp&key=$key&login=' . rawurlencode($user_login), 'login') . "\r\n ";
-
-
-//   return $message;
-
-// }
-
-
-// add_filter("retrieve_password_message", "mapp_custom_password_reset", 99, 4);
 
 
 
@@ -588,9 +508,11 @@ $email_subject = 'Your password has been changed';
 
 ?>
 
-<p>It looks like you need to reset your password.</p>
-<p>To reset your password, <a href="<?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?>">click here</a>.</p>
-<p>Otherwise, just ignore this email and nothing will happen.<p>
+<p>A password reset request has been sent for your Alpha Match account.</p>
+<p>If this was a mistake, just ignore this email and nothing will happen.</p>
+<p>To initiate your password reset, click the link below:<p>
+<p><a href="<?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?>"><?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?></a></p>
+
 
 <?php
 
@@ -601,7 +523,6 @@ ob_end_clean();
 return $message;
 
 }
-
 
 
 // Redefine user notification function
@@ -623,7 +544,7 @@ if ( !function_exists('wp_new_user_notification') ) {
 
         $message  = __('Hi there,') . "\r\n\r\n";
         $message .= sprintf(__("Welcome to Alpha Match here's how to log in:"), get_option('blogname')) . "\r\n\r\n";
-        $message .= wp_login_url() . "\r\n";
+        $message .= home_url() . "login"  . "\r\n";
         $message .= sprintf(__('Username: %s'), $user_login) . "\r\n";
         $message .= sprintf(__('Password: %s'), $plaintext_pass) . "\r\n\r\n";
         $message .= sprintf(__('If you have any problems, please contact us at %s.'), get_option('admin_email')) . "\r\n\r\n";
