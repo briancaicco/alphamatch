@@ -14953,6 +14953,9 @@ h1.detail-title {
   border: 0;
   color: #333333; }
 
+.shiftNav {
+  display: none; }
+
 .wp-social-login-connect-with {
   display: none !important; }
 
@@ -15974,9 +15977,9 @@ a.listing-display-rows span, a.listing-display-grid span {
   .widget.widget_nav_menu ul li a {
     line-height: 10px; }
   .home .widget_filter {
-    order: 2; }
-  .home .widget_listings {
     order: 1; }
+  .home .widget_listings {
+    order: 2; }
   .filter-sorting-inner-styles .filter-create-listing {
     width: 100% !important;
     display: block; } }
@@ -16015,7 +16018,7 @@ a.listing-display-rows span, a.listing-display-grid span {
     margin: 0; }
   .filter-sorting-inner .filter-sorting-inner-group-types ul li {
     float: left;
-    padding-right: 20px;
+    padding-right: 15px;
     margin: 0; }
   .home .filter-sorting-inner-group.filter-sorting-inner-group-types {
     margin: 0; }
@@ -16030,7 +16033,50 @@ a.listing-display-rows span, a.listing-display-grid span {
     position: relative;
     top: 9px; }
   .filter-sorting-inner-group.filter-sorting-inner-group-types .mobile_adjust {
-    margin: 0; } }
+    margin: 0; }
+  .inventor-slider-item-info-headline, .inventor-slider-item-info-text {
+    font-size: 16px;
+    text-align: center;
+    width: 100%; }
+  #menu-footer-meta li {
+    width: 50%; }
+  .footer-signup {
+    margin: 10px 20% 0; }
+  .footer-social-links li:nth-child(4), #menu-footer-menu li:nth-child(3) {
+    margin: 0 !important; }
+  .footer-social-links {
+    margin: 0 auto;
+    width: 55%;
+    height: 45px; }
+  #menu-footer-menu {
+    width: 65%;
+    margin: 0 17%; }
+  span.small.footer-credits {
+    width: 60%;
+    text-align: center;
+    margin: 0 20%; }
+  .widget.widget_archive ul li a:hover, .widget.widget_categories ul li a:hover, .widget.widget_pages ul li a:hover, .widget.widget_nav_menu ul li a:hover, .widget.widget_recent_entries ul li a:hover, .widget.widget_meta ul li a:hover {
+    color: #ecad20;
+    padding-left: 0; }
+  .header-navigation-wrapper {
+    display: none; }
+  /* Shift Nav */
+  .shiftNav {
+    width: 15%;
+    float: right;
+    display: block; }
+  .shiftnav-inner {
+    background-color: #333333 !important; }
+  a.shiftnav-target {
+    color: #fff;
+    padding: 10px 25px !important; }
+  .shiftnav-toggle-button .fa {
+    margin-right: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    position: relative; }
+  .shiftnav-toggle-button .fa {
+    margin-right: 0 !important; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
