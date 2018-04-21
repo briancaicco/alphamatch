@@ -91,10 +91,9 @@ if (!$user_ID) { //block logged in users
 		$wpdb->update($wpdb->users, array('user_activation_key' => $key), array('user_login' => $user_login));
 	}
 	//mailing reset details to the user
-	$message = __('<p>Someone requested that the password be reset for the following account:') . get_option('siteurl') . '</p>' . "\r\n\r\n";
-	$message .= sprintf(__('<p>Username: %s</p>'), $user_login) . "\r\n\r\n";
+	$message = __('<p>A password reset request has been sent for your Alpha Match account</p>') . "\r\n\r\n";
 	$message .= __('<p>If this was a mistake, just ignore this email and nothing will happen.</p>') . "\r\n\r\n";
-	$message .= __('<p>To reset your password, visit the following address:</p>') . "\r\n\r\n";
+	$message .= __('<p>To initiate your password reset, click the link below:</p><br/>') . "\r\n\r\n";
 	$message .= tg_validate_url() . "action=reset_pwd&key=$key&login=" . rawurlencode($user_login) . "\r\n";
 	if ( $message && !wp_mail($user_email, 'Password Reset Request', $message) ) {
 		echo "<div class='alert alert-warning'>Email failed to send. Please contact us for assistance.</div>";
