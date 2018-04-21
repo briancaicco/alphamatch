@@ -502,6 +502,16 @@ if ( empty( $_POST['user_login'] ) ) {
  }
 
 $user_login_name = $user_data->user_login;
+
+
+add_filter('wp_mail', function($args) {
+$args = '<a href="<?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?>"><?php echo wp_login_url() ?>?action=rp&key=<?php echo $key ?>&login=<?php echo $user_login_name; ?></a>';
+$args['alpa_pass_reset_link'] = do_shortcode($args['alpa_pass_reset_link']);
+return $args;
+
+}, 1, 1);
+
+
 ob_start();
 
 $email_subject = 'Your password has been changed';
@@ -585,5 +595,3 @@ function get_request_parameter( $key, $default = '' ) {
     // Set so process it
     return strip_tags( (string) wp_unslash( $_REQUEST[ $key ] ) );
 }
-
-
