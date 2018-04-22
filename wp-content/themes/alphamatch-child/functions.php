@@ -147,24 +147,45 @@ add_action( 'inventor_listing_type_icon', function ( $icon, $post_type ) {
  * @action post
  * @return void
  */
-add_action( 'cmb2_init', 'custom_fields', 11 );
+// add_action( 'cmb2_init', 'custom_fields', 11 );
 
-function custom_fields( ) {
-	$contact_metabox = CMB2_Boxes::get( INVENTOR_LISTING_PREFIX . 'pet_details' );
+// function custom_fields( ) {
+// 	$contact_metabox = CMB2_Boxes::get( INVENTOR_LISTING_PREFIX . 'pet_details' );
 
-	if ( ! empty( $contact_metabox ) ) {
-		$contact_metabox->add_field( array(
-			'id'         => INVENTOR_LISTING_PREFIX . 'pet_animal',
-			'taxonomy'       => ''
-		) );
+// 	if ( ! empty( $contact_metabox ) ) {
+// 		$contact_metabox->add_field( array(
+// 			'id'         => INVENTOR_LISTING_PREFIX . 'pet_animal',
+// 			'taxonomy'       => ''
+// 		) );
 
-		return '';
-	}
-}
-
-
+// 		return '';
+// 	}
+// }
 
 
+
+// /**
+//  * Removes custom meta boxes
+//  *
+//  * @action post
+//  * @return void
+//  */
+// 
+
+// add_action( 'cmb2_init', 'remove_metabox', 10, 0 );
+
+// function remove_metabox() {
+//     Inventor_Post_Types::remove_metabox( 
+//     	'dog_details', array(
+// 		'video',
+// 		'listing_street_view',
+// 		'listing_street_view_location',
+// 		'listing_inside_view',
+// 		'listing_inside_view_location',
+
+//     ) 
+//    );
+// }
 
 
 // /**

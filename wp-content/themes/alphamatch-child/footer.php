@@ -169,6 +169,7 @@
   		$('.alert').remove().fadeOut(500);
   		$('#listing_featured_image').css('border', '1px solid rgba(236,173,32,.8)');
 		$('<div class="alert alert-warning">Please add an image to continue</div>').appendTo('.cmb2-id-listing-featured-image').show().fadeIn(2000);
+		// $('<div class="alert alert-warning">Please add an image to continue</div>').appendTo('.submission-form').show().fadeIn(2000);
 
 	  	event.preventDefault();
 	}
