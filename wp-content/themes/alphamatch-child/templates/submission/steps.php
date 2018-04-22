@@ -1,6 +1,6 @@
 <?php if ( ! empty( $steps ) ) : ?>
 	<style type="text/css">
-		.cmb2-id-listing-map-location-polygon, .cmb2-id-listing-street-view, .cmb2-id-listing-street-view-location, .cmb2-id-listing-inside-view, .cmb2-id-listing-inside-view-location{
+		.cmb2-id-listing-map-location-polygon, .cmb2-id-listing-street-view, .cmb2-id-listing-street-view-location, .cmb2-id-listing-inside-view, .cmb2-id-listing-inside-view-location, .pw-map-latitude, .pw-map-longitude{
 			display: none !important;
 		}
 		.cmb-type-title {
