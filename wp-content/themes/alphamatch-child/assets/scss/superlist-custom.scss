@@ -41,6 +41,9 @@ $color-primary: #ecad20;
 .header-user-menu-name a {
     font-size: 12px;
 }
+.btn-primary:hover {
+	color: #ffffff !important;
+}
 .header-user-menu-name a.button.btn.bnt-lg.btn-primary:hover {
     background: none !important;
 }
@@ -94,8 +97,12 @@ h1.detail-title {
 .shiftNav {
     display: none;
 }
-
-
+.shiftnav ul.shiftnav-menu li.menu-item {
+	padding: 15px 0 !important;
+}
+.footer .inventor-slider-item-info-wrapper .inventor-slider-item-info .inventor-slider-item-info-headline {
+    padding-top: 29px !important;
+}
 
 
 
@@ -609,7 +616,7 @@ ul.collections,
 }
 
 .detail-banner.detail-banner-simple {
-	height: 300px;
+	height: 270px;
 	background: transparent;
 }
 
@@ -625,7 +632,9 @@ ul.collections,
 	top: 0;
 	z-index: 99;
 }
-
+.listing-detail-gallery .item-image {
+    background-size: contain;
+}
 .listing-author-contact {
 	display: none !important;
 }
@@ -729,6 +738,9 @@ a.filter-sort-order-asc {
 .filter-sorting-inner-group.filter-sorting-inner-group-order a {
     min-width: 11px;
     width: 11px;
+}
+.listing-column {
+	overflow: visible;
 }
 .listing-column-label-special {
     background-color: #ecad20;
@@ -1398,9 +1410,9 @@ a.listing-display-rows:after {
 @media only screen and (min-width: 320px) {
 
 
-	.detail-banner.detail-banner-simple {
+	/*.detail-banner.detail-banner-simple {
 		height: 350px;
-	}
+	}*/
 
 	.detail-banner-actions {
 		display: flex;
