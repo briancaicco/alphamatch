@@ -616,3 +616,15 @@ function get_request_parameter( $key, $default = '' ) {
     // Set so process it
     return strip_tags( (string) wp_unslash( $_REQUEST[ $key ] ) );
 }
+
+// WordPress Get menu from Shortcode
+function print_menu_shortcode($atts, $content = null) {
+
+extract(shortcode_atts(array( 'name' => null, 'class' => null ), $atts));
+  return wp_nav_menu( array( 'menu' => $name, 'menu_class' => $class, 'echo' => false ) );
+}
+
+add_shortcode('menu', 'print_menu_shortcode');
+
+
+
