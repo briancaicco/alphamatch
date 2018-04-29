@@ -39,6 +39,7 @@ jQuery(document).ready(function($) {
         $('.action-bar-content').toggleClass('open');
     });
 
+
     /**
      * Tabs
      */

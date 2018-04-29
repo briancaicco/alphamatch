@@ -58,6 +58,16 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/assets\/css\/style-login-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/css\/style-login-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/css\/style-login.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3928,6 +3938,13 @@
 		"oAP": "\/page-fullwidth.php",
 		"oF": 0
 		},
+	"\/page-login-test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-login-test.php",
+		"oF": 0
+		},
 	"\/page-no-title.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -4027,6 +4044,41 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/taxonomy.php",
+		"oF": 0
+		},
+	"\/templates\/accounts\/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/accounts\/login.php",
+		"oF": 0
+		},
+	"\/templates\/accounts\/password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/accounts\/password.php",
+		"oF": 0
+		},
+	"\/templates\/accounts\/profile.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/accounts\/profile.php",
+		"oF": 0
+		},
+	"\/templates\/accounts\/register.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/accounts\/register.php",
+		"oF": 0
+		},
+	"\/templates\/accounts\/reset.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/accounts\/reset.php",
 		"oF": 0
 		},
 	"\/templates\/archive-listing.php": {
@@ -4195,6 +4247,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/templates\/payment\/payment-form.php",
+		"oF": 0
+		},
+	"\/templates\/submission\/steps.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/submission\/steps.php",
 		"oF": 0
 		},
 	"\/templates\/users\/card.php": {
