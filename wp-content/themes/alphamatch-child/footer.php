@@ -135,7 +135,7 @@
 <?php endif; ?>
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ad27eca8e28fb04"></script>
-<script type="text/javascript"> $('.alert-dismissible').delay( 5000 ).fadeOut( 400 );</script>
+<script type="text/javascript"> jQuery(document).ready(function($) { $('.alert-dismissible').delay( 5000 ).fadeOut( 400 ); });</script>
 <?php wp_footer(); ?>
 
 <?php if ( is_page( 70 )){ ?>
