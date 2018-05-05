@@ -592,7 +592,7 @@ add_action( 'wp_login_failed', 'my_front_end_login_fail' );
 function my_front_end_login_fail( $username ) {
      $referrer = $_SERVER['HTTP_REFERER'];
      if ( !empty($referrer) && !strstr($referrer,'wp-login') && !strstr($referrer,'wp-admin') ) {
-          wp_redirect( $referrer . '?login=failed' );
+          wp_redirect( $referrer . '?action=failed' );
           exit;
      }
 }
