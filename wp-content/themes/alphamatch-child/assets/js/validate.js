@@ -14,7 +14,7 @@ function AppModel(attrs, elem){
         required: '',
         maxlength: 8,
         minlength: 4,
-        coupon: 'ALPHA2018',
+        coupon: 'ALPHA18',
         number: /^[a-zA-Z0-9”#$%&*+-./?@_]*$/,
         url: /^(https?|ftp)(:\/\/[-_.!~*¥'()a-zA-Z0-9;¥/?:¥@&=+¥$,%#]+)$/,
         mail: /^[a-zA-Z0-9."!#$%&*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
