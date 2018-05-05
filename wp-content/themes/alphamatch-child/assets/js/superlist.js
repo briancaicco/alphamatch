@@ -475,4 +475,10 @@ jQuery(document).ready(function($) {
             itemSelector: '.post-masonry'
         });
     }
+
+
+    // Autohide Alerts
+    $('.alert').remove().fadeOut(500);
+
+
 });
