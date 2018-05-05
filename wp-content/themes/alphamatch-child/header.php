@@ -32,7 +32,7 @@
 <?php if(is_front_page() || is_home() || is_page( '22' )){
 
         if( get_request_parameter( 'action', '' ) == 'failed' ){ 
-            echo "<div class='alert alert-warning m-0'>Your username or password are incorrect. Please try agian.</div>";
+            echo "<div class='alert alert-warning' style='margin-bottom: 0px;' >Your username or password are incorrect. Please try agian.</div>";
         }
         
 };?>
