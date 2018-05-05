@@ -27,6 +27,16 @@
 <?php endif; ?>
 
 <div class="page-wrapper">
+
+
+<?php if(is_front_page() || is_home() || is_page( '22' )){
+
+        if( get_request_parameter( 'action', '' ) == 'failed' ){ 
+            echo "<div class='alert alert-warning'>Your username or password are incorrect. Please try agian.</div>";
+        }
+        
+};?>
+
     <?php $header_type = get_theme_mod( 'superlist_general_header_type', 'header-regular' ); ?>
     <?php get_template_part( 'templates/header-types/' . $header_type ); ?>
 

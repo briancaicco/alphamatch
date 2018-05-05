@@ -138,15 +138,6 @@
 <script type="text/javascript"> jQuery(document).ready(function($) { $('.alert-dismissible').delay( 5000 ).fadeOut( 400 ); });</script>
 <?php wp_footer(); ?>
 
-<?php if(is_front_page() || is_home() || is_page( '22' )){
-
-		if( get_request_parameter( 'action', '' ) == 'failed' ){ 
-			echo "<div class='alert alert-warning'>Your username or password are incorrect. Please try agian.</div>";
-		}
-		
-};?>
-
-
 <?php if ( is_page( 70 )){ ?>
 <script type="text/javascript">
 
