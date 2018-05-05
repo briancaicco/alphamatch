@@ -33,7 +33,6 @@
 
         if( get_request_parameter( 'action', '' ) == 'failed' ){ 
             echo "<div class='alert alert-warning' style='margin-bottom: 0px;' >Your username or password are incorrect. Please try agian.</div>";
-            echo "<script>$('.alert').remove().fadeOut(500);</script>";
         }
         
 };?>
