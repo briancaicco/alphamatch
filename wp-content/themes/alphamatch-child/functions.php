@@ -586,6 +586,18 @@ if ( !function_exists('wp_new_user_notification') ) {
 }
 
 
+// Redirect failed login 
+//////////////////////////////////////////////////////////////////////
+add_action( 'wp_login_failed', 'my_front_end_login_fail' );
+function my_front_end_login_fail( $username ) {
+     $referrer = $_SERVER['HTTP_REFERER'];
+     if ( !empty($referrer) && !strstr($referrer,'wp-login') && !strstr($referrer,'wp-admin') ) {
+          wp_redirect( $referrer . '?login=failed' );
+          exit;
+     }
+}
+
+
 // Set Wordpress Admin colour scheme
 function additional_admin_color_schemes() {
   //Get the theme directory
